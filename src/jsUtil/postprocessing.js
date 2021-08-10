@@ -19,6 +19,9 @@ const PostProcessing = {
         },
         'howmuchrgbshifticanhaz': {
             value: 0
+        },
+        'noiseblur':{
+            value: 0
         }
     },
     vertexShader:
@@ -36,6 +39,7 @@ const PostProcessing = {
         uniform float pixelSize;
         uniform vec2 resolution;
         uniform float time;
+        uniform float noiseblur;
         uniform float howmuchrgbshifticanhaz;
 
         varying highp vec2 vUv;
@@ -43,7 +47,7 @@ const PostProcessing = {
 
         void main(){
 
-            vec2 shift = vec2(0.01, 0.01) * howmuchrgbshifticanhaz * 2.;
+            vec2 shift = vec2(0.01, 0.01) * howmuchrgbshifticanhaz * 3.9;
 
             // make bw
             vec4 t = texture2D(tDiffuse, vUv);
@@ -53,13 +57,13 @@ const PostProcessing = {
             // vec3 color1 = vec3((t1.r + t1.b + t1.g)/3.);
             // vec3 color2 = vec3((t2.r + t2.b + t2.g)/3.);
             
-            // vec3 color = vec3((t.rbg)/1.6); // last number can make darker
-            // vec3 color1 = vec3((t1.rbg)/1.6);
-            // vec3 color2 = vec3((t2.rbg)/1.6);
+            // vec3 color = vec3((t.rbg)/3.); // last number can make darker
+            // vec3 color1 = vec3((t1.rbg)/3.);
+            // vec3 color2 = vec3((t2.rbg)/3.);
 
-            vec3 color = vec3((t.rbg)); // last number can make darker
-            vec3 color1 = vec3((t1.rbg));
-            vec3 color2 = vec3((t2.rbg));
+            vec3 color = vec3((t.rbg) / noiseblur); // last number can make darker
+            vec3 color1 = vec3((t1.rbg) / noiseblur);
+            vec3 color2 = vec3((t2.rbg) / noiseblur);
 
             color = vec3(color1.r, color.b, color2.g);
 
@@ -67,7 +71,8 @@ const PostProcessing = {
 
 
             // noise
-            float val = hash(vUv + time)*0.1;
+            // float val = hash(vUv + time)*0.1;
+            float val = hash(vUv + time) * 0.1;
 
             vec2 dxy = pixelSize / resolution;
             vec2 coord = dxy * floor( vUv / dxy );

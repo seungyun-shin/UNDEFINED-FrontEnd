@@ -1,68 +1,227 @@
-*{
-  margin: 0;
-  padding: 0;
-  // padding: 1px;
-}
-body{
-  overscroll-behavior: none;
-  background: black;
-}
-#container{
-  width: 100vw;
-  height: 100vh;
-  // background-color:#ffd3d3;
-}
-canvas{
-  width: 100vw;
-  height: 100vh;
-  display: block;
-  background-color: aqua;
+// *{
+//   margin: 0;
+//   padding: 0;
+// }
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
 }
 
-.main-title-1{
-  font-size: 3rem;
-  position: absolute;
-  color: aliceblue;
-  top:20%;
-  right: 20%;
+/* Hide scrollbar for IE, Edge and Firefox */
+body{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  // overflow-x: hidden;
+  // overflow: hidden;
+  visibility: hidden;
+  // position: relative;
+  // overscroll-behavior: none;
+  // background: black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  // overflow-x: hidden;
+}
+
+.overall-Layout{
+    position: relative;
+    width: 100vw;
+    // height: 100vh;
+    max-width: 1500px; 
+    z-index: 199;
+}
+
+.default-link{
+  text-decoration: none !important;
+}
+// #container{
+//   width: 100vw;
+//   height: 100vh;
+//   // background-color:#ffd3d3;
+// }
+canvas{
+  width: 100%;
+  height: 100vh;
+  // // width: 100%;
+  // // height: 100%;
+  display: block;
+  // // background-color: aqua;
+  // padding: 0;
+  // margin: 0;
 }
 
 video{
   display: none;
 }
 
-.section{
-  min-height: 100vh;
-  width: 100vw;
-  display: flex;
-  place-items: center;
-  color: whitesmoke;
-  border: 1px solid blue;
-  padding: 200px;
-  box-sizing: border-box;
-}
-
-.section h2{
-  width: 100%;
-  display: block;
-  font-size: 6rem;
-}
-
 #mesh-container{
+  margin: 0;
+  padding: 0;
   position: fixed;
-  left: 0;
   top: 0;
-  width: 100vw;
+  left: 0;
+  width: 100vw !important; 
   height: 100vh;
   z-index: -1;
 }
 
-#back-mesh-container{
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
+.contents-container{
+  // position: relative;
+  margin-top: 3%;
+  // background-color:black;
   height: 100vh;
-  z-index: -30;
   // opacity: 0.7;
+}
+
+// .fixed-background{
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: black;
+
+// }
+
+// //CSS-transition-group
+// // .page-appear,
+// .page-enter{
+//   opacity: 0;
+//   // z-index: 1;
+// }
+
+// // .page-appear-active,
+// // .page-enter.page-enter-active{
+// .page-enter-active{
+//   opacity: 1;
+//   transition: opacity 399ms ;
+//   transition-delay: 600ms;
+// }
+
+// .page-exit{
+//   opacity: 1;
+// }
+
+// // .page-exit.page-exit-active{
+// .page-exit-active{
+//   opacity: 0;
+//   transition: opacity 399ms ;
+// }
+
+// rating component
+
+.book-info-title{
+  margin-top: 0.3rem;
+}
+
+.basic-button{
+  background: lightgray;
+  color: black;
+  font-weight: 700;
+  font-family: roboto;
+  border: none;
+  padding:9px;
+  height: 50px;
+  width: 100%;
+  // border-radius: 9px;
+  cursor:pointer;
+  margin-top: 0.3rem;
+}
+
+.shop-select {
+  width: 100%;
+  padding: .8em .5em;
+  border: 1px solid #999;
+  font-family: inherit;
+  font-weight: 700;
+  background: url('../src/imgs/selectboxarrow.jpg') no-repeat 95% 50%;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: black;
+  background-color: white ;
+  }
+
+label{
+  color: black;
+}
+
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+select::-ms-expand {
+  display: none;
+}
+
+.selectbox {
+
+  position: relative;
+  width: 200px;  /* 너비설정 */
+  border: 1px solid #999;  /* 테두리 설정 */
+  z-index: 1;
+}
+
+/* 가상 선택자를 활용 화살표 대체 */
+.selectbox:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 0;
+  height: 0;
+  margin-top: -1px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #333;
+}
+
+.selectbox label {
+  position: absolute;
+  top: 1px;  /* 위치정렬 */
+  left: 5px;  /* 위치정렬 */
+  padding: .8em .5em;  /* select의 여백 크기 만큼 */
+  color: #999;
+  z-index: -1;  /* IE8에서 label이 위치한 곳이 클릭되지 않는 것 해결 */
+}
+
+.selectbox select {
+  width: 100%;
+  height: auto;  /* 높이 초기화 */
+  line-height: normal;  /* line-height 초기화 */
+  font-family: inherit;  /* 폰트 상속 */
+  padding: .8em .5em;  /* 여백과 높이 결정 */
+  border: 0;
+  opacity: 0;  /* 숨기기 */
+  filter:alpha(opacity=0);  /* IE8 숨기기 */
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.space{
+  height: 200px;
+}
+
+
+
+//drop down menu
+span ul {
+  display: none;
+  position:absolute;
+  // background:#37bc9b;
+  // float:left;
+}
+
+span:hover ul{
+  display: block;
+}
+
+span ul li{
+  width:100%;
+  border-bottom:1px solid rgba(255,255,255,.3);
 }

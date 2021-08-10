@@ -217,7 +217,7 @@ float cnoise(vec4 P, vec4 rep){
         fakeUV = fract(fakeUV + vec2(time/4., time/2.));
 
 
-        vec4 txt = texture2D(landscape, newFakeUV + 0.2 * cnoise(vec4( fakeUV*7. ,time ,0. ), vec4(10.)));
+        vec4 txt = texture2D(landscape, newFakeUV + 0.2 * cnoise(vec4( fakeUV * 7. ,time ,0. ), vec4(10.)));
 
         // gl_FragColor = vec4(newFakeUV, 0.0, 1.);
         

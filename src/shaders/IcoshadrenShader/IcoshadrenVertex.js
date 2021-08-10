@@ -90,10 +90,10 @@ void main(){
     vUv = uv;
     vBary = aBary;
     vNormal=normalize(normalMatrix*normal);
-    float noisy = mouse * pow(cnoise(vNormal + time * 2.), 3.);
+    float noisy = mouse * pow(cnoise(vNormal + time) , 3.);
 
     // vec3 newPosition = position + 0.3 * cnoise(vNormal + time) * normal;
-    vec3 newPosition = position + noisy * normal;
+    vec3 newPosition = position + noisy * normal * 1.3;
 
     vec4 worldPosition = modelMatrix * vec4( newPosition, 1.0);
     eyeVector = normalize(worldPosition.xyz - cameraPosition);

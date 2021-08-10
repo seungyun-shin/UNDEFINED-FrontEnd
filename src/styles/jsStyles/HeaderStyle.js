@@ -1,13 +1,70 @@
 import styled, {css, createGlobalStyle} from "styled-components"
 
-export const HeaderComp = styled.div`
+export const HeaderStyleCom = styled.div`
+    
+    .header-wraper{
+        position:relative;
+        /* top:0; */
+        /* left:0; */
+        width: 100%;
+        max-width: 1500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 9vh;
+        padding-top: 9vh;
+        color: white;
+        font-size: 1rem;
 
-    position:absolute;
-    top: 10%;
-    left: 10%;
-    font-size: 6rem;
-    /* width: 100vw;
-    height: 100vh; */
-    /* border: 1px solid #f00; */
-    color: #ffffff;
+        .header-container{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding-left: 9%;
+            padding-right: 9%;
+
+            .left-container{
+                
+                .logo{
+                    padding-bottom: 30px;
+                    a {    
+                        text-decoration:none;
+                        font-weight: 600;
+                        color: white;
+                    }
+                }
+
+                .small-info {
+                    padding-top: 1.9%;
+                    display: flex;
+                    flex-direction: column;
+                    
+
+                    span{
+                        padding-top: 6px;
+                        font-size: 0.79rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .right-container{
+
+                .menu-container{
+
+                    span{
+                        padding-left: 36px;
+                        font-weight: 600;
+                        color: white;
+                    }
+                    a {    
+                        text-decoration:none;
+                        font-weight: 600;
+                        color: white;
+                    }
+
+                }
+            }
+        }
+    }
 `

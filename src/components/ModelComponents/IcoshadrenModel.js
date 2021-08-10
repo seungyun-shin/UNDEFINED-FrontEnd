@@ -1,6 +1,8 @@
 import React, { useRef, useMemo, useCallback, useEffect } from 'react'
 import * as THREE from "three";
 
+import gsap from 'gsap'
+
 //Pixel examples
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
@@ -15,14 +17,19 @@ import IcoshadrenVertex from '../../shaders/IcoshadrenShader/IcoshadrenVertex'
 import IcoshadrenPixelFragment from '../../shaders/IcoshadrenShader/IcoshadrenPixelFragment'
 import IcoshadrenPixelVertex from '../../shaders/IcoshadrenShader/IcoshadrenPixelVertex'
 
+
+import { HeaderStyleCom } from "../../styles/jsStyles/HeaderStyle";
+import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
+
 // import landscape from '../../imgs/back10.jpg'
 import landscape from '../../imgs/skytexture.png'
+// import landscape from '../../imgs/universe.png'
 import { TetrahedronGeometry } from 'three';
 
 //dat.gui
-import * as dat from "dat.gui"
+// import * as dat from "dat.gui"
 
-let OrbitControls = require("three-orbit-controls")(THREE);
+// let OrbitControls = require("three-orbit-controls")(THREE);
 
 function IcoshadrenModel() {
 
@@ -39,18 +46,23 @@ function IcoshadrenModel() {
                 this.renderer.outputEncoding = THREE.sRGBEncoding;
 
                 this.container = document.getElementById("mesh-container");
+                // this.width = window.innerHeight;
+                // this.height = window.innerHeight;
                 this.width = this.container.offsetWidth;
                 this.height = this.container.offsetHeight;
                 this.container.appendChild( this.renderer.domElement );
+                // document.getElementById("mesh-container").appendChild( this.renderer.domElement );
 
                 this.camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 1000 );
+                // this.camera.position.set(0, 0, 1.39);
                 this.camera.position.set(0, 0, 1.39);
+                // this.camera.position.set(0, 0, 0.3);
                 
-                this.control = new OrbitControls(this.camera, this.renderer.domElement);
-                this.control.enableDamping = true;
-                this.control.dampingFactor = 0.3;
-                this.control.enableZoom = true;
-                this.control.zoomSpeed = 1.2;
+                // this.control = new OrbitControls(this.camera, this.renderer.domElement);
+                // this.control.enableDamping = true;
+                // this.control.dampingFactor = 0.3;
+                // this.control.enableZoom = true;
+                // this.control.zoomSpeed = 1.2;
 
                 this.scene = new THREE.Scene();
                 
@@ -58,8 +70,9 @@ function IcoshadrenModel() {
                 // this.raycaster = new THREE.Raycaster(); 
                 
                 this.time = 0;
-                this.mouse=0;
-                
+                this.mouse = 0;
+                this.noiseblur = 1;
+                this.meshToggle = 0;
                 this.setupResize();
                 this.addMesh();
                 this.mouseEvents();
@@ -68,6 +81,87 @@ function IcoshadrenModel() {
                 // this.settings();
                 this.resize();
                 this.render();
+                this.meshanimation();
+                this.initialpagecheck();
+                // this.meshanimationOut();
+            }
+
+            initialpagecheck(){
+                // console.log('check : ', document.getElementsByClassName('main-title'))
+                if(document.getElementsByClassName('main-title').length == 0){
+                    
+                    gsap.to( this.camera.position, {
+                        duration: 3,
+                        z: 0.3,
+                    } );
+
+                    gsap.to( this.customPass.uniforms[ "noiseblur" ], {
+                        duration: 3,
+                        value: 6.9,
+                    } );
+                }
+            }
+
+            meshanimation(){
+
+
+                document.getElementsByClassName('logo')[0].addEventListener('click', (e) => {
+
+                    // if(this.meshToggle == 0){
+                    // gsap.to( this.camera.position, {
+                    //     duration: 3,
+                    //     z: 0.3,
+                    // } );
+
+                    // gsap.to( this.customPass.uniforms[ "noiseblur" ], {
+                    //     duration: 3,
+                    //     value: 3.0,
+                    // } );
+
+                    // this.meshToggle=1;
+
+                    // }else 
+
+                    if(this.meshToggle == 1){
+                        gsap.to( this.camera.position, {
+                            duration: 3,
+                            z: 1.39,
+                        } );
+        
+                        gsap.to( this.customPass.uniforms[ "noiseblur" ], {
+                            duration: 3,
+                            value: 1.0,
+                        } );
+
+                        this.meshToggle=0;
+                    }
+                });
+
+                const menulist = document.querySelectorAll(".menu-container span"); 
+                for(let i=0; i<menulist.length; i++){
+                    menulist[i].addEventListener('click', (e) => {
+                        if(this.meshToggle == 0){
+                            gsap.to( this.camera.position, {
+                                duration: 3,
+                                z: 0.3,
+                            } );
+
+                            gsap.to( this.customPass.uniforms[ "noiseblur" ], {
+                                duration: 3,
+                                value: 3.0,
+                            } );
+
+                            gsap.to(HeaderStyleCom, 1.6, {
+                                y: -70,
+                                opacity: 0,
+                                ease: "power4.out",
+                            })
+
+                            this.meshToggle=1;
+
+                        }
+                    });
+                }
             }
 
             mouseEvents(){
@@ -78,9 +172,9 @@ function IcoshadrenModel() {
                 // this.mouse = new THREE.Vector2();
 
                 document.addEventListener('mousemove', (e) => {
-                    this.speed = Math.sqrt((e.pageX - this.lastX)**2 +  (e.pageX - this.lastX)**2) * 0.03;
+                    this.speed = Math.sqrt((e.pageX - this.lastX)**2 +  (e.pageX - this.lastX)**2) * 0.003;
                     // this.speed = (e.pageX - this.lastX) * 0.1;
-                    console.log(this.speed);
+                    // console.log(this.speed);
                     this.lastX = e.pageX;
                     this.lastY = e.pageY;
                     // console.log(( event.clientX / window.innerWidth ) * 2 - 1);
@@ -108,7 +202,7 @@ function IcoshadrenModel() {
                 document.addEventListener('mouseout', (e) => {
                     this.speed = 0;
                     // this.speed = (e.pageX - this.lastX) * 0.1;
-                    console.log('mpouse out');
+                    // console.log('mpouse out');
                     this.lastX = 0;
                     this.lastY = 0;
                 })
@@ -130,27 +224,29 @@ function IcoshadrenModel() {
             resize(){
                 this.width = this.container.offsetWidth;
                 this.height = this.container.offsetHeight;
+                // this.width = window.innerHeight;
+                // this.height = window.innerHeight;
                 this.renderer.setSize(this.width, this.height);
                 this.composer.setSize(this.width, this.height);
                 this.camera.aspect = this.width / this.height;
 
-                this.imageAspect = 1;
-                // this.imageAspect = 1080/1920;
-                let a1; let a2;
-                if(this.height/this.width>this.imageAspect){
-                    a1 = (this.width/this.height) * this.imageAspect;
-                    a2 = 1;
-                }else{
-                    a1 = 1;
-                    a2 = (this.height/this.width) / this.imageAspect;
-                }
+                // this.imageAspect = 1;
+                // // this.imageAspect = 1080/1920;
+                // let a1; let a2;
+                // if(this.height/this.width>this.imageAspect){
+                //     a1 = (this.width/this.height) * this.imageAspect;
+                //     a2 = 1;
+                // }else{
+                //     a1 = 1;
+                //     a2 = (this.height/this.width) / this.imageAspect;
+                // }
 
-                this.material.uniforms.resolution.value.x = this.width;
-                this.material.uniforms.resolution.value.y = this.height;
-                this.material.uniforms.resolution.value.z = a1;
-                this.material.uniforms.resolution.value.w = a2;
+                // this.material.uniforms.resolution.value.x = this.width;
+                // this.material.uniforms.resolution.value.y = this.height;
+                // this.material.uniforms.resolution.value.z = a1;
+                // this.material.uniforms.resolution.value.w = a2;
 
-                // //optional - cover with quad
+                //optional - cover with quad
                 // const dist = this.camera.position.z;
                 // const height = 1;
                 // this.camera.fov = (2*(180/Math.PI)*Math.atan(height/(2*dist))) ;
@@ -162,7 +258,6 @@ function IcoshadrenModel() {
                 // }else{
                 //     this.mesh.scale.y = 1/this.camera.aspect;
                 // }
-
                 this.camera.updateProjectionMatrix();
 
             }
@@ -174,6 +269,7 @@ function IcoshadrenModel() {
 				this.customPass = new ShaderPass( PostProcessing );
 				this.customPass.uniforms[ "resolution" ].value = new THREE.Vector2( window.innerWidth, window.innerHeight );
 				this.customPass.uniforms[ "resolution" ].value.multiplyScalar( window.devicePixelRatio );
+                this.customPass.uniforms[ "noiseblur" ].value = this.noiseblur;
 				this.composer.addPass( this.customPass );
             }
 
@@ -243,29 +339,59 @@ function IcoshadrenModel() {
                 // this.mesh.rotation.x += 0.01; 
 	            // this.mesh.rotation.y += 0.02;
                 this.time += 0.001 ;
-                this.mouse -= (this.mouse - this.speed) * 0.01;
-                this.mouse *= 0.99;
+                this.mouse -= (this.mouse - this.speed) * 0.005;
+                // this.mouse -= (this.mouse - this.speed) * 0.01
+                // this.mouse *= 0.99;;
+                this.speed *= 0.99;
+                // this.mouse *= 0.999;
                 this.scene.rotation.x = - this.time * 6;
                 this.scene.rotation.y =  this.time * 6;
                 this.scene.position.z = 0.2 * Math.sin(this.time*5)
                 this.customPass.uniforms.time.value = this.time;
-                this.customPass.uniforms.howmuchrgbshifticanhaz.value = this.mouse/3;
+                // this.customPass.uniforms.howmuchrgbshifticanhaz.value = this.mouse/3;
+                this.customPass.uniforms.howmuchrgbshifticanhaz.value = this.mouse/5;
                 this.material.uniforms.time.value = this.time;
                 this.material.uniforms.mouse.value = this.mouse;
                 this.material1.uniforms.time.value = this.time;
                 this.material1.uniforms.mouse.value = this.mouse;
+                // this.customPass.uniforms[ "noiseblur" ].value = this.noiseblur;
                 // this.renderer.render( this.scene, this.camera );
                 this.composer.render();
                 window.requestAnimationFrame(this.render.bind(this));
             }
         }
-        new Sketch();
-    
+        const sketch = new Sketch();
+        // sketch.meshanimationIn();
         }, []);
+
 
     return (
         <>
             <div id="mesh-container"></div>
+            {/* <HeaderStyleCom>
+            <div className="header-wraper">
+                <div className="header-container">
+                    <div className="left-container">
+                        <div className="logo">
+                            <LinkStyleCom to="/MainScreen">SEUNGYUN SHIN.</LinkStyleCom>
+                        </div>
+                        <div className="small-info">
+                            <span>Republic of Korea</span>
+                            <span>94'</span>
+                        </div>
+                    </div>
+                    <div className="right-container">
+                        <div className="menu-container">
+                            <LinkStyleCom to="/banner"><span>AI</span></LinkStyleCom>
+                            <LinkStyleCom to="/BoardAppScreen"><span>Work</span></LinkStyleCom>
+                            <span>Sports Industry</span>
+                            <span>Memory</span>
+                            <span>About</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </HeaderStyleCom> */}
         </>
     )
 }
