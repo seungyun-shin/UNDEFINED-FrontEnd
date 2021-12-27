@@ -2,11 +2,11 @@ import React, { useRef, useMemo, useCallback, useEffect } from 'react'
 import * as THREE from "three";
 
 // particle texture
-import sprite1 from '../imgs/texture/snowflake1.png'
-import sprite2 from '../imgs/texture/snowflake2.png'
-import sprite3 from '../imgs/texture/snowflake3.png'
-import sprite4 from '../imgs/texture/snowflake4.png'
-import sprite5 from '../imgs/texture/snowflake5.png' 
+import sprite1 from '../assets/images/models/ParticleScreen/snowflake1.png'
+import sprite2 from '../assets/images/models/ParticleScreen/snowflake2.png'
+import sprite3 from '../assets/images/models/ParticleScreen/snowflake3.png'
+import sprite4 from '../assets/images/models/ParticleScreen/snowflake4.png'
+import sprite5 from '../assets/images/models/ParticleScreen/snowflake5.png' 
 
 function ParticleBackgroundScreen() {
 

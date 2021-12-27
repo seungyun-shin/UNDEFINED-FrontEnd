@@ -24,7 +24,7 @@ function ShopScreen() {
             >
             <ShopContentsStyleCom>
                 <div className="contents-container">
-                    <ContentsBanner/>
+                    <ContentsBanner bannerTitle={"SHOP"}/>
                     <ShopHeader/>
                     <ShopContents/>
                 </div>

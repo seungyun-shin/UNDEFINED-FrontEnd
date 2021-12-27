@@ -4,20 +4,24 @@ import { ShopProductStyleCom } from "../../styles/jsStyles/ShopStyles/ShopProduc
 import Rating from '../ShopComponents/Rating'
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 
+import FadeInSection from "../componentParts/Observer"
+
 function ShopProduct({product}) {
 
     return (
         <>
             <ShopProductStyleCom>
+                
+            <FadeInSection>
                 <div className="shop-product-container">
                     {/* <a href={`/product/${product._id}`}>
                         <img src={product.image}/>
                     </a> */}
                 
-                        <div class="book-container">
-                            <div class="book">
+                        <div className="book-container">
+                            <div className="book">
                                 <LinkStyleCom to={`/ShopProduct/${product._id}`}>
-                                    <div class="book-cover">
+                                    <div className="book-cover">
                                         {/* <h1>{product.name}</h1> */}
                                         {/* <h2>{product.rating} from {product.numReviews} reviews</h2> */}
                                         {/* <h2>Bartolo Manzano</h2> */}
@@ -25,7 +29,7 @@ function ShopProduct({product}) {
                                         <img src={product.image}/>
                                     </div>
                                 </LinkStyleCom>
-                                <div class="book-spine">
+                                <div className="book-spine">
                                     <h1>{product.name}</h1>
                                 </div>
                                 <div className="book-info">
@@ -36,6 +40,8 @@ function ShopProduct({product}) {
                             </div> 
                         </div>
                 </div>
+                
+                </FadeInSection>
             </ShopProductStyleCom>
         </>
     )

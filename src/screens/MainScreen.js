@@ -29,15 +29,16 @@ function MainScreen({}) {
             transition={{duration: 0.5}}
         >
         <MainTitleStyleCom>
-            <div className="main-title-wraper">
-                <div className="main-title">CREATOR</div>
-            </div>
-            <div className="sub-title-wraper">
-                <div className="sub-title">UNDEFINED</div> 
+            <div className="main-text-container">
+                <div className="main-title-wraper">
+                    <div className="main-title">CREATOR</div>
+                </div>
+                <div className="sub-title-wraper">
+                    <div className="sub-title">UNDEFINED</div> 
+                </div>
             </div>
         </MainTitleStyleCom>
         </motion.div>
-        
         <MainFooter/>
         </>
     )

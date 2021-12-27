@@ -52,8 +52,8 @@ function CartScreen( { match, location, history } ) {
             >
             <ShopContentsStyleCom>
                 <div className="contents-container">
-                    <ContentsBanner/>
-                    <ShopHeader/>
+                    <ContentsBanner bannerTitle={"Cart"}/>
+                    <ShopHeader />
 
                     <ShopCartScreenStyleCom>
                         <div className="cart-contents-wraper">
@@ -85,7 +85,7 @@ function CartScreen( { match, location, history } ) {
                                                     </div>
                                                 </div>
                                                 <div className="cart-list-button">
-                                                    <button style={{cursor:'pointer'}} onClick={() => removeFromCartHandler(item.product)} type='button'><i className='fas fa-trash'></i></button>
+                                                    <button style={{cursor:'pointer'}} onClick={() => removeFromCartHandler(item.product)} type='button' className="cart-icon-button"><i className='fas fa-trash'></i></button>
                                                 </div>
                                             </div>
                                         ))}

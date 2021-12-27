@@ -22,7 +22,7 @@ import { HeaderStyleCom } from "../../styles/jsStyles/HeaderStyle";
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 
 // import landscape from '../../imgs/back10.jpg'
-import landscape from '../../imgs/skytexture.png'
+import landscape from '../../assets/images/textures/skytexture.png'
 // import landscape from '../../imgs/universe.png'
 import { TetrahedronGeometry } from 'three';
 

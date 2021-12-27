@@ -9,7 +9,7 @@ export const OrderScreenStyleCom = styled.div`
         left: 0;
         width: 100vw;
         /* height: 90vh; */
-        max-width: 1500px;
+        max-width: 1700px;
         /* background: rgba(1,1,1,0.7); */
 
         display: flex;
@@ -47,7 +47,7 @@ export const OrderScreenStyleCom = styled.div`
                 font-size: 3rem;
                 font-weight: 900;
                 margin-top: 7%;
-                margin-bottom: 13px;
+                margin-bottom: 5%;
                 display: flex;
                 justify-content:center;
                 align-items: center;
@@ -127,6 +127,55 @@ export const OrderScreenStyleCom = styled.div`
 
 
         }
+
+        .order-detail-info-container{
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid gray;
+            margin-bottom: 2%;
+
+            .order-detail-info{
+                margin-bottom: 3%;
+                font-size: 1.2rem;
+            }
+        }
+
+        .payMessage-not{
+            margin: 1%;
+            padding: 2%;
+            background-color: bisque;
+            color: black;
+            font-weight: 700;
+        }
+
+        .payMessage-paid{
+            margin: 1%;
+            padding: 2%;
+            background-color: lightgreen;
+            color: black;
+            font-weight: 700;
+        }
+        
+        .button-container{
+            /* padding: 2%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .deliver-button{
+            width: 98.5%;
+            padding: 13px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        
+    }
+
+    .paypal-container{
+        text-align:center;
     }
 
 `

@@ -7,9 +7,13 @@ export const LoginScreenStyleCom = styled.div`
         position: absolute;
         top: 0;
         left: 0;
+        /* width: 100%;
+        height: 100%; */
+        /* width: 100vw;
+        height: 100vh; */
         width: 100vw;
         height: 63vh;
-        max-width: 1500px;
+        /* max-width: 1500px; */
         /* background: rgba(1,1,1,0.7); */
 
         display: flex;
@@ -20,8 +24,10 @@ export const LoginScreenStyleCom = styled.div`
         
         .login-wraper{
             position: relative;
-            width: 50%;
-            height: 79%;
+            width: 28vw;
+            height: auto;
+
+            padding: 3.9rem 2.9rem;
 
             display: flex;
             justify-content:center;
@@ -29,16 +35,21 @@ export const LoginScreenStyleCom = styled.div`
             flex-direction: column;
 
             /* background-color: teal; */
-            background: rgba(1,1,1,0.7);
+            /* background: rgba(1,1,1,0.7); */
+            background-image: linear-gradient(180deg,#000,rgba(31,31,31,.19));
+            backdrop-filter: brightness(155%) blur(5px);
+            webkit-backdrop-filter: brightness(155%) blur(5px);
             
             .login-banner{
                 /* font-family: 'Tourney'; */
                 font-size: 3rem;
                 font-weight: 900;
-                margin-bottom: 13px;
+                /* margin-bottom: 13px; */
                 display: flex;
                 justify-content:center;
                 align-items: center;
+                font-family: Romelio;
+                margin-bottom: 13%;
             }
 
             .login-label{

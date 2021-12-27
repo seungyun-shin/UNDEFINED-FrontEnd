@@ -4,6 +4,7 @@ import styled, {css, createGlobalStyle} from "styled-components"
 export const LoadingStyleCom = styled.div`
 
     
+    padding-top: 39%;
 
     .loader {
     position: absolute;

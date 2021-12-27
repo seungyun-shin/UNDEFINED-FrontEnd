@@ -9,7 +9,7 @@ export const ShopPlaceOrderScreenCom = styled.div`
         left: 0;
         width: 100vw;
         /* height: 90vh; */
-        max-width: 1500px;
+        max-width: 1700px;
         /* background: rgba(1,1,1,0.7); */
 
         display: flex;

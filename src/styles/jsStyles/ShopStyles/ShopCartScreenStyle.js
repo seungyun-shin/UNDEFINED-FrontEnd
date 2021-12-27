@@ -3,7 +3,7 @@ import styled, {css, createGlobalStyle} from "styled-components"
 export const ShopCartScreenStyleCom = styled.div`
 
 
-    .cart-contents-wraper{
+    .cart-contents-wraper{  
         
         position: relative;
         display: flex;
@@ -95,13 +95,16 @@ export const ShopCartScreenStyleCom = styled.div`
                     align-items: center;
                     width: 20%;
                     
-                    .button{
+                    button{
+                        padding:2%;
+                        font-size: 1rem;
+                        cursor: pointer;
                         /* background-color: black; */
                     }
 
                     i{
                         /* color:white; */
-                        font-size: 1.19rem;
+                        /* font-size: 1.19rem; */
                         /* background: black; */
                     }
                 }

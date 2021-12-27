@@ -14,12 +14,16 @@ export const MessageStyleCom = styled.div`
         left: calc(50% - 256px);
         width: 512px;
         transition: 1s ease;
+        margin-top: 3%;
+        margin-bottom: 2%;
 
         .message-content{
 
             background-color: cornflowerblue;
             padding: 16px;
             border-radius: 16px;
+            text-align: center;
+            min-width: 160px;
 
         }
     }

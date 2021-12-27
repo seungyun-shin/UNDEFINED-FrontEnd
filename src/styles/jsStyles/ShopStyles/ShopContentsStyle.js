@@ -6,6 +6,13 @@ export const ShopContentsStyleCom = styled.div`
     
     /* position: relative; */
     /* color:white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contents-container{
+        width: 100%;
+    }
 
     .shop-contents-container{
         position: relative;

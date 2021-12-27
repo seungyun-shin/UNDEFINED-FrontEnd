@@ -1,21 +1,78 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import { productListReducer, productDetailsReducer } from './reducers/productReducers'
+import { 
+    recordListReducer, 
+    recordDetailsReducer,
+    recordDeleteReducer,
+    recordCreateReducer,
+    recordUpdateReducer,
+} from './reducers/recordReducers'
+
+import { 
+    productListReducer, 
+    productDetailsReducer, 
+    productDeleteReducer,
+    productCreateReducer,
+    productUpdateReducer,
+    productReviewCreateReducer, 
+} from './reducers/productReducers'
+
 import { cartReducer } from './reducers/cartReducers'
-import { userLoginReducer, userRegisterReducer, userDetailsReducer, userUpdateProfileReducer } from './reducers/userReducers'
-import { orderCreateReducer, orderDetailsReducer } from './reducers/orderReducer'
+
+import { 
+    userLoginReducer, 
+    userRegisterReducer, 
+    userDetailsReducer, 
+    userUpdateProfileReducer, 
+    userListReducer, 
+    userDeleteReducer,
+    userUpdateReducer,
+} from './reducers/userReducers'
+
+import { 
+    orderCreateReducer, 
+    orderDetailsReducer, 
+    orderPayReducer, 
+    orderListMyReducer,
+    orderListReducer,
+    orderDeliverReducer,
+} from './reducers/orderReducer'
 
 const reducer = combineReducers({
-    productList:productListReducer,
-    productDetails:productDetailsReducer,
-    cart: cartReducer,
+
+    //USER REDUCERS
     userLogin: userLoginReducer,
     userRegister: userRegisterReducer,
     userDetails: userDetailsReducer,
     userUpdateProfile: userUpdateProfileReducer,
+    userList: userListReducer,
+    userDelete: userDeleteReducer,
+    userUpdate: userUpdateReducer,
+
+    //SHOP REDUCERS
+    productList:productListReducer,
+    productDetails:productDetailsReducer,
+    productDelete:productDeleteReducer,
+    productCreate:productCreateReducer,
+    productUpdate:productUpdateReducer,
+    productReviewCreate : productReviewCreateReducer,
+
+    cart: cartReducer,
+
     orderCreate: orderCreateReducer,
     orderDetails: orderDetailsReducer,
+    orderPay: orderPayReducer,
+    orderListMy : orderListMyReducer,
+    orderList : orderListReducer,
+    orderDeliver: orderDeliverReducer,
+
+    //RECORD REDUCERS
+    recordList : recordListReducer,
+    recordDetails : recordDetailsReducer,
+    recordDelete: recordDeleteReducer,
+    recordCreate: recordCreateReducer,
+    recordUpdate: recordUpdateReducer,
 })
 
 const cartItemsFromStorage = localStorage.getItem('cartItems') ?

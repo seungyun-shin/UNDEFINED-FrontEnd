@@ -9,7 +9,7 @@ export const RegisterScreenStyleCom = styled.div`
         left: 0;
         width: 100vw;
         height: 75vh;
-        max-width: 1500px;
+        /* max-width: 1500px; */
         /* background: rgba(1,1,1,0.7); */
 
         display: flex;
@@ -20,8 +20,9 @@ export const RegisterScreenStyleCom = styled.div`
         
         .register-wraper{
             position: relative;
-            width: 50%;
-            height: 90%;
+            width: 28vw;
+            height: auto;
+            padding: 3.9rem 2.9rem;
 
             display: flex;
             justify-content:center;
@@ -29,16 +30,20 @@ export const RegisterScreenStyleCom = styled.div`
             flex-direction: column;
 
             /* background-color: teal; */
-            background: rgba(1,1,1,0.7);
+            background-image: linear-gradient(180deg,#000,rgba(31,31,31,.19));
+            backdrop-filter: brightness(155%) blur(5px);
+            webkit-backdrop-filter: brightness(155%) blur(5px);
+            
             
             .register-banner{
                 /* font-family: 'Tourney'; */
                 font-size: 3rem;
                 font-weight: 900;
-                margin-bottom: 13px;
+                margin-bottom: 13%;
                 display: flex;
                 justify-content:center;
                 align-items: center;
+                font-family: Romelio;
             }
 
             .register-label{

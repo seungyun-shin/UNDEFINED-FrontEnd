@@ -7,14 +7,29 @@ export const ShopProductStyleCom = styled.div`
     
 
         .shop-product-container{
-            width: 19vw;
-            height: 24vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 23.5vw;
+            height: 28.5vw;
             
 
             /* img{
                 width: 90%;
                 height: 90%;
             } */
+
+            @media ${props => props.theme.laptop2} {
+                width: 42.5vw;
+                height: 43vw;
+            }
+            @media ${props => props.theme.mobile3} {
+                width: 85vw;
+                height: 84.5vw;
+            }
+            @media ${props => props.theme.mobile7} {
+                margin-bottom: 3%;
+            }
         }
     
         
@@ -48,6 +63,11 @@ export const ShopProductStyleCom = styled.div`
                 transform-origin: 125px 0;
                 
                 transform: translateX(-10px) translateZ(35px) translateX(35px) rotateY(39deg);
+             
+                @media ${props => props.theme.mobile7} {
+                    transform: translateX(0px) translateX(0px) rotateY(0deg);
+                }
+
             }
             .book:after { 
                 content: ""; 
@@ -61,6 +81,7 @@ export const ShopProductStyleCom = styled.div`
                 -webkit-transform: translateZ(1px);
                 /* Fix for flickering in Chrome  */
             }
+
             .book:hover {
                 -webkit-transform: translateX(-10px) translateZ(35px) translateX(35px) rotateY(60deg);
                 -moz-transform: translateX(-10px) translateZ(35px) translateX(35px) rotateY(60deg);
@@ -103,7 +124,9 @@ export const ShopProductStyleCom = styled.div`
             .book-spine { 
                 position: absolute; 
                 color: #fff; 
-                background-color: black;
+                
+                /* background-color: black; */
+                background-color: #161616;
                 position: absolute; 
                 bottom: 0; 
                 top: 0; 
@@ -127,13 +150,14 @@ export const ShopProductStyleCom = styled.div`
                 /* width: 325px;   */
                 width: 325px; 
                 text-align: left; 
-                color: #fff; 
+                /* color: #fff;  */
+                color: #dfd3c3; 
                 position: absolute; 
                 top: 0; 
                 left: 39px; 
                 text-indent: 43px; 
                 text-transform: uppercase; 
-                font-family: Helvetica, Arial, sans-serif; 
+                font-family: Romelio; 
                 font-size: 1.6vw; 
                 opacity: 0.75; 
                 font-weight: normal;
@@ -144,6 +168,15 @@ export const ShopProductStyleCom = styled.div`
                 -webkit-transform-origin: 0 0;
                 -moz-transform-origin: 0 0;
                 transform-origin: 0 0;
+
+                
+                @media ${props => props.theme.laptop2} {
+                    font-size: 2.3vw;
+                }
+                @media ${props => props.theme.mobile3} {
+                    font-size: 3.9vw;
+                }
+
             }
             .book-spine:before { 
                 display: block; 
@@ -160,6 +193,10 @@ export const ShopProductStyleCom = styled.div`
                 padding: 10px;
                 color: white;
 
+                @media ${props => props.theme.mobile7} {
+                    opacity: 1;
+                }
+
                 .book-info-title{
                     font-weight: 700;
                 }
@@ -172,5 +209,6 @@ export const ShopProductStyleCom = styled.div`
                 opacity: 1;
                 transition: 1s ease;
             }
+            
     
 `

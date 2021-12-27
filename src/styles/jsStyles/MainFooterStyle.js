@@ -2,15 +2,15 @@ import styled, {css, createGlobalStyle} from "styled-components"
 
 export const MainFooterStyleCom = styled.div`
 
-position:fixed;
-/* top:0; */
-/* left:0; */
-width: 100%;
-max-width: 1500px;
 display: flex;
 justify-content: center;
 align-items: center;
-bottom: 6vh;
+position: fixed;
+bottom: 9vh;
+
+width: 100%;
+/* max-width: 1500px; */
+/* bottom: 6vh; */
 z-index: 139;
 
 color: white;
@@ -18,7 +18,10 @@ font-size: 1rem;
 
 .mainfooter-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    /* max-width: 1700px; */
     justify-content: space-between;
     padding-left: 9%;
     padding-right: 9%;
@@ -29,6 +32,10 @@ font-size: 1rem;
             padding-top: 1.9%;
             /* display: flex; */
             /* flex-direction: column; */
+
+            /* span:first-child{
+                padding-left: 14px;
+            } */
 
             span{
                 padding-top: 7px;

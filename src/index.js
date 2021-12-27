@@ -1,19 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
-import store from './store'
+
+//redux store
+import store from './store';
 
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { GlobalStyles } from "./styles/jsStyles/globalStyle"
 
+import { GlobalStyles } from "./styles/jsStyles/globalStyle"
+import './styles/fonts/fonts.css'
+import { ThemeProvider } from 'styled-components'; 
+import theme from './styles/theme'
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-    <GlobalStyles/>
-  </Provider>,
+  <ThemeProvider theme={theme}>
+  <SimpleReactLightbox>  <Provider store={store}>
+      <GlobalStyles/>
+      <App />
+  </Provider>
+  </SimpleReactLightbox>
+  </ThemeProvider>,
   document.getElementById('root')
 );
 

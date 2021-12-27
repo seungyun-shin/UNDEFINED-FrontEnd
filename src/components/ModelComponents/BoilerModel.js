@@ -20,7 +20,7 @@ function BoilerModel() {
                 
                 this.renderer = new THREE.WebGLRenderer( { antialias: true } );
                 this.renderer.setSize( window.innerWidth, window.innerHeight );
-                document.getElementById('mesh-container').appendChild( this.renderer.domElement );
+                document.getElementById('boilerContainer').appendChild( this.renderer.domElement );
 
                 this.camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
                 this.camera.position.z = 1;
@@ -63,7 +63,7 @@ function BoilerModel() {
 
     return (
         <>
-            <div id="mesh-container"></div>
+            <div id="boilerContainer"></div>
         </>
     )
 }

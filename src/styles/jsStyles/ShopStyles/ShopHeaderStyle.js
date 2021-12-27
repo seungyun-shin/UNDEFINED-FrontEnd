@@ -6,7 +6,7 @@ export const ShopHeaderStyleCom = styled.div`
     /* top:0; */
     /* left:0; */
     width: 100%;
-    max-width: 1500px;
+    /* max-width: 1700px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,23 +30,45 @@ export const ShopHeaderStyleCom = styled.div`
 
         .menu-container{
 
+            display: flex;
+
             .first-span{
                 padding-left: 0px;
             }
 
             span{
-                padding-left: 36px;
+                padding-right: 36px;
                 font-weight: 600;
                 color: white;
             }
 
             a {    
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 text-decoration:none;
+                font-size: 1.5rem;
                 font-weight: 600;
                 color: white;
+
+                @media screen and (max-width: 750px) {
+                    font-size: 1.3rem;
+                }
+                @media screen and (max-width: 500px) {
+                    font-size: 1.0rem;
+                }
             }
 
         }
         
+    }
+
+    .fa-shopping-cart{
+        @media screen and (max-width: 750px) {
+            font-size: 19px;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 16px;
+        }
     }
 `

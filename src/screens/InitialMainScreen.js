@@ -31,7 +31,7 @@ function MainScreen({}) {
             amount: 0.3
         },
         opacity:0
-        }).to('.overlay-top', 1.6, {
+        }).to('.overlay-top', .6, {
         scaleY: 0,
         ease: 'expo.inOut',
         stagger:0.4,
@@ -55,7 +55,7 @@ function MainScreen({}) {
             amount: 0.3
         },
         opacity:0
-        }).to('.overlay-bottom', 1.6, {
+        }).to('.overlay-bottom', .6, {
         scaleY: 0,
         ease: 'expo.inOut',
         stagger:0.4,
@@ -75,11 +75,13 @@ function MainScreen({}) {
         <IntroOverlay/>
         {/* <Header/> */}
         <MainTitleStyleCom>
-            <div className="main-title-wraper">
-                <div className="main-title">CREATOR</div>
-            </div>
-            <div className="sub-title-wraper">
-                <div className="sub-title">UNDEFINED</div> 
+            <div className="main-text-container">
+                <div className="main-title-wraper">
+                    <div className="main-title">CREATOR</div>
+                </div>
+                <div className="sub-title-wraper">
+                    <div className="sub-title">UNDEFINED</div> 
+                </div>
             </div>
         </MainTitleStyleCom>
         
