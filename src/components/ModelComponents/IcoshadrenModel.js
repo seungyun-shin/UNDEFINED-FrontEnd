@@ -36,6 +36,7 @@ function IcoshadrenModel() {
 
         const renderer = new THREE.WebGLRenderer( { antialias: true } );
         renderer.setPixelRatio(window.devicePixelRatio);
+        // renderer.setSize( window.innerWidth, window.innerHeight*1.5 );
         renderer.setSize( window.innerWidth, window.innerHeight*1.5 );
         renderer.setClearColor(0x111111, 1);
         renderer.physicallyCorrectLights = true;
@@ -46,7 +47,9 @@ function IcoshadrenModel() {
         icoshadrenContainer.current.appendChild(renderer.domElement );
 
         const camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 1000 );
-        camera.position.set(0, 0, 1.39);
+        // camera.position.set(0, 0, 1.39);
+        // camera.position.set(0, 0, 1.5);
+        camera.position.set(0, 0, 1.7);
         
         let mouseCmove = {x:0, y:0};
 

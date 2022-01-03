@@ -123,6 +123,8 @@ function Header() {
                                         </ul>
                                     }   
                                 </li>
+                                
+                                <li className='logout-hamburger' onClick={logoutHandler} style={{cursor:"pointer"}}>LOGOUT</li>
                                 </>
                             ):(
                                 <li className='nav-item'>

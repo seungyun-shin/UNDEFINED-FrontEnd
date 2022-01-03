@@ -335,21 +335,43 @@ function AboutMe({match, history }) {
                             <Observer2>
                             <div className="introduce-text-container">
                                 <div className="introduce-text">
-                                The word Undefined is a word that expresses my 'belief' and 'attitude' not to define my own limits.
+                                'Undefined' refers to express my ‘belief’ and ‘attitude’
+                                </div>
+                            </div>
+                            </Observer2>
+                            <Observer2>
+                            <div className="introduce-text-container">
+                                <div className="introduce-text">
+                                not to set limit for myself. I believe that I should keep
                                 </div>
                             </div>
                             </Observer2>
                             <Observer2>
                             <div className="introduce-text-container2">
                                 <div className="introduce-text">
-                                In order to communicate with and empathize with people from various fields, I believe that we must always have a learning mindset.
+                                in mind that I need to learn always to communicate 
                                 </div>
                             </div>
                             </Observer2>
                             <Observer2>
+                            <div className="introduce-text-container2">
+                                <div className="introduce-text">
+                                with people in various fields and emphasize with them.
+                                </div>
+                            </div>
+                            </Observer2>
+                            <Observer2>
+                            <div className="introduce-text-container2">
+                                <div className="introduce-text">
+                                My goal is to keep evolving myself always with open
+                                </div>
+                            </div>
+                            </Observer2>
+                            
+                            <Observer2>
                             <div className="introduce-text-container3">
                                 <div className="introduce-text">
-                                We do not set boundaries for learning and growth, and we want to constantly develop with an open mind.
+                                mindset, without setting any limit in my growth.
                                 </div>
                             </div>
                             </Observer2>
@@ -741,28 +763,42 @@ function AboutMe({match, history }) {
                             <Observer2>
                             <div className="introduce-text-container">
                                 <div className="introduce-text">
-                                I'm always looking for and learning the most effective and efficient ways to make a global impact.
+                                I’ve learned and looked for the most effective, efficient 
                                 </div>
                             </div>
                             </Observer2>
                             <Observer2>
                             <div className="introduce-text-container2">
                                 <div className="introduce-text">
-                                I think this website could also be one of them. 
+                                way to influence all over the world. I strongly believe that 
                                 </div>
                             </div>
                             </Observer2>
                             <Observer2>
                             <div className="introduce-text-container3">
                                 <div className="introduce-text">
-                                We want to share opinions and develop ideas with various people around the world to spread good influence around the world.
+                                this website  can be one of options. I’m planning to discuss
+                                </div>
+                            </div>
+                            </Observer2>
+                            <Observer2>
+                            <div className="introduce-text-container3">
+                                <div className="introduce-text">
+                                idea with people all around the world and come up with
+                                </div>
+                            </div>
+                            </Observer2>
+                            <Observer2>
+                            <div className="introduce-text-container3">
+                                <div className="introduce-text">
+                                new idea to distribute positive impact on this world.
                                 </div>
                             </div>
                             </Observer2>
                             <Observer2>
                             <div className="introduce-text-container4">
                                 <div className="introduce-text">
-                                Wouldn't you like to do something wonderful together?
+                                Would you join me?
                                 </div>
                             </div>
                             </Observer2>

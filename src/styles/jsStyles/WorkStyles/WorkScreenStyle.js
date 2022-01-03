@@ -32,7 +32,7 @@ export const WorkScreenStyleCom = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-bottom: 13rem;
+        /* padding-bottom: 13rem; */
         /* align-items: center; */
         
     

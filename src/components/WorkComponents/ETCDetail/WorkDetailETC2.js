@@ -239,15 +239,7 @@ function WorkDetailETC2({history, match }) {
                             <div className="biarrow-container">
                                 <div className="arrow-container">
                                     <div className="arrow-box">
-                                        <LinkStyleCom to="/WorkScreenART" style={{textDecoration:"none"}}><LeftArrow/></LinkStyleCom>
-                                        <span>&nbsp;&nbsp;PREV</span> 
-                                    </div>
-                                    <div className="arrow-box">
-                                        <LinkStyleCom to="/WorkScreenART" style={{textDecoration:"none"}}>BACK TO ART</LinkStyleCom>
-                                    </div>
-                                    <div className="arrow-box">
-                                        <span>NEXT&nbsp;&nbsp;</span>
-                                        <LinkStyleCom to="/WorkScreenART" style={{textDecoration:"none"}}><RightArrow/></LinkStyleCom>
+                                        <LinkStyleCom to="/WorkScreenETC" style={{textDecoration:"none"}}>BACK TO ETC</LinkStyleCom>
                                     </div>
                                 </div>
                             </div>

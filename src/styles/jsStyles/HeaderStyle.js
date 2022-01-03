@@ -78,8 +78,9 @@ export const HeaderStyleCom = styled.div`
 }
 
 .nav-item {
-  /* display: flex; */
+  display: flex;
   align-items: center;
+  justify-content: center;
   /* height: 80px; */
   /* width:; */
 }
@@ -108,6 +109,17 @@ export const HeaderStyleCom = styled.div`
 }
 
 .menu-icon {
+  display: none;
+}
+
+.logout-hamburger{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: #FFF;
+  font-size:17px;
+  font-weight: 900;
   display: none;
 }
 
@@ -147,7 +159,17 @@ export const HeaderStyleCom = styled.div`
   .nav-links {
     text-align: center;
     padding: 1rem;
-    width: 100%;
+    /* width: 100%; */
+    display: table;
+    font-size: 5vw;
+    font-family: Romelio;
+    color: #dfd3c3;
+  }
+  
+  .logout-hamburger{
+    text-align: center;
+    padding: 1rem;
+    /* width: 100%; */
     display: table;
     font-size: 5vw;
     font-family: Romelio;

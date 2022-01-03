@@ -4,6 +4,7 @@ export const ShopProductDetailStyleCom = styled.div`
     
     .shop-product-detail-container{
         color: white;
+        /* width: 90%; */
         
         margin-top: 5%;
 
@@ -11,7 +12,9 @@ export const ShopProductDetailStyleCom = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         padding-bottom: 3rem;
+        /* width: 100%;
         /* justify-content: space-space-evenly; */
         /* width: 100%;
         height: 100%; */
@@ -31,12 +34,12 @@ export const ShopProductDetailStyleCom = styled.div`
             transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
             @media screen and (max-width: 700px) {
-                width: 300px;
-                height: 560px;
+                width: 350px;
+                height: 495px;
             }
-            @media screen and (max-width: 550px) {
-                width: 200px;
-                height: 360px;
+            @media screen and (max-width: 500px) {
+                width: 250px;
+                height: 354px;
             }
         }
         .product-detail-info-wraper{
@@ -51,7 +54,7 @@ export const ShopProductDetailStyleCom = styled.div`
 
             @media ${props => props.theme.laptop} {
                 margin-top: 3%;
-                width: 100%;
+                width: 90%;
                 margin-left: 0;
             }
 
@@ -137,7 +140,7 @@ export const ShopProductDetailStyleCom = styled.div`
             margin-left: 3rem;
 
             @media ${props => props.theme.laptop} {
-                width: 100%;
+                width: 90%;
                 margin-top: 3%;
                 flex-direction: row;
                 justify-content: center;
@@ -215,28 +218,6 @@ export const ShopProductDetailStyleCom = styled.div`
                 }
             }
         }
-            
-            .arrow-container{
-
-                position: absolute;
-                top:39%;
-                left:3%;
-                opacity: 0.39;
-             
-                #LeftArrow{
-                    color: white;
-                    width: 5vw;
-                    height: 5vw;
-                    transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                }
-
-                #LeftArrow:hover{
-                    transform: translateX(-30px);
-                    transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      
-                }
-            }
-        }
         
         .shop-product-review-container{
             font-size: 1rem;
@@ -255,6 +236,13 @@ export const ShopProductDetailStyleCom = styled.div`
                 border-top: 3px solid white;
                 width: 70%;
                 padding: 1.5%;
+
+                @media screen and (max-width: 700px) {
+                    width: 80%;
+                }
+                @media screen and (max-width: 500px) {
+                    width: 90%;
+                }
 
                 .review-title{
                     font-size: 1.9rem;
@@ -300,12 +288,14 @@ export const ShopProductDetailStyleCom = styled.div`
                 .review-field{
                     display: flex;
                     flex-direction: column;
+                    width: 20%;
+                    min-width: 200px;
                     
                     .comment-label{
                         color:white;
                         font-weight: 700;
-                        margin-top: 0.5%;
-                        margin-bottom: 0.5%;
+                        margin-top: 1.7%;
+                        margin-bottom: 1.7%;
                     }
                 }
 
@@ -320,16 +310,45 @@ export const ShopProductDetailStyleCom = styled.div`
                         font-size: 0.8rem;
                     }
                 }
-            }
-                
-            }
-            
+            }   
         }
+    }
 
-        @media ${props => props.theme.laptop} {
-            .basic-button{
-                margin-top: 0;
-                height: 100%;
+    @media ${props => props.theme.laptop} {
+        .basic-button{
+            margin-top: 0;
+            height: 100%;
+        }
+    }
+
+    .arrow-container{
+        /* position: absolute; */
+        /* top:39%;
+        left:3%; */
+        width: 100%;
+        height: 13vh;
+        /* opacity: 0.39; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .arrow-box{
+            display: flex;
+            align-items: center;
+            color:gray;
+            font-weight: 700;
+
+            a{
+                color:gray;
+                font-weight: 700;
+                transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+            a:hover{
+                color:white;
+                font-weight: 700;
             }
         }
+    }
+    
+    
 `

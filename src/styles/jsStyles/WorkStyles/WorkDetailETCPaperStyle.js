@@ -14,23 +14,30 @@ export const WorkDetailETCPaperStyleCom = styled.div`
         
         .work-detail-title{
             flex-direction: column;
-            line-height: 6rem;
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-top: 3%;
-            font-size: 3rem;
+            /* font-size: 3rem; */
+            font-size: 3.6vw;
+            line-height: 5vw;
             font-weight: 700;
             padding:2%;
             border-bottom: 1px solid white;
+
+            
+            span{
+                text-align: center;
+            }
         }
 
         .work-detail-info{
             color: white;
             display: flex;
             justify-content: center;
-            font-size: 1.5rem;
+            /* font-size: 1.5rem; */
+            font-size: 2vw;
             font-weight: 700;
             margin-top: 7%;
             opacity: 0.79;
@@ -59,6 +66,16 @@ export const WorkDetailETCPaperStyleCom = styled.div`
             font-size: 1.9rem;
             font-weight: 900;
             /* opacity: 0.79; */
+
+            @media screen and (max-width: 900px) {
+                font-size: 1.5rem;
+            }
+            @media screen and (max-width: 650px) {
+                font-size: 1.2rem;
+            }
+            @media screen and (max-width: 550px) {
+                font-size: 0.9rem;
+            }
         }
 
         .project-purpose-content{
@@ -69,6 +86,10 @@ export const WorkDetailETCPaperStyleCom = styled.div`
             font-size: 18px;
             font-size-adjust: 0.5;
             line-height: calc(1ex / 0.32);
+
+            @media screen and (max-width: 550px) {
+                font-size: 13px;
+            }
 
             p{
                 opacity: 0.79;
@@ -83,6 +104,16 @@ export const WorkDetailETCPaperStyleCom = styled.div`
                 opacity: 1;
                 margin-bottom: 2%;
                 margin-top: 3%;
+
+                @media screen and (max-width: 900px) {
+                    font-size: 1.5rem;
+                }
+                @media screen and (max-width: 650px) {
+                    font-size: 1.2rem;
+                }
+                @media screen and (max-width: 550px) {
+                    font-size: 0.9rem;
+                }
             }
             
             .project-small-title{
@@ -93,6 +124,16 @@ export const WorkDetailETCPaperStyleCom = styled.div`
                 opacity: 1;
                 margin-bottom: 2%;
                 margin-top: 3%;
+
+                @media screen and (max-width: 900px) {
+                    font-size: 1.3rem;
+                }
+                @media screen and (max-width: 650px) {
+                    font-size: 1rem;
+                }
+                @media screen and (max-width: 550px) {
+                    font-size: 0.7rem;
+                }
             }
         }
     }
@@ -199,6 +240,16 @@ export const WorkDetailETCPaperStyleCom = styled.div`
         margin-top: 1%;
         color: white;
         text-align: center;
+
+        @media screen and (max-width: 900px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 650px) {
+            font-size: 1.2rem;
+        }
+        @media screen and (max-width: 550px) {
+            font-size: 0.9rem;
+        }
     }
 }
         

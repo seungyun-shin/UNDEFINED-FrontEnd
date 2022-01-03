@@ -20,7 +20,8 @@ export const RegisterScreenStyleCom = styled.div`
         
         .register-wraper{
             position: relative;
-            width: 28vw;
+            /* width: 28vw; */
+            width: 500px;
             height: auto;
             padding: 3.9rem 2.9rem;
 
@@ -34,7 +35,10 @@ export const RegisterScreenStyleCom = styled.div`
             backdrop-filter: brightness(155%) blur(5px);
             webkit-backdrop-filter: brightness(155%) blur(5px);
             
-            
+            @media screen and (max-width: 700px) {
+                width: calc(95% - 125px);
+            }
+
             .register-banner{
                 /* font-family: 'Tourney'; */
                 font-size: 3rem;
@@ -55,7 +59,8 @@ export const RegisterScreenStyleCom = styled.div`
             }
 
             .input-name{
-                width: 90.3%;
+                /* width: 90.3%; */
+                width: calc(100% - 29px);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;
@@ -63,7 +68,8 @@ export const RegisterScreenStyleCom = styled.div`
             }
             
             .input-email{
-                width: 90.3%;
+                /* width: 90.3%; */
+                width: calc(100% - 29px);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;
@@ -71,7 +77,8 @@ export const RegisterScreenStyleCom = styled.div`
             }
 
             .input-password{
-                width: 90.3%;
+                /* width: 90.3%; */
+                width: calc(100% - 29px);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;
@@ -79,7 +86,8 @@ export const RegisterScreenStyleCom = styled.div`
             }
 
             .input-confirmPassword{
-                width: 90.3%;
+                /* width: 90.3%; */
+                width: calc(100% - 29px);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;
@@ -107,6 +115,10 @@ export const RegisterScreenStyleCom = styled.div`
                 color: skyblue;
 
             }
+            h3{
+                text-align: center;
+            }
+        }
         }
     }
 

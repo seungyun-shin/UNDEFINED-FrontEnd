@@ -14,23 +14,30 @@ export const WorkDetailETCStyleCom = styled.div`
         
         .work-detail-title{
             flex-direction: column;
-            line-height: 6rem;
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-top: 3%;
-            font-size: 3rem;
+            /* font-size: 3rem; */
+            font-size: 3.6vw;
+            line-height: 5vw;
             font-weight: 700;
             padding:2%;
             border-bottom: 1px solid white;
+
+            
+            span{
+                text-align: center;
+            }
         }
 
         .work-detail-info{
             color: white;
             display: flex;
             justify-content: center;
-            font-size: 1.5rem;
+            /* font-size: 1.5rem; */
+            font-size: 2vw;
             font-weight: 700;
             margin-top: 7%;
             opacity: 0.79;
@@ -50,16 +57,32 @@ export const WorkDetailETCStyleCom = styled.div`
     display: flex;
     flex-direction: column;
     align-items : center;
+    word-wrap:break-word;
 
     .project-purpose-container{
+    width: 100%;
+    height: 100%;
+    word-wrap:break-word;
     max-width: 1300px;
         
         .project-purpose-title{
             color: white;
+            /* font-size: 1.9rem; */
             font-size: 1.9rem;
             font-weight: 900;
             /* opacity: 0.79; */
+
+            @media screen and (max-width: 900px) {
+                font-size: 1.5rem;
+            }
+            @media screen and (max-width: 650px) {
+                font-size: 1.2rem;
+            }
+            @media screen and (max-width: 550px) {
+                font-size: 0.9rem;
+            }
         }
+        
 
         .project-purpose-content{
             margin-top: 3%;
@@ -69,9 +92,15 @@ export const WorkDetailETCStyleCom = styled.div`
             font-size: 18px;
             font-size-adjust: 0.5;
             line-height: calc(1ex / 0.32);
+                word-wrap:break-word;
+
+            @media screen and (max-width: 550px) {
+                font-size: 13px;
+            }
 
             p{
                 opacity: 0.79;
+                /* width: 100%; */
             }
             /* line-height: 2; */
             
@@ -83,6 +112,16 @@ export const WorkDetailETCStyleCom = styled.div`
                 opacity: 1;
                 margin-bottom: 2%;
                 margin-top: 3%;
+
+                @media screen and (max-width: 900px) {
+                    font-size: 1.5rem;
+                }
+                @media screen and (max-width: 650px) {
+                    font-size: 1.2rem;
+                }
+                @media screen and (max-width: 550px) {
+                    font-size: 0.9rem;
+                }
             }
             
             .project-small-title{
@@ -180,6 +219,7 @@ export const WorkDetailETCStyleCom = styled.div`
 .imgfull{ width: 70%; } */
 
 .img-caption-container{
+    /* position: relative; */
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -192,14 +232,24 @@ export const WorkDetailETCStyleCom = styled.div`
 
     img{ 
         width: 100%;
-        /* max-width:550px; */
-        max-width:790px;
+        max-width:579px;
     }
 
     .img-caption{
+        width: 100%;
         margin-top: 1%;
         color: white;
         text-align: center;
+
+        /* @media screen and (max-width: 900px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 650px) {
+            font-size: 1.2rem;
+        }
+        @media screen and (max-width: 550px) {
+            font-size: 0.9rem;
+        } */
     }
 }
         

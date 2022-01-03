@@ -14,7 +14,7 @@ width: 100%;
 z-index: 139;
 
 color: white;
-font-size: 1rem;
+/* font-size: 14.3px; */
 
 .mainfooter-container{
     display: flex;
@@ -39,8 +39,16 @@ font-size: 1rem;
 
             span{
                 padding-top: 7px;
-                font-size: 0.9rem;
+                /* font-size: 0.9rem; */
+                font-size: 15px;
                 font-weight: 700;
+
+                @media screen and (max-width: 550px) {  
+                    font-size: 13px;
+                }
+                @media screen and (max-width: 415px) {  
+                    font-size: 10px;
+                }
             }
         }
     }
@@ -52,8 +60,16 @@ font-size: 1rem;
             span{
                 padding-left: 36px;
                 font-weight: 600;
-                font-size: 1.3rem;
+                /* font-size: 1.3rem; */
+                font-size: 19px;
                 color: white;
+
+                @media screen and (max-width: 550px) {  
+                    font-size: 14px;
+                }
+                @media screen and (max-width: 415px) {  
+                    font-size: 10px;
+                }
             }
             a {    
                 text-decoration:none;

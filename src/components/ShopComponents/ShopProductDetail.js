@@ -136,10 +136,10 @@ function ShopProductDetail({match, history }) {
                                     <div className="product-detail-orderbox4"><button onClick={addToCartHandler} className='basic-button' style={ product.countInStock == 0 ? {display:'none'} : {}} type='button'>Add to Cart</button></div>
                                 </div>
                                 
-                            <div className="arrow-container">
+                            {/* <div className="arrow-container">
                                 <div className="arrow-box"></div>
                                 <LinkStyleCom to="/ShopScreen" style={{textDecoration:"none"}}><LeftArrow/></LinkStyleCom>
-                            </div>
+                            </div> */}
                             </div>
                             <div className="shop-product-review-container">
                                 <div className="shop-product-review-box">
@@ -205,6 +205,15 @@ function ShopProductDetail({match, history }) {
                                     </div>
                                 </div>
                             </div>
+
+                            <div className="biarrow-container">
+                                <div className="arrow-container">
+                                    <div className="arrow-box">
+                                        <LinkStyleCom to="/ShopScreen" style={{textDecoration:"none"}}>BACK TO SHOP</LinkStyleCom>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </ShopProductDetailStyleCom>
                     </motion.div>

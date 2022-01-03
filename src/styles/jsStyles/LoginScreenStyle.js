@@ -24,7 +24,9 @@ export const LoginScreenStyleCom = styled.div`
         
         .login-wraper{
             position: relative;
-            width: 28vw;
+            /* width: 28vw; */
+            width: 500px;
+            /* min-width: 530px; */
             height: auto;
 
             padding: 3.9rem 2.9rem;
@@ -39,6 +41,14 @@ export const LoginScreenStyleCom = styled.div`
             background-image: linear-gradient(180deg,#000,rgba(31,31,31,.19));
             backdrop-filter: brightness(155%) blur(5px);
             webkit-backdrop-filter: brightness(155%) blur(5px);
+
+            @media screen and (max-width: 700px) {
+                width: calc(95% - 125px);
+            }
+
+            .field{
+                width: 100%;
+            }
             
             .login-banner{
                 /* font-family: 'Tourney'; */
@@ -61,7 +71,8 @@ export const LoginScreenStyleCom = styled.div`
             }
             
             .input-email{
-                width: 90.3%;
+                /* width: 90.3%; */
+                width: calc(100% - 29px);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;
@@ -69,7 +80,8 @@ export const LoginScreenStyleCom = styled.div`
             }
 
             .input-password{
-                width: 90.3%;
+                /* width: 90.3%; */
+                width: calc(100% - 29px);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;
@@ -77,7 +89,8 @@ export const LoginScreenStyleCom = styled.div`
             }
 
             .login-button{
-                width: 100%;
+                /* width: 100%; */
+                width: calc(100%);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;
@@ -96,6 +109,9 @@ export const LoginScreenStyleCom = styled.div`
                 text-decoration: none;
                 color: skyblue;
 
+            }
+            h3{
+                text-align: center;
             }
         }
     }

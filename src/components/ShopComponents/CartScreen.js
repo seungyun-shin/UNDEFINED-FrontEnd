@@ -56,7 +56,7 @@ function CartScreen( { match, location, history } ) {
                     <ShopHeader />
 
                     <ShopCartScreenStyleCom>
-                        <div className="cart-contents-wraper">
+                        <div className="cart-contents-wraper">                    
                             <div className="cart-contents-container">
                                 
                             <div className="cart-screen-title"><h1>SHOPPING CART</h1></div>
@@ -69,23 +69,25 @@ function CartScreen( { match, location, history } ) {
                                         {cartItems.map(item => (
                                             <div className="cart-list-container" key={item.product}>
                                                 <div className="cart-list-image"> <img src={item.image} alt={item.image}/></div>
-                                                <div className="cart-list-name"><LinkStyleCom to={`/ShopProduct/${item.product}`}>{item.name}</LinkStyleCom></div>
-                                                <div className="cart-list-price">${item.price}</div>
-                                                <div className="cart-list-qty">
-                                                    <div className="cart-list-select">
-                                                        <select value={item.qty} onChange={(e) => dispatch(addToCart(item.product, Number(e.target.value)))}>
-                                                            {
-                                                                [...Array(item.countInStock).keys()].map((x)=>(
-                                                                    <option key={x+1} value={x+1}>
-                                                                        {x+1}
-                                                                    </option>
-                                                                ))
-                                                            }
-                                                        </select>
+                                                <div className="cart-info-wraper">
+                                                    <div className="cart-list-name"><LinkStyleCom to={`/ShopProduct/${item.product}`}>{item.name}</LinkStyleCom></div>
+                                                    <div className="cart-list-price">${item.price}</div>
+                                                    <div className="cart-list-qty">
+                                                        <div className="cart-list-select">
+                                                            <select value={item.qty} onChange={(e) => dispatch(addToCart(item.product, Number(e.target.value)))}>
+                                                                {
+                                                                    [...Array(item.countInStock).keys()].map((x)=>(
+                                                                        <option key={x+1} value={x+1}>
+                                                                            {x+1}
+                                                                        </option>
+                                                                    ))
+                                                                }
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div className="cart-list-button">
-                                                    <button style={{cursor:'pointer'}} onClick={() => removeFromCartHandler(item.product)} type='button' className="cart-icon-button"><i className='fas fa-trash'></i></button>
+                                                    <div className="cart-list-button">
+                                                        <button style={{cursor:'pointer'}} onClick={() => removeFromCartHandler(item.product)} type='button' className="cart-icon-button"><i className='fas fa-trash'></i></button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         ))}

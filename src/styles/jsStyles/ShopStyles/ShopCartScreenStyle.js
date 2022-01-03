@@ -43,6 +43,7 @@ export const ShopCartScreenStyleCom = styled.div`
                 color:white;
                 padding-top: 1%;
                 padding-left: 6%;
+                padding-bottom: 1%;
                 
                 background: rgba(1,1,1,0.7);
                 
@@ -61,29 +62,46 @@ export const ShopCartScreenStyleCom = styled.div`
                         height: 150px;
                     }
                 }
+                
+                .cart-info-wraper{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    /* padding-left: 3%;
+                    padding-right: 3%; */
+
+                    @media screen and (max-width: 500px) {
+                        flex-direction: column;
+                        
+                        justify-content: space-evenly;
+                    }
+
+                }
 
                 .cart-list-name{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 20%;
+                    /* width: 20%; */
                 }
 
                 .cart-list-price{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 20%;
+                    /* width: 20%; */
                 }
 
                 .cart-list-qty{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 20%;
+                    /* width: 20%; */
                     
                     .cart-list-select{
-                        width:79px;
+                        /* width:79px; */
                         font-size: 1rem;
                         /* width: 100%; */
                     }
@@ -93,7 +111,7 @@ export const ShopCartScreenStyleCom = styled.div`
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 20%;
+                    /* width: 20%; */
                     
                     button{
                         padding:2%;
@@ -134,6 +152,7 @@ export const ShopCartScreenStyleCom = styled.div`
                     .cart-subtotal-button{
                         padding-left: 3%;
                         width: 30%;
+                        min-width: 170px;
                     }
                 }
             }

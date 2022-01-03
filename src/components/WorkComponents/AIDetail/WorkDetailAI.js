@@ -61,8 +61,8 @@ function WorkDetailAI({history, match }) {
                                     <div className="work-info-visit">DNN, LSTM</div>
                                 </div>
                                 <div className="work-detail-title">
-                                    <span>Demand and Vacancy Forecasting DeepLearning Models for Train</span>
-                                    <span>열차 수요 및 공석 예측 딥러닝 모델</span>
+                                    <span class='work-detail-title-en'>Demand and Vacancy Forecasting DeepLearning Models for Train</span>
+                                    <span class='work-detail-title-ko'>열차 수요 및 공석 예측 딥러닝 모델</span>
                                 </div>
 
                             </div>

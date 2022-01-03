@@ -115,6 +115,7 @@ function Earth2Model( props ) {
                     position={[countryPoint.x, countryPoint.y, countryPoint.z]}
                     rotation={[0.0, -countryPoint.lon, countryPoint.lat-Math.PI * 0.5]}
                     onClick={() => window.appHistory.push({ pathname: '/MemoryPhotoGallery', state: {countryPoint: countryPoint}})}
+                    onPointerDown={() => window.appHistory.push({ pathname: '/MemoryPhotoGallery', state: {countryPoint: countryPoint}})}
                     userData= {{ name: countryPoint.name }}
                     onPointerOver={infoShowingUp}
                     onPointerOut={infoShowingDown}
@@ -128,6 +129,8 @@ function Earth2Model( props ) {
         </mesh>
         <mesh position={[-9, 2, -6]}
             onClick={() => window.appHistory.push('/SSYProject')}
+            onPointerDown={() => window.appHistory.push('/SSYProject')}
+                    
             ref={projectPlanetCover}
         >
             {/* <sphereGeometry args={[1.05, 32, 32]}/> */}
@@ -148,6 +151,7 @@ function Earth2Model( props ) {
         <mesh position={[9, -3, -3]}
             // onClick={() => window.appHistory.push('/Thanks')} 
             onClick={() => window.appHistory.push('/warningscreen')}
+            // onPointerDown={() => window.appHistory.push('/Thanks')} 
             ref={thanksPlanetCover}
         >
             <sphereGeometry args={[1.05, 32, 32]}/>

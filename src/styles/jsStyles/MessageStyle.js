@@ -11,15 +11,17 @@ export const MessageStyleCom = styled.div`
         align-items: center;
         font-weight: 700;
         top: calc(3%);
-        left: calc(50% - 256px);
-        width: 512px;
+        /* left: calc(50% - 256px); */
+        /* max-width: 512px; */
+        width: 100%;
         transition: 1s ease;
         margin-top: 3%;
         margin-bottom: 2%;
 
         .message-content{
 
-            background-color: cornflowerblue;
+            /* background-color: cornflowerblue; */
+            background-color: #dfd3c3;
             padding: 16px;
             border-radius: 16px;
             text-align: center;

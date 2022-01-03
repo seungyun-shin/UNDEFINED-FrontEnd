@@ -36,23 +36,30 @@ export const WorkDetailAIStyleCom = styled.div`
         
         .work-detail-title{
             flex-direction: column;
-            line-height: 6rem;
+            /* line-height: 6rem; */
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-top: 3%;
-            font-size: 3rem;
+            /* font-size: 3rem; */
+            font-size: 3.6vw;
+            line-height: 5vw;
             font-weight: 700;
             padding:2%;
             border-bottom: 1px solid white;
+
+            span{
+                text-align: center;
+            }
         }
 
         .work-detail-info{
             color: white;
             display: flex;
             justify-content: center;
-            font-size: 1.5rem;
+            /* font-size: 1.5rem; */
+            font-size: 2vw;
             font-weight: 700;
             margin-top: 7%;
             opacity: 0.79;
@@ -75,11 +82,26 @@ export const WorkDetailAIStyleCom = styled.div`
             font-size: 1.9rem;
             font-weight: 900;
             opacity: 0.79;
+
+            @media screen and (max-width: 900px) {
+                font-size: 1.5rem;
+            }
+            @media screen and (max-width: 650px) {
+                font-size: 1.2rem;
+            }
+            @media screen and (max-width: 550px) {
+                font-size: 0.9rem;
+            }
+
         }
         .project-purpose-content{
             margin-top: 3%;
             padding-left: 1.9%;
             color:white;
+            
+            @media screen and (max-width: 550px) {
+                font-size: 13px;
+            }
         }
     }
 
@@ -91,6 +113,16 @@ export const WorkDetailAIStyleCom = styled.div`
             font-size: 1.9rem;
             font-weight: 900;
             opacity: 0.79;
+
+            @media screen and (max-width: 900px) {
+                font-size: 1.5rem;
+            }
+            @media screen and (max-width: 650px) {
+                font-size: 1.2rem;
+            }
+            @media screen and (max-width: 550px) {
+                font-size: 0.9rem;
+            }
         }
         .project-summary-content{
             margin-top: 3%;
@@ -109,6 +141,10 @@ export const WorkDetailAIStyleCom = styled.div`
             display: flex;
             flex-direction: column;
             width: 100%;
+
+            @media screen and (max-width: 550px) {
+                font-size: 13px;
+            }
 
             table.basic-info-table {
                 border-collapse: collapse;
@@ -140,6 +176,16 @@ export const WorkDetailAIStyleCom = styled.div`
         font-weight: 900;
         opacity: 0.79;
         margin-top: 3%;
+
+        @media screen and (max-width: 900px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 650px) {
+            font-size: 1.2rem;
+        }
+        @media screen and (max-width: 550px) {
+            font-size: 0.9rem;
+        }
     }
     .project-workflow-subtitle{
         color: white;
@@ -148,6 +194,16 @@ export const WorkDetailAIStyleCom = styled.div`
         opacity: 0.79;
         margin-top: 5%;
         padding-left: 2%;
+
+        @media screen and (max-width: 900px) {
+            font-size: 1.3rem;
+        }
+        @media screen and (max-width: 650px) {
+            font-size: 1rem;
+        }
+        @media screen and (max-width: 550px) {
+            font-size: 0.7rem;
+        }
     }
     .project-workflow-description{
         color: white;
@@ -156,6 +212,10 @@ export const WorkDetailAIStyleCom = styled.div`
         margin-bottom: 5%;
         padding-left: 3%;
         line-height: 189%;
+
+        @media screen and (max-width: 550px) {
+            font-size: 13px;
+        }
     }
 
 }
