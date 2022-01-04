@@ -8,6 +8,7 @@ export const OrderScreenStyleCom = styled.div`
         top: 0;
         left: 0;
         width: 100vw;
+        margin-top: 5%;
         /* height: 90vh; */
         max-width: 1700px;
         /* background: rgba(1,1,1,0.7); */
@@ -18,11 +19,11 @@ export const OrderScreenStyleCom = styled.div`
         color: white;
         
         .placeOrder-wraper{
-            margin-top: 3%;
-            margin-bottom: 5%;
-            padding: 5%;
             position: relative;
-            width: 50%;
+            padding: 4.9rem 3.9rem;
+            position: relative;
+            width: 700px;
+            margin-bottom: 5%;
             /* height: 90%; */
 
             display: flex;
@@ -31,7 +32,9 @@ export const OrderScreenStyleCom = styled.div`
             flex-direction: column;
 
             /* background-color: teal; */
-            background: rgba(1,1,1,0.7);
+            background-image: linear-gradient(180deg,#000,rgba(31,31,31,.19));
+            backdrop-filter: brightness(155%) blur(5px);
+            webkit-backdrop-filter: brightness(155%) blur(5px);
 
             form{
                 width: 100%;

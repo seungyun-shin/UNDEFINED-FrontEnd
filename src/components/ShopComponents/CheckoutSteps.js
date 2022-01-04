@@ -27,9 +27,9 @@ function CheckoutSteps( { step1, step2, step3, step4} ) {
                     )}
 
                     {step4 ? (
-                        <LinkStyleCom to='/placeorder'>Place Order</LinkStyleCom>
+                        <LinkStyleCom to='/placeorder'>PlaceOrder</LinkStyleCom>
                     ) : (
-                        <LinkStyleCom to='/placeorder' className='disabled'>Place Order</LinkStyleCom>
+                        <LinkStyleCom to='/placeorder' className='disabled'>PlaceOrder</LinkStyleCom>
                     )}
                 </div>
             </CheckoutStepsStyleCom>

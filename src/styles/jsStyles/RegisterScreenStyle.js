@@ -8,7 +8,8 @@ export const RegisterScreenStyleCom = styled.div`
         top: 0;
         left: 0;
         width: 100vw;
-        height: 75vh;
+        margin-top: 5%;
+        /* height: 75vh; */
         /* max-width: 1500px; */
         /* background: rgba(1,1,1,0.7); */
 
@@ -24,6 +25,7 @@ export const RegisterScreenStyleCom = styled.div`
             width: 500px;
             height: auto;
             padding: 3.9rem 2.9rem;
+            margin-bottom: 5%;
 
             display: flex;
             justify-content:center;

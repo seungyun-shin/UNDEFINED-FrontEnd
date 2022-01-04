@@ -8,6 +8,7 @@ export const ProfileScreenStyleCom = styled.div`
         top: 0;
         left: 0;
         width: 100vw;
+        margin-top: 5%;
         /* height: 75vh; */
         /* max-width: 1500px; */
         /* background: rgba(1,1,1,0.7); */
@@ -20,17 +21,23 @@ export const ProfileScreenStyleCom = styled.div`
         
         .register-wraper{
             position: relative;
-            width: 70%;
-            height: 90%;
-            padding: 5%;
+            width: 1000px;
+            height: auto;
+            padding: 3.9rem 2.9rem;
+            margin-bottom: 5%;
 
             display: flex;
             /* justify-content:center;
             align-items: center; */
             /* flex-direction: column; */
 
-            /* background-color: teal; */
-            background: rgba(1,1,1,0.7);
+            background-image: linear-gradient(180deg,#000,rgba(31,31,31,.19));
+            backdrop-filter: brightness(155%) blur(5px);
+            webkit-backdrop-filter: brightness(155%) blur(5px);
+            
+            @media screen and (max-width: 1100px) {
+                width: calc(95% - 125px);
+            }
 
             @media screen and (max-width: 1000px) {     
                 flex-direction: column;
@@ -42,12 +49,24 @@ export const ProfileScreenStyleCom = styled.div`
                 width: 30%;
                 margin-right: 3%;
                 
-                @media screen and (max-width: 1000px) {     
-                    width: 170px;
+                @media screen and (max-width: 1000px) { 
+                margin-right: 0%;    
+                width: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+                @media screen and (max-width: 390px) {
+                    width: calc(100% - 125px);
                 }
             }
             .profile-order-wraper{
                 width: 70%;
+
+                @media screen and (max-width: 1000px) { 
+                    width: 100%;
+                }
+
             }
             
             .register-banner{
@@ -69,20 +88,22 @@ export const ProfileScreenStyleCom = styled.div`
             }
 
             .input-name{
-                width: 90.3%;
+                /* width: 90.3%; */
+                width: calc(100% - 29px);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;
                 margin-bottom: 13px;
                 
                 @media screen and (max-width: 1000px) {     
-                    padding: 13px;
+                    /* padding: 13px; */
                 }
 
             }
             
             .input-email{
-                width: 90.3%;
+                /* width: 90.3%; */
+                width: calc(100% - 29px);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;
@@ -90,7 +111,8 @@ export const ProfileScreenStyleCom = styled.div`
             }
 
             .input-password{
-                width: 90.3%;
+                /* width: 90.3%; */
+                width: calc(100% - 29px);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;
@@ -98,7 +120,8 @@ export const ProfileScreenStyleCom = styled.div`
             }
 
             .input-confirmPassword{
-                width: 90.3%;
+                /* width: 90.3%; */
+                width: calc(100% - 29px);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;
@@ -106,15 +129,9 @@ export const ProfileScreenStyleCom = styled.div`
             }
 
             .field{
-                @media screen and (max-width: 1000px) {     
-                    width: 170px;
-                }
             }
 
             form{
-                @media screen and (max-width: 1000px) {     
-                    width: 170px;
-                }
             }
 
             .register-button{
@@ -126,7 +143,7 @@ export const ProfileScreenStyleCom = styled.div`
                 cursor: pointer;
                 
                 @media screen and (max-width: 1000px) {     
-                    width: 183px;
+                    /* width: 183px; */
                 }
             }
 

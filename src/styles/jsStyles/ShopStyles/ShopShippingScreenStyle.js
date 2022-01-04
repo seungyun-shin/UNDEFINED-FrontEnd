@@ -8,7 +8,8 @@ export const ShopShippingScreenStyleCom = styled.div`
         top: 0;
         left: 0;
         width: 100vw;
-        height: 75vh;
+        margin-top: 5%;
+        /* height: 75vh; */
         max-width: 1700px;
         /* background: rgba(1,1,1,0.7); */
 
@@ -20,8 +21,13 @@ export const ShopShippingScreenStyleCom = styled.div`
         
         .register-wraper{
             position: relative;
-            width: 50%;
-            height: 90%;
+            /* width: 50%;
+            height: 90%; */
+            
+            width: 500px;
+            margin-bottom: 5%;
+            height: auto;
+            padding: 3.9rem 2.9rem;
 
             display: flex;
             justify-content:center;
@@ -29,7 +35,13 @@ export const ShopShippingScreenStyleCom = styled.div`
             flex-direction: column;
 
             /* background-color: teal; */
-            background: rgba(1,1,1,0.7);
+            background-image: linear-gradient(180deg,#000,rgba(31,31,31,.19));
+            backdrop-filter: brightness(155%) blur(5px);
+            webkit-backdrop-filter: brightness(155%) blur(5px);
+            
+            @media screen and (max-width: 700px) {
+                width: calc(95% - 125px);
+            }
             
             .register-banner{
                 /* font-family: 'Tourney'; */
@@ -50,7 +62,7 @@ export const ShopShippingScreenStyleCom = styled.div`
             }
 
             .input-Address{
-                width: 90.3%;
+                width: calc(100% - 29px);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;
@@ -58,7 +70,7 @@ export const ShopShippingScreenStyleCom = styled.div`
             }
             
             .input-city{
-                width: 90.3%;
+                width: calc(100% - 29px);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;
@@ -66,7 +78,7 @@ export const ShopShippingScreenStyleCom = styled.div`
             }
 
             .input-postalCode{
-                width: 90.3%;
+                width: calc(100% - 29px);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;
@@ -74,7 +86,7 @@ export const ShopShippingScreenStyleCom = styled.div`
             }
 
             .input-Country{
-                width: 90.3%;
+                width: calc(100% - 29px);
                 padding: 13px;
                 font-weight: 700;
                 font-size: 1rem;

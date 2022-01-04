@@ -12,7 +12,8 @@ export const LoginScreenStyleCom = styled.div`
         /* width: 100vw;
         height: 100vh; */
         width: 100vw;
-        height: 63vh;
+        margin-top: 5%;
+        /* height: 63vh; */
         /* max-width: 1500px; */
         /* background: rgba(1,1,1,0.7); */
 
@@ -27,7 +28,8 @@ export const LoginScreenStyleCom = styled.div`
             /* width: 28vw; */
             width: 500px;
             /* min-width: 530px; */
-            height: auto;
+            /* height: auto; */
+            margin-bottom: 5%;
 
             padding: 3.9rem 2.9rem;
 

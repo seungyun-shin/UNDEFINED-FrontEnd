@@ -99,8 +99,10 @@ function PlaceOrderScreen({history}) {
                                 {cart.cartItems.map((item, index) => (
                                     <div className="cart-item-container" key={index}>
                                         <div className="cart-item-image"><img src={item.image} alt={item.image}/></div>
-                                        <div className="cart-item-name"><LinkStyleCom to={`/shopproduct/${item.product}`}>{item.name}</LinkStyleCom> </div>
-                                        <div className="cart-item-price"> {item.qty} x ${item.price} = ${(item.qty * item.price).toFixed(2)}</div>
+                                        <div className="cart-info-wraper">
+                                            <div className="cart-item-name"><LinkStyleCom to={`/shopproduct/${item.product}`}>{item.name}</LinkStyleCom> </div>
+                                            <div className="cart-item-price"> {item.qty} x ${item.price} = ${(item.qty * item.price).toFixed(2)}</div>
+                                        </div>
                                     </div>
                                     ))}
                                 </>

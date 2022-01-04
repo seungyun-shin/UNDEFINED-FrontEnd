@@ -8,7 +8,7 @@ export const ShopPlaceOrderScreenCom = styled.div`
         top: 0;
         left: 0;
         width: 100vw;
-        /* height: 90vh; */
+        margin-top: 5%;
         max-width: 1700px;
         /* background: rgba(1,1,1,0.7); */
 
@@ -18,11 +18,13 @@ export const ShopPlaceOrderScreenCom = styled.div`
         color: white;
         
         .placeOrder-wraper{
-            margin-top: 3%;
-            margin-bottom: 5%;
-            padding: 5%;
+            /* margin-top: 3%;
+            margin-bottom: 5%; */
+            /* padding: 5%; */
+            padding: 4.9rem 3.9rem;
             position: relative;
-            width: 50%;
+            width: 700px;
+            margin-bottom: 5%;
             /* height: 90%; */
 
             display: flex;
@@ -31,7 +33,10 @@ export const ShopPlaceOrderScreenCom = styled.div`
             flex-direction: column;
 
             /* background-color: teal; */
-            background: rgba(1,1,1,0.7);
+            background-image: linear-gradient(180deg,#000,rgba(31,31,31,.19));
+            backdrop-filter: brightness(155%) blur(5px);
+            webkit-backdrop-filter: brightness(155%) blur(5px);
+            
 
             form{
                 width: 100%;
@@ -87,6 +92,24 @@ export const ShopPlaceOrderScreenCom = styled.div`
                     }
                 }
             }
+
+            .cart-info-wraper{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                /* padding-left: 3%;
+                padding-right: 3%; */
+
+                @media screen and (max-width: 500px) {
+                    flex-direction: column;
+                    
+                    justify-content: space-evenly;
+                }
+
+            }
+
 
             .summary-container{
                 display: flex;

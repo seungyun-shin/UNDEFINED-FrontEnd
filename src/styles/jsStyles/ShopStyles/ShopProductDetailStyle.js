@@ -26,6 +26,7 @@ export const ShopProductDetailStyleCom = styled.div`
         }
         
         img{
+            border: 13px solid black;
             width: 500px;
             height: 707px;
             /* width: 35vw;
