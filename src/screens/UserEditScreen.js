@@ -73,7 +73,7 @@ function UserEditScreen({match, history}) {
                                 {error && <Message>{error}</Message>} */}
                             </div>
                         </div>
-                            <div className="register-banner">Edit User</div>
+                            <div className="register-banner">EDIT USER</div>
 
                             {/* Update User Loading*/}
                             {loadingUpdate && <Loader/>}

@@ -8,6 +8,7 @@ export const OrderListScreenStyleCom = styled.div`
         top: 0;
         left: 0;
         width: 100vw;
+        margin-top: 5%;
         /* height: 75vh; */
         /* max-width: 1500px; */
         /* background: rgba(1,1,1,0.7); */
@@ -21,8 +22,8 @@ export const OrderListScreenStyleCom = styled.div`
         .register-wraper{
             position: relative;
             width: 70%;
-            height: 90%;
-            padding: 5%;
+            padding: 3.9rem 2.9rem;
+            margin-bottom: 5%;
 
             display: flex;
             /* justify-content:center;
@@ -30,7 +31,13 @@ export const OrderListScreenStyleCom = styled.div`
             /* flex-direction: column; */
 
             /* background-color: teal; */
-            background: rgba(1,1,1,0.7);
+            background-image: linear-gradient(180deg,#000,rgba(31,31,31,.19));
+            backdrop-filter: brightness(155%) blur(5px);
+            webkit-backdrop-filter: brightness(155%) blur(5px);
+
+            @media screen and (max-width: 1100px) {
+                width: calc(95% - 125px);
+            }
 
             .profile-order-wraper{
                 width: 100%;
@@ -40,10 +47,11 @@ export const OrderListScreenStyleCom = styled.div`
                 /* font-family: 'Tourney'; */
                 font-size: 3rem;
                 font-weight: 900;
-                margin-bottom: 13px;
+                margin-bottom: 19px;
                 display: flex;
                 justify-content:center;
                 align-items: center;
+                font-family: Romelio;
             }
 
 

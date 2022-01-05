@@ -23,7 +23,7 @@ export const RecordScreenStyleCom = styled.div`
         /* justify-content: space-space-evenly; */
         width: 100%;
         height: 100%;
-        margin-top: 7rem;
+        margin-top: 9%;
 
         
         
@@ -75,6 +75,11 @@ export const RecordScreenStyleCom = styled.div`
             }
 
             @media screen and (max-width: 600px) {
+
+            .record-name{
+                color:white;
+            }
+            
             table {
                 border: 0;
             }

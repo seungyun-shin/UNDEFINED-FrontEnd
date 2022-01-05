@@ -78,7 +78,7 @@ function ProductListScreen({ history, match }) {
                             <div className="productlist-top">
                                 <div className="register-banner">PRODUCT</div>
                                 <div className="create-button-wraper">
-                                    <button className="create-button" onClick={createProductHandler}>+ CREATE PRODUCT</button>
+                                    <button className="create-button" onClick={createProductHandler}>+ CREATE</button>
                                 </div>
                             </div>
                                 

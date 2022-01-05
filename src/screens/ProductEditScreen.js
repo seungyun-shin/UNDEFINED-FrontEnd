@@ -122,7 +122,7 @@ function ProductEditScreen({match, history}) {
                                 {error && <Message>{error}</Message>} */}
                             </div>
                         </div>
-                            <div className="register-banner">Edit Product</div>
+                            <div className="register-banner">EDIT PRODUCT</div>
 
                             {/* Update User Loading*/}
                             {loadingUpdate && <Loader/>}

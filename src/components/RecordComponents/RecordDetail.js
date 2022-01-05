@@ -57,14 +57,22 @@ function RecordDetail({ match }) {
                                     <div className="record-info-visit">{record.visit_count}</div>
                                 </div>
                                 <div className="record-detail-title">
-                                    <div className="arrow-container">
+                                    {/* <div className="arrow-container">
                                         <div className="arrow-box"></div>
                                         <LinkStyleCom to="/RecordScreen" style={{textDecoration:"none"}}><LeftArrow/></LinkStyleCom>
-                                    </div>
+                                    </div> */}
                                     {record.title}
                                 </div>
                                 <div className="record-detail-contents">
                                     {ReactHtmlParser(record.contents)}
+                                </div>
+                                
+                                <div className="biarrow-container">
+                                    <div className="arrow-container">
+                                        <div className="arrow-box">
+                                            <LinkStyleCom to="/RecordScreen" style={{textDecoration:"none"}}>BACK TO LIST</LinkStyleCom>
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
