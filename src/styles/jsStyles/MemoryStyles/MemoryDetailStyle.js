@@ -2,16 +2,27 @@ import styled, {css, createGlobalStyle} from "styled-components"
 
 export const MemoryDetailStyleCom = styled.div`
 
+.gallaryfullwraper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .memory-detail-container{
+        width: 95vw;
         color: white;
         
-        margin-top: 3rem;
+        /* margin-top: 3rem; */
+        margin-top: 5%;
 
         position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-bottom: 3rem;
+        align-items: center;
+        /* padding-bottom: 3rem; */
         /* justify-content: space-space-evenly; */
         /* width: 100%;
         height: 100%; */
@@ -20,18 +31,36 @@ export const MemoryDetailStyleCom = styled.div`
     }
 
     .main-pic-container{
-        width: 100%;
+        /* width: 100%; */
+        /* width: 95vw; */
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 3%;
+        /* padding-bottom: 3%; */
+        margin-bottom: 3%;
+
+        .picsContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         img{
-            width: 100%;
+            width: calc(100% - 30px);
+            border: 15px solid black;
+            /* padding: 2px; */
+
+            @media (max-width: 480px){
+            width: calc(100% - 10px);
+            border: 5px solid black;
+            }
         }
     }
 
     .gallary{
+        
+        /* width: 95vw;
+        max-width: 1500px; */
         
         -webkit-column-break-inside: avoid;
         -webkit-backface-visibility: hidden;
@@ -78,7 +107,8 @@ export const MemoryDetailStyleCom = styled.div`
             }
 
             img { 
-                width:100%;
+                width: calc(100% - 10px);
+                border: 5px solid black;
                 /* height: 100%; */
             }
         }

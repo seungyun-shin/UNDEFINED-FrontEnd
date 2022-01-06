@@ -22,7 +22,8 @@ export const RecordDetailStyleCom = styled.div`
             line-height: 5vw;
             font-weight: 700;
             padding:2%;
-            border-bottom: 1px solid white;
+            /* border-bottom: 2px solid #dfd3c3; */
+            /* border-bottom: 2px solid #dfd3c3; */
 
             /* font-size: 3rem;
             font-weight: 700;
@@ -47,6 +48,7 @@ export const RecordDetailStyleCom = styled.div`
 
         }
         .record-detail-contents{
+            border: 2px solid #dfd3c3;
             padding: 5%;
             color: white;
             
@@ -58,6 +60,8 @@ export const RecordDetailStyleCom = styled.div`
             @media screen and (max-width: 550px) {
                 font-size: 13px;
             }
+
+            background-color: #161616;
         }
     }
 

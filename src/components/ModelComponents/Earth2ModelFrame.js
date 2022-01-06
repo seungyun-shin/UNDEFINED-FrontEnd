@@ -65,7 +65,7 @@ function Earth2ModelFrame() {
 
             <div className="guide-container" >
                 <div className="guide-info">
-                    <span>Click the White Points or Planet</span> 
+                    <span>Click the Points or Planet</span> 
                     {/* <div className="link-container">
                         <LinkStyleCom to="/memoryfullgallery">Go to Gallery</LinkStyleCom>
                     </div> */}

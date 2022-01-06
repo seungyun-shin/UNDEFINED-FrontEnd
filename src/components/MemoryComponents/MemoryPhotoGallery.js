@@ -9,7 +9,8 @@ import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 import {AnimatePresence, motion} from 'framer-motion'
 
 //basic Components
-import ContentsBanner from "../componentParts/ContentsBanner"
+// import ContentsBanner from "../componentParts/ContentsBanner"
+import GallaryBanner from "../componentParts/GallaryBanner"
 import {ReactComponent as LeftArrow} from "../../assets/svg/arrow-left.svg"
 import {ReactComponent as RightArrow} from "../../assets/svg/arrow-right.svg"
 
@@ -72,39 +73,41 @@ function MemoryPhotoGallery({match, history }) {
 
                 <div className="contents-container">
                     
-                    <ContentsBanner bannerTitle={countryPoint.name}/>
-                    <div className="memory-detail-container">
+                    <GallaryBanner bannerTitle={countryPoint.name}/>
+                    <div className="gallaryfullwraper">
+                        <div className="memory-detail-container">
 
-                        <SRLWrapper options={options}>
+                            <SRLWrapper options={options}>
 
-                        <div className="main-pic-container">
-                            <a href={countryPoint.mainImg}>
-                                <div className="picsContainer">
-                                    <img src={countryPoint.mainImg}/>
+                            <div className="main-pic-container">
+                                <a href={countryPoint.mainImg}>
+                                    <div className="picsContainer">
+                                        <img src={countryPoint.mainImg}/>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div className="gallary">
+                                {
+                                countryPoint.simgList.map( (item, index )=> {
+                                    return(
+                                        <a href={countryPoint.imgList[index].imgSrc} key={index}>
+                                            <div className="picsContainer" key={index}>
+                                                <img src={item.imgSrc}  srl_gallery_image="true"/>
+                                            </div>
+                                        </a>
+                                    )
+                                })
+
+                                }
+                            </div>
+                            </SRLWrapper>
+                        </div>
+                        <div className="biarrow-container">
+                            <div className="arrow-container">
+                                <div className="arrow-box">
+                                    <LinkStyleCom to="/MemoryScreen" style={{textDecoration:"none"}}>BACK TO MEMORY</LinkStyleCom>
                                 </div>
-                            </a>
-                        </div>
-
-                        <div className="gallary">
-                            {
-                            countryPoint.simgList.map( (item, index )=> {
-                                return(
-                                    <a href={countryPoint.imgList[index].imgSrc} key={index}>
-                                        <div className="picsContainer" key={index}>
-                                            <img src={item.imgSrc}  srl_gallery_image="true"/>
-                                        </div>
-                                    </a>
-                                )
-                            })
-
-                            }
-                        </div>
-                        </SRLWrapper>
-                    </div>
-                    <div className="biarrow-container">
-                        <div className="arrow-container">
-                            <div className="arrow-box">
-                                <LinkStyleCom to="/MemoryScreen" style={{textDecoration:"none"}}>BACK TO MEMORY</LinkStyleCom>
                             </div>
                         </div>
                     </div>

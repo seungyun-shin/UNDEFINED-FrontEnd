@@ -587,6 +587,11 @@ span ul li{
   z-index: 99999;
   display: none;
   transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-family: 'Romelio';
+}
+
+.country-name-show-up{
+  font-family: 'Romelio';
 }
 
 .guide-container{
@@ -605,8 +610,11 @@ span ul li{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   font-size: 2vw;
+
+  span{
+    font-family: 'Romelio';
+  }
 
   @media screen and (max-width: 700px) {  
     font-size: 3vw;

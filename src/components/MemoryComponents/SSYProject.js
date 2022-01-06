@@ -177,7 +177,7 @@ function SSYProject({match, history }) {
         { id: 41, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/1170/project41.jpg" },
         { id: 42, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/1170/project42.jpg" },
         { id: 43, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/1170/project43.jpg" },
-        { id: 45, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/1170/project44.jpg" },
+        // { id: 45, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/1170/project44.jpg" },
         { id: 46, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/1170/project45.jpg" },
         { id: 47, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/1170/project46.jpg" },
         { id: 48, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/1170/project47.jpg" },
@@ -238,7 +238,7 @@ function SSYProject({match, history }) {
         { id: 41, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/300/project41.jpg" },
         { id: 42, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/300/project42.jpg" },
         { id: 43, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/300/project43.jpg" },
-        { id: 45, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/300/project44.jpg" },
+        // { id: 45, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/300/project44.jpg" },
         { id: 46, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/300/project45.jpg" },
         { id: 47, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/300/project46.jpg" },
         { id: 48, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/300/project47.jpg" },
@@ -271,7 +271,8 @@ function SSYProject({match, history }) {
                     <MemoryDetailStyleCom>
                         <div className="contents-container">
                             
-                            <ContentsBanner bannerTitle={"Gala Pagos"}/>
+                            <ContentsBanner bannerTitle={"Project"}/>
+                    <div className="gallaryfullwraper">
                             <div className="memory-detail-container">
 
                                 <SRLWrapper options={options}>
@@ -304,6 +305,7 @@ function SSYProject({match, history }) {
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </MemoryDetailStyleCom>
                     </motion.div>

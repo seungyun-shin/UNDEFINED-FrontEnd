@@ -189,7 +189,8 @@ function Thanks({match, history }) {
                     <MemoryDetailStyleCom>
                         <div className="contents-container">
                             
-                            <ContentsBanner bannerTitle={"Gala Pagos"}/>
+                            <ContentsBanner bannerTitle={"Appreciate"}/>
+                    <div className="gallaryfullwraper">
                             <div className="memory-detail-container">
 
                                 <SRLWrapper options={options}>
@@ -231,6 +232,7 @@ function Thanks({match, history }) {
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </MemoryDetailStyleCom>
                     </motion.div>
         </>

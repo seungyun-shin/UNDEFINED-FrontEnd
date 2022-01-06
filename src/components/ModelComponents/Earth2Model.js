@@ -71,7 +71,7 @@ function Earth2Model( props ) {
         
         // console.log(props.countryInfo.current)
         props.countryInfo.current.style.display = 'flex';
-        props.countryInfoName.current.innerHTML = `<div>${e.object.userData.name}</div>`;
+        props.countryInfoName.current.innerHTML = `<div class="country-name-show-up">${e.object.userData.name}</div>`;
         // window.open(e.object.userData.url)
         // document.querySelector(".infoContainer").style.display = "flex";
         // document.querySelector(".infoTitle").innerText = "Region: " + e.target.current.userData.name;
@@ -162,7 +162,7 @@ function Earth2Model( props ) {
         
         <mesh position={[9, -3, -3]}
             ref={thanksPlanet}
-            userData= {{ name: "Thanks a lot" }}
+            userData= {{ name: "Appreciate" }}
             onPointerOver={infoShowingUp}
             onPointerOut={infoShowingDown}
         >
