@@ -6,6 +6,10 @@ export const HeaderStyleCom = styled.div`
     justify-content: center;
     align-items: center;
 
+    /* a{
+      font-family: 'Romelio';
+    } */
+
     .header-wraper{
         position:relative;
         /* top:0; */

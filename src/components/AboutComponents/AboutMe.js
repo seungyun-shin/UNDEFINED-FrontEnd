@@ -197,8 +197,8 @@ function AboutMe({match, history }) {
 
         const skewScrolling = () => {
 
-            console.log('//////',window.scrollY)
-            console.log('///',skewConfigs.rounded)
+            // console.log('//////',window.scrollY)
+            // console.log('///',skewConfigs.rounded)
             
             skewConfigs.current = window.scrollY;
             skewConfigs.previous += (skewConfigs.current - skewConfigs.previous) * skewConfigs.ease
@@ -212,7 +212,8 @@ function AboutMe({match, history }) {
     
             //
             if (scrollRef.current !== null) {
-                scrollRef.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0) skewY(${skew}deg)`
+                // scrollRef.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0) skewY(${skew}deg)`
+                scrollRef.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0)`
             }
     
             if ( itemImage.current !== null){
@@ -271,16 +272,9 @@ function AboutMe({match, history }) {
                                 </div>
                             </div>
 
-                            <div className="photo-container" ref={itemImage}>    
+                            <div className="photo-container">    
                                 <div className="item">
-                                    <div className="item-header">
-                                        <div className="item-header-heading"></div>
-                                        <div className="item-header-heading2"></div>
-                                    </div>
-                                    <div className="item-image"></div>
-                                    <div className="item-footer">
-                                        <div className="item-footer-quote"></div>
-                                    </div>
+                                    <div className="item-image" ref={itemImage}></div>
                                 </div>
                             </div>
 
@@ -390,7 +384,7 @@ function AboutMe({match, history }) {
                             </div>
                             </Observer2> */}
                         </div>
-
+                        
                         <div className="road-list-title">
                         <Observer2>
                             {/* <div className="title-text">Artificial Intelligence</div> */}
@@ -424,22 +418,22 @@ function AboutMe({match, history }) {
                                     <table>
                                         <tbody>
                                             <tr>
-                                                <td><span><i class="fas fa-divide"></i> CLASSIFICATION</span></td>
+                                                <td><span><i className="fas fa-divide"></i> CLASSIFICATION</span></td>
                                             </tr>
                                             <tr>
-                                                <td><span><i class="fas fa-percent"></i> REGRESSION</span></td>
+                                                <td><span><i className="fas fa-percent"></i> REGRESSION</span></td>
                                             </tr>
                                             <tr>
-                                                <td><span><i class="fas fa-chart-line"></i> TIME SERIES</span></td>
+                                                <td><span><i className="fas fa-chart-line"></i> TIME SERIES</span></td>
                                             </tr>
                                             <tr>
-                                                <td><span><i class="fas fa-eye"></i> COMPUTER VISION</span></td>
+                                                <td><span><i className="fas fa-eye"></i> COMPUTER VISION</span></td>
                                             </tr>
                                             <tr>
-                                                <td><span><i class="fas fa-language"></i>  NATURAL LANGUAGE PROCESSING</span></td>
+                                                <td><span><i className="fas fa-language"></i>  NATURAL LANGUAGE PROCESSING</span></td>
                                             </tr>
                                             <tr>
-                                                <td><span><i class="fas fa-infinity"></i>  REINFORCEMENT LEARNING</span></td>
+                                                <td><span><i className="fas fa-infinity"></i>  REINFORCEMENT LEARNING</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -453,6 +447,7 @@ function AboutMe({match, history }) {
                                 <Observer3>
                                 <li className="stack-line"></li>
                                 </Observer3>
+                                {/* </div> */}
 
                                 <li className="stack-content-title topmargin"> <span>FRAME WORK - Skills</span></li>
                                 
@@ -464,16 +459,16 @@ function AboutMe({match, history }) {
                                         <table>
                                             <tbody>
                                                 <tr>
-                                                    <td><span><i class="fas fa-angle-double-up iorange"></i> Tensorflow</span></td>
-                                                    <td><span><i class="fab fa-kickstarter-k ired"></i> Keras</span></td>
+                                                    <td><span><i className="fas fa-angle-double-up iorange"></i> Tensorflow</span></td>
+                                                    <td><span><i className="fab fa-kickstarter-k ired"></i> Keras</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><span><i class="fas fa-circle iblue"></i> Scikit learn</span></td>
-                                                    <td><span><i class="fas fa-fire-alt itorch"></i> Pytorch</span></td>
+                                                    <td><span><i className="fas fa-circle iblue"></i> Scikit learn</span></td>
+                                                    <td><span><i className="fas fa-fire-alt itorch"></i> Pytorch</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><span><i class="fas fa-th inumpy"></i> Numpy </span></td>
-                                                    <td><span><i class="fab fa-gitter ipandas"></i> Pandas</span></td>
+                                                    <td><span><i className="fas fa-th inumpy"></i> Numpy </span></td>
+                                                    <td><span><i className="fab fa-gitter ipandas"></i> Pandas</span></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -487,7 +482,8 @@ function AboutMe({match, history }) {
                         </div>
 
                         
-
+                        <div className="main-skill-stack-responsive-margin"></div>
+                            
                         <div className="road-list-title-left">
                         <Observer2>
                             {/* <div className="title-text">Artificial Intelligence</div> */}
@@ -513,16 +509,16 @@ function AboutMe({match, history }) {
                                     <table>
                                         <tbody>
                                             <tr>
-                                                <td><span><i class="fab fa-html5 ihtml"></i> HTML</span> <span><i class="fab fa-css3 icss"></i> CSS</span> <span><i class="fab fa-sass iscss"></i> SCSS</span></td>
+                                                <td><span><i className="fab fa-html5 ihtml"></i> HTML</span> <span><i className="fab fa-css3 icss"></i> CSS</span> <span><i className="fab fa-sass iscss"></i> SCSS</span></td>
                                             </tr>
                                             <tr>
-                                                <td> <span><i class="fab fa-js ijs"></i> JS </span> <span><i class="fas fa-square its"></i> TS </span> <span><i class="fas fa-moon ijq"></i> jQ </span> </td>
+                                                <td> <span><i className="fab fa-js ijs"></i> JS </span> <span><i className="fas fa-square its"></i> TS </span> <span><i className="fas fa-moon ijq"></i> jQ </span> </td>
                                             </tr>
                                             <tr>
-                                                <td><span><i class="fab fa-react ireact"></i> React </span> <span><i class="fab fa-react ipurple"></i> Redux </span> <span> <i class="fab fa-react igreen"></i> Saga </span></td>
+                                                <td><span><i className="fab fa-react ireact"></i> React </span> <span><i className="fab fa-react ipurple"></i> Redux </span> <span> <i className="fab fa-react igreen"></i> Saga </span></td>
                                             </tr>
                                             <tr>
-                                                <td><span><i class="fas fa-dice-d20 ithreejs"></i> THREE.JS</span> <span><i class="far fa-moon iwebjs"></i>  WebGL </span> <span><i class="fas fa-adjust iglsl"></i> GLSL</span> </td>
+                                                <td><span><i className="fas fa-dice-d20 ithreejs"></i> THREE.JS</span> <span><i className="far fa-moon iwebjs"></i>  WebGL </span> <span><i className="fas fa-adjust iglsl"></i> GLSL</span> </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -537,6 +533,10 @@ function AboutMe({match, history }) {
                             </div>
 
                         </div>
+                        
+                        
+                        <div className="skill-stack-responsive-margin"></div>
+
 
                         <div className="road-list-title-right">
                         <Observer2>
@@ -569,25 +569,29 @@ function AboutMe({match, history }) {
                                     <table>
                                         <tbody>
                                             <tr>
-                                                <td><span><i class="fab fa-python ipython"></i> Python</span> </td>
+                                                <td><span><i className="fab fa-python ipython"></i> Python</span> </td>
                                             </tr>
                                             <tr>
-                                                <td><span><i class="fas fa-hat-cowboy idjango"></i> Django </span> <span><i class="fas fa-hat-cowboy-side idjangodrf"></i> DRF </span> <span><i class="fab fa-affiliatetheme iflask"></i> Flask </span> </td>
+                                                <td><span><i className="fas fa-hat-cowboy idjango"></i> Django </span> <span><i className="fas fa-hat-cowboy-side idjangodrf"></i> DRF </span> <span><i className="fab fa-affiliatetheme iflask"></i> Flask </span> </td>
                                             </tr>
                                             <tr>
-                                                <td><span><i class="fas fa-square inginx"></i> Nginx </span> <span><i class="fas fa-square iuwsgi"></i> uWSGI </span> <span> <i class="fas fa-square igunicorn"></i> Gunicorn </span></td>
+                                                <td><span><i className="fas fa-square inginx"></i> Nginx </span> <span><i className="fas fa-square iuwsgi"></i> uWSGI </span> <span> <i className="fas fa-square igunicorn"></i> Gunicorn </span></td>
                                             </tr>
                                             <tr>
-                                                <td><span><i class="fab fa-node inodejs"></i> Node.js</span> <span><i class="fas fa-cube iwebpack"></i>  Webpack </span> </td>
+                                                <td><span><i className="fab fa-node inodejs"></i> Node.js</span> <span><i className="fas fa-cube iwebpack"></i>  Webpack </span> </td>
                                             </tr>
                                             <tr>
-                                                <td><span><i class="fas fa-database imysql"></i> MySQL</span> <span><i class="fas fa-database ipostgreSQL"></i>  PostgreSQL </span> <span><i class="fas fa-database imongodb"></i>  MongoDB </span></td>
+                                                <td><span><i className="fas fa-database imysql"></i> MySQL</span> <span><i className="fas fa-database ipostgreSQL"></i>  PostgreSQL </span> <span><i className="fas fa-database imongodb"></i>  MongoDB </span></td>
                                             </tr>
                                         </tbody>
                                     </table>
                             </div>
                         </div>
                         
+                        
+                        <div className="skill-stack-responsive-margin"></div>
+
+
                         <div className="small-stack-title">
                         <Observer2>
                             {/* <div className="title-text">Artificial Intelligence</div> */}
@@ -613,16 +617,16 @@ function AboutMe({match, history }) {
                                     <table>
                                         <tbody>
                                             <tr>
-                                                <td><span><i class="fab fa-docker idocker"></i> Docker</span></td>
+                                                <td><span><i className="fab fa-docker idocker"></i> Docker</span></td>
                                             </tr>
                                             <tr>
-                                                <td> <span><i class="fab fa-git-square igit"></i> Git </span> <span><i class="fab fa-github igithub"></i> GitHub </span></td>
+                                                <td> <span><i className="fab fa-git-square igit"></i> Git </span> <span><i className="fab fa-github igithub"></i> GitHub </span></td>
                                             </tr>
                                             <tr>
-                                                <td><span><i class="fab fa-aws iec2"></i> EC2 </span> <span><i class="fab fa-aws is3"></i> S3 </span> <span><i class="fab fa-aws iRDS"></i> RDS </span> </td> 
+                                                <td><span><i className="fab fa-aws iec2"></i> EC2 </span> <span><i className="fab fa-aws is3"></i> S3 </span> <span><i className="fab fa-aws iRDS"></i> RDS </span> </td> 
                                             </tr>
                                             <tr>
-                                                <td> <span><i class="fab fa-aws iEB"></i> EB </span> <span> <i class="fab fa-aws ilambda"></i> Lambda </span></td>
+                                                <td> <span><i className="fab fa-aws iEB"></i> EB </span> <span> <i className="fab fa-aws ilambda"></i> Lambda </span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -637,6 +641,10 @@ function AboutMe({match, history }) {
                             </div>
 
                         </div>
+
+                        
+                        <div className="skill-stack-responsive-margin"></div>
+                        
                         
                         <div className="site-info-title">
                         <Observer2>
@@ -657,41 +665,41 @@ function AboutMe({match, history }) {
                             <div className="wrapper">
                                 <div className="slider">
                                     <div className="slide">
-                                        <span><i class="far fa-moon iwebjs"></i>&nbsp;WebGL</span>
-                                        <span><i class="fas fa-dice-d20 ithreejs"></i>&nbsp;THREE.JS</span>
-                                        <span><i class="fab fa-react ireact"></i>&nbsp;React</span>
-                                        <span><i class="fab fa-react ipurple"></i>&nbsp;Redux</span>
-                                        <span><i class="fas fa-cube iwebpack"></i>&nbsp;Webpack</span>
-                                        <span><i class="fab fa-node inodejs"></i>&nbsp;Node.js</span>
-                                        <span><i class="fab fa-aws is3"></i>&nbsp;S3</span>
+                                        <span><i className="far fa-moon iwebjs"></i>&nbsp;WebGL</span>
+                                        <span><i className="fas fa-dice-d20 ithreejs"></i>&nbsp;THREE.JS</span>
+                                        <span><i className="fab fa-react ireact"></i>&nbsp;React</span>
+                                        <span><i className="fab fa-react ipurple"></i>&nbsp;Redux</span>
+                                        <span><i className="fas fa-cube iwebpack"></i>&nbsp;Webpack</span>
+                                        <span><i className="fab fa-node inodejs"></i>&nbsp;Node.js</span>
+                                        <span><i className="fab fa-aws is3"></i>&nbsp;S3</span>
                                     </div>
                                     <div className="slide">
-                                        <span><i class="far fa-moon iwebjs"></i>&nbsp;WebGL</span>
-                                        <span><i class="fas fa-dice-d20 ithreejs"></i>&nbsp;THREE.JS</span>
-                                        <span><i class="fab fa-react ireact"></i>&nbsp;React</span>
-                                        <span><i class="fab fa-react ipurple"></i>&nbsp;Redux</span>
-                                        <span><i class="fas fa-cube iwebpack"></i>&nbsp;Webpack</span>
-                                        <span><i class="fab fa-node inodejs"></i>&nbsp;Node.js</span>
-                                        <span><i class="fab fa-aws is3"></i>&nbsp;S3</span>
+                                        <span><i className="far fa-moon iwebjs"></i>&nbsp;WebGL</span>
+                                        <span><i className="fas fa-dice-d20 ithreejs"></i>&nbsp;THREE.JS</span>
+                                        <span><i className="fab fa-react ireact"></i>&nbsp;React</span>
+                                        <span><i className="fab fa-react ipurple"></i>&nbsp;Redux</span>
+                                        <span><i className="fas fa-cube iwebpack"></i>&nbsp;Webpack</span>
+                                        <span><i className="fab fa-node inodejs"></i>&nbsp;Node.js</span>
+                                        <span><i className="fab fa-aws is3"></i>&nbsp;S3</span>
                                     </div>
                                 </div>
 
                                 <div className="slider2">
                                     <div className="slide2">
-                                        <span><i class="fas fa-hat-cowboy idjango"></i>&nbsp;Django</span>
-                                        <span><i class="fas fa-hat-cowboy-side idjangodrf"></i>&nbsp;DRF</span>
-                                        <span><i class="fas fa-square inginx"></i>&nbsp;Nginx</span>
-                                        <span><i class="fas fa-horse igunicorn"></i>&nbsp;Gunicorn</span>
-                                        <span><i class="fab fa-docker idocker"></i>&nbsp;Docker</span>
-                                        <span><i class="fab fa-aws iec2"></i>&nbsp;EC2</span>
+                                        <span><i className="fas fa-hat-cowboy idjango"></i>&nbsp;Django</span>
+                                        <span><i className="fas fa-hat-cowboy-side idjangodrf"></i>&nbsp;DRF</span>
+                                        <span><i className="fas fa-square inginx"></i>&nbsp;Nginx</span>
+                                        <span><i className="fas fa-horse igunicorn"></i>&nbsp;Gunicorn</span>
+                                        <span><i className="fab fa-docker idocker"></i>&nbsp;Docker</span>
+                                        <span><i className="fab fa-aws iec2"></i>&nbsp;EC2</span>
                                     </div>
                                     <div className="slide2">
-                                        <span><i class="fas fa-hat-cowboy idjango"></i>&nbsp;Django</span>
-                                        <span><i class="fas fa-hat-cowboy-side idjangodrf"></i>&nbsp;DRF</span>
-                                        <span><i class="fas fa-square inginx"></i>&nbsp;Nginx</span>
-                                        <span><i class="fas fa-horse igunicorn"></i>&nbsp;Gunicorn</span>
-                                        <span><i class="fab fa-docker idocker"></i>&nbsp;Docker</span>
-                                        <span><i class="fab fa-aws iec2"></i>&nbsp;EC2</span>
+                                        <span><i className="fas fa-hat-cowboy idjango"></i>&nbsp;Django</span>
+                                        <span><i className="fas fa-hat-cowboy-side idjangodrf"></i>&nbsp;DRF</span>
+                                        <span><i className="fas fa-square inginx"></i>&nbsp;Nginx</span>
+                                        <span><i className="fas fa-horse igunicorn"></i>&nbsp;Gunicorn</span>
+                                        <span><i className="fab fa-docker idocker"></i>&nbsp;Docker</span>
+                                        <span><i className="fab fa-aws iec2"></i>&nbsp;EC2</span>
                                     </div>
                                 </div>
                             </div>
@@ -700,6 +708,8 @@ function AboutMe({match, history }) {
                                 <li className="road-line"></li>
                             </Observer3>
                         </div>
+
+                        <div className="skill-stack-responsive-margin2"></div>
 
                         <div className="roadpath-list-title">
                         <Observer2>

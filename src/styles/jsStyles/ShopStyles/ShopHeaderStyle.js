@@ -40,6 +40,7 @@ export const ShopHeaderStyleCom = styled.div`
                 padding-right: 36px;
                 font-weight: 600;
                 color: white;
+                font-family: 'Romelio';
             }
 
             a {    

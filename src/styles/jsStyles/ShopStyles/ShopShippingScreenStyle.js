@@ -7,10 +7,11 @@ export const ShopShippingScreenStyleCom = styled.div`
         position: absolute;
         top: 0;
         left: 0;
+        /* width: 100%; */
         width: 100vw;
         margin-top: 5%;
         /* height: 75vh; */
-        max-width: 1700px;
+        /* max-width: 1700px; */
         /* background: rgba(1,1,1,0.7); */
 
         display: flex;

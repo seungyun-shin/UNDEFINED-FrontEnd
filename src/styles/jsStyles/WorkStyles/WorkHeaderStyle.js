@@ -51,6 +51,9 @@ export const WorkHeaderStyleCom = styled.div`
                 font-weight: 600;
                 color: white;
             }
+            span{    
+                font-family: 'Romelio';
+            }
 
         }
         

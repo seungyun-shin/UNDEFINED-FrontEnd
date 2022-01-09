@@ -30,22 +30,22 @@ export const ContentsBannerStyleCom = styled.div`
                 font-size: 11rem;
             }
             @media screen and (max-width: 750px) {
-                font-size: 10rem;
-            }
-            @media screen and (max-width: 650px) {
                 font-size: 9rem;
             }
-            @media screen and (max-width: 550px) {
+            @media screen and (max-width: 650px) {
                 font-size: 8rem;
             }
-            @media screen and (max-width: 450px) {
+            @media screen and (max-width: 550px) {
                 font-size: 7rem;
             }
+            @media screen and (max-width: 450px) {
+                font-size: 5rem;
+            }
             @media screen and (max-width: 350px) {
-                font-size: 6rem;
+                font-size: 3.9rem;
             }
             @media screen and (max-width: 300px) {
-                font-size: 5rem;
+                font-size: 3rem;
             }
 
 
@@ -59,6 +59,7 @@ export const ContentsBannerStyleCom = styled.div`
             text-align: center;
             font-weight: 700;
             color: white;
+            font-family: 'Romelio';
         }
 
     }

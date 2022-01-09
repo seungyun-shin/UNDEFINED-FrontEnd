@@ -4,6 +4,53 @@ export const AboutMeStyleCom = styled.div`
 
     font-family: 'Romelio';
 
+    .main-skill-stack-responsive-margin{
+        
+        width: 100%;
+        @media screen and (max-width: 900px) {
+            height: 96vh;
+        }
+        @media screen and (max-width: 750px) {
+            height: 96vh;
+        }
+    }
+
+    .skill-stack-responsive-margin{
+        width: 100%;
+        @media screen and (max-width: 900px) {
+            height: 63vh;
+        }
+        @media screen and (max-width: 750px) {
+            height: 63vh;
+        }
+
+        /* @media screen and (max-width: 650px) {
+            height: 30vh;
+        }
+
+        @media screen and (max-width: 550px) {
+            height: 35vh;
+        } */
+    }
+
+    .skill-stack-responsive-margin2{
+        width: 100%;
+        @media screen and (max-width: 900px) {
+            height: 39vh;
+        }
+        @media screen and (max-width: 750px) {
+            height: 39vh;
+        }
+
+        /* @media screen and (max-width: 650px) {
+            height: 30vh;
+        }
+
+        @media screen and (max-width: 550px) {
+            height: 35vh;
+        } */
+    }
+
     .margin-top-remove{
         margin-top: 0 !important;
     }
@@ -17,7 +64,7 @@ export const AboutMeStyleCom = styled.div`
         position: fixed;
         top: 0;
         left: 0;
-        height: 100%;
+        /* height: 100%; */
         width: 100%;
         overflow: hidden;
     }
@@ -44,18 +91,29 @@ export const AboutMeStyleCom = styled.div`
         color: white;
         /* width: 80%; */
         width: 80%;
+        /* background: #003A9D; */
+
+            @media screen and (max-width: 1100px) {
+            }
+
+            @media screen and (max-width: 900px) {
+                width: 100%;
+            }
+            @media screen and (max-width: 500px) {
+            }
+
         .item{
-            display: flex;
+            /* display: flex;
             justify-content: center;
             flex-direction: column;
             /* width:500px; */
-            width:70%;
+            width:100%; 
         }
         .item-header{
-            display: flex;
+            /* display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-bottom: 5px;
+            padding-bottom: 5px; */
             /* border-bottom: 1px dashed antiquewhite; */
         }
         .item-header-heading{
@@ -71,13 +129,30 @@ export const AboutMeStyleCom = styled.div`
             border-bottom: 1px dashed antiquewhite; */
         }
         .item-image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: ease-out 0.7s;
+            /* width: 100%; */
             /* height: 400px; */
             /* height: 100%; */
             /* width: 1500px; */
             /* height: 780px; */
-            height: 700px;
+            /* height: 700px; */
+            height: 90vh;
             /* background-color: gray; */
             margin: 10px 0;
+
+            @media screen and (max-width: 1100px) {
+                height: 70vh;
+            }
+
+            @media screen and (max-width: 800px) {
+                height: 60vh;
+            }
+            @media screen and (max-width: 500px) {
+                height: 50vh;
+            }
         }
         .item-footer{
             display: flex;
@@ -91,9 +166,32 @@ export const AboutMeStyleCom = styled.div`
     .about-header{
         .header-text{
             font-family: 'Romelio';
-            font-size: 16rem;
+            /* font-size: 16rem; */
+            font-size: 13.3vw;
             font-weight: 900;
             color:#dfd3c3;
+
+            /* @media screen and (max-width: 850px) {
+                font-size: 11rem;
+            }
+            @media screen and (max-width: 750px) {
+                font-size: 9rem;
+            }
+            @media screen and (max-width: 650px) {
+                font-size: 8rem;
+            }
+            @media screen and (max-width: 550px) {
+                font-size: 7rem;
+            }
+            @media screen and (max-width: 450px) {
+                font-size: 5rem;
+            }
+            @media screen and (max-width: 350px) {
+                font-size: 3.9rem;
+            }
+            @media screen and (max-width: 300px) {
+                font-size: 3rem;
+            } */
         }
     }
 
@@ -101,13 +199,32 @@ export const AboutMeStyleCom = styled.div`
         position: relative;
         width: 100%;
         height: 39vh;
+
+        @media screen and (max-width: 1100px) {
+
+        }
+
+        @media screen and (max-width: 800px) {
+            margin-top: 13%;
+        }
+        @media screen and (max-width: 500px) {
+            margin-top: 46%;
+        }
     }
 
     .sub-text{
             font-family: 'Romelio';
-            font-size: 9rem;
+            /* font-size: 9rem; */
+            font-size: 7vw;
             font-weight: 900;
             color:#dfd3c3;
+
+            @media screen and (max-width: 800px) {
+                font-size: 8vw;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 8.7vw;
+            }
         }
 
     .sub-text-container{
@@ -147,14 +264,23 @@ export const AboutMeStyleCom = styled.div`
         display: flex;
         align-items: center;
         flex-direction: column;
+        justify-content: center;
         color:#dfd3c3;
         margin-bottom: 13%;
+        height: 100vh;
     }
     .introduce-text{
         /* font-size: 3.6rem; */
         font-size: 3vw;
         font-weight: 700;
         text-align: center;
+
+        @media screen and (max-width: 800px) {
+            font-size: 5vw;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 6vw;
+        }
     }
     .introduce-text-container{
     }
@@ -171,6 +297,9 @@ export const AboutMeStyleCom = styled.div`
             color:#dfd3c3;
             padding-left: 3%;
             /* text-align: center; */
+            @media screen and (max-width: 900px) {
+                font-size: 9vw;
+            }
         }
     }
 
@@ -185,6 +314,10 @@ export const AboutMeStyleCom = styled.div`
             font-weight: 900;
             color:#dfd3c3;
             text-align: center;
+
+            @media screen and (max-width: 900px) {
+                font-size: 9vw;
+            }
         }
     }
 
@@ -201,6 +334,11 @@ export const AboutMeStyleCom = styled.div`
             font-weight: 900;
             color:#dfd3c3;
             text-align: center;
+
+            @media screen and (max-width: 900px) {
+                font-size: 9vw;
+                margin-bottom: 3%;
+            }
         }
     }
 
@@ -220,6 +358,11 @@ export const AboutMeStyleCom = styled.div`
             font-weight: 900;
             color:#dfd3c3;
             text-align: center;
+
+            @media screen and (max-width: 900px) {
+                font-size: 9vw;
+                margin-bottom: 3%;
+            }
         }
     }
 
@@ -234,6 +377,11 @@ export const AboutMeStyleCom = styled.div`
             font-size: 5vw;
             font-weight: 900;
             color:#dfd3c3;
+
+            @media screen and (max-width: 900px) {
+                font-size: 9vw;
+                margin-bottom: 3%;
+            }
         }
     }
 
@@ -248,6 +396,8 @@ export const AboutMeStyleCom = styled.div`
             font-weight: 900;
             color:#dfd3c3;
             text-align:right;
+
+            
         }
     }
     
@@ -300,6 +450,10 @@ export const AboutMeStyleCom = styled.div`
         font-size: 1.99vw;
         text-align: center;
         /* margin: 3.32vh 0; */
+        
+        @media screen and (max-width: 900px) {
+            font-size: 3.39vw;
+        }
     }
     .stack-content-wraper{
         display: flex;
@@ -319,15 +473,23 @@ export const AboutMeStyleCom = styled.div`
             font-size: 1.39vw;
             line-height: 1.9;
             color: #dfd3c3;
-            font-weight: 500
+            font-weight: 500;
+
+            
+            @media screen and (max-width: 900px) {
+                font-size: 3.39vw;
+            }
         }
     }
+    }
+    
 
     .AI-stack-container{
         margin-top: 3%;
         margin-bottom: 3%;
         list-style-type: none; /* Remove bullets */
-        width: 80vw;
+        width: 80%;
+        /* height: 100%; */
         height: 39.9vw;
 
         transition: ease-out 0.7s;
@@ -339,6 +501,11 @@ export const AboutMeStyleCom = styled.div`
         color:#dfd3c3;
         /* background: white; */
 
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            height: 60.9vw;
+        }
+
         .AI-stack-pic-wraper{
             width: 46%;
             height: 100%;
@@ -348,6 +515,11 @@ export const AboutMeStyleCom = styled.div`
             justify-content: center;
             perspective: 1500px;
             transform-style: preserve-3d;
+
+            @media screen and (max-width: 900px) {
+                width: 95%;
+                margin-bottom: 3%;
+            }
             
             .AI-stack-pic-container{
                 opacity: 0;
@@ -378,6 +550,10 @@ export const AboutMeStyleCom = styled.div`
             padding-right: 1%;
             /* height: 36vw; */
             /* background: blue; */
+
+            @media screen and (max-width: 900px) {
+                width: 95%;
+            }
                     
             .stack-line{
                 width: 100%;
@@ -398,7 +574,7 @@ export const AboutMeStyleCom = styled.div`
                 /* margin-top: 1.62vh; */
                 color: #dfd3c3;
                 padding-left: 3%;
-                font-weight: 500
+                font-weight: 500;
             }
         }
     }
@@ -418,6 +594,11 @@ export const AboutMeStyleCom = styled.div`
         color:#dfd3c3;
         /* background: white; */
 
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            height: 60.9vw;
+        }
+
         .small-stack-pic-wraper{
             width: 36%;
             height: 100%;
@@ -427,6 +608,10 @@ export const AboutMeStyleCom = styled.div`
             justify-content: center;
             perspective: 1500px;
             transform-style: preserve-3d;
+
+            @media screen and (max-width: 900px) {
+                width: 95%;
+            }
             
             .small-stack-pic-container{
                 opacity: 0;
@@ -441,6 +626,11 @@ export const AboutMeStyleCom = styled.div`
                 img{
                     width: 100%;
                     height: 100%;
+                }
+
+                @media screen and (max-width: 900px) {
+                    order:1;
+                    margin-bottom: 3%;
                 }
             }
 
@@ -458,6 +648,11 @@ export const AboutMeStyleCom = styled.div`
                     width: 100%;
                     height: 100%;
                 }
+
+                @media screen and (max-width: 900px) {
+                    order:1;
+                    margin-bottom: 3%;
+                }
             }
 
             .small-stack-pic-container3{
@@ -473,6 +668,11 @@ export const AboutMeStyleCom = styled.div`
                 img{
                     width: 100%;
                     height: 100%;
+                }
+
+                @media screen and (max-width: 900px) {
+                    order:1;
+                    margin-bottom: 3%;
                 }
             }
 
@@ -490,6 +690,11 @@ export const AboutMeStyleCom = styled.div`
                     width: 100%;
                     height: 100%;
                 }
+
+                @media screen and (max-width: 900px) {
+                    order:1;
+                    margin-bottom: 3%;
+                }
             }
 
         }
@@ -504,6 +709,11 @@ export const AboutMeStyleCom = styled.div`
             padding-right: 1%;
             /* height: 36vw; */
             /* background: blue; */
+
+            @media screen and (max-width: 900px) {
+                order:2;
+                width: 95%;
+            }
         
             .stack-line{
                 width: 100%;
@@ -670,6 +880,11 @@ export const AboutMeStyleCom = styled.div`
             font-weight: 900;
             color:#dfd3c3;
             text-align: center;
+
+            @media screen and (max-width: 900px) {
+                font-size: 9vw;
+                margin-bottom: 3%;
+            }
         }
     }
     
@@ -722,6 +937,18 @@ export const AboutMeStyleCom = styled.div`
                     font-size: 5vw;
                     margin: 0 3.6645vw;
                     color: #dfd3c3;
+
+                    @media screen and (max-width: 900px) {
+                        font-size: 7vw;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        font-size: 9vw;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 11vw;
+                    }
                 }
             }
         }
@@ -749,6 +976,18 @@ export const AboutMeStyleCom = styled.div`
                     font-size: 5vw;
                     margin: 0 3.6645vw;
                     color: #dfd3c3;
+
+                    @media screen and (max-width: 900px) {
+                        font-size: 7vw;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        font-size: 9vw;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 11vw;
+                    }
                 }
             }
         }
@@ -808,15 +1047,19 @@ export const AboutMeStyleCom = styled.div`
     
 
     .contact-section-wraper{
-        margin-top: 30%;
-        margin-bottom: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 80vw;
+        height: 100vh;
         /* width: 80vw;
         height: 100vh; */
         /* background-color: aqua; */
         /* padding: 15vh 8.274vw 10vh 8.274vw; */
 
         .contact-box{
+            width: 100%;
             display: block;
             font-size: 5.8571428571vw;
             line-height: .96;
@@ -824,11 +1067,16 @@ export const AboutMeStyleCom = styled.div`
             will-change: color;
             font-family: 'Romelio';
             color: #dfd3c3;
+
+            @media screen and (max-width: 900px) {
+                    font-size: 9vw;
+                }
         }
         .contact-info{
+            width: 100%;
             /* position: relative; */
             display: block;
-            margin-top: 6%;
+            margin-top: 9%;
             text-align: right;
 
             span{
@@ -839,6 +1087,10 @@ export const AboutMeStyleCom = styled.div`
                 font-family: 'Romelio';
                 color: #dfd3c3;
                 text-decoration: underline;
+
+                @media screen and (max-width: 900px) {
+                    font-size: 5vw;
+                }
             }
             
         }
