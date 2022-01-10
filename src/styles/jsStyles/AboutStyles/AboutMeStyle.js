@@ -64,7 +64,6 @@ export const AboutMeStyleCom = styled.div`
         position: fixed;
         top: 0;
         left: 0;
-        /* height: 100%; */
         width: 100%;
         overflow: hidden;
     }
@@ -96,7 +95,7 @@ export const AboutMeStyleCom = styled.div`
             @media screen and (max-width: 1100px) {
             }
 
-            @media screen and (max-width: 900px) {
+            @media screen and (max-width: 1000px) {
                 width: 100%;
             }
             @media screen and (max-width: 500px) {
@@ -282,8 +281,11 @@ export const AboutMeStyleCom = styled.div`
             font-size: 6vw;
         }
     }
-    .introduce-text-container{
-    }
+    /* .introduce-text-container{
+        transition: 1s ease;
+        opacity: 0;
+        transform: translateY(10vh);
+    } */
 
     .roadpath-list-title{
         margin-top: 13%;

@@ -671,6 +671,15 @@ span ul li{
   margin: 1%;
 }
 
+.work-observer-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transform: translateY(10vh);
+  opacity: 0;
+}
+
 // .fade-in-section {
 //   perspective: 1000px;
 //   transform-style: preserve-3d;

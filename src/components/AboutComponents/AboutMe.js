@@ -197,35 +197,38 @@ function AboutMe({match, history }) {
 
         const skewScrolling = () => {
 
-            // console.log('//////',window.scrollY)
-            // console.log('///',skewConfigs.rounded)
+            console.log('//////',window.scrollY)
+            console.log('///',skewConfigs.rounded)
             
             skewConfigs.current = window.scrollY;
             skewConfigs.previous += (skewConfigs.current - skewConfigs.previous) * skewConfigs.ease
             skewConfigs.rounded = Math.round(skewConfigs.previous * 100) / 100;
     
             //varibles
-            const difference = skewConfigs.current - skewConfigs.rounded;
-            const acceleration = difference / size.width
-            const velocity = + acceleration;
-            const skew = velocity * 27.5; 
+            // const difference = skewConfigs.current - skewConfigs.rounded;
+            // const acceleration = difference / size.width
+            // const velocity = + acceleration;
+            // const skew = velocity * 27.5; 
     
             //
-            if (scrollRef.current !== null) {
+            if (scrollRef.current !== null ) {
                 // scrollRef.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0) skewY(${skew}deg)`
                 scrollRef.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0)`
             }
+
+            if(window.scrollY < 2100){
     
-            if ( itemImage.current !== null){
-                itemImage.current.style.transform = `translate3d(0, -${window.scrollY * 0.5}px, 0) `
-            }
-            
-            if ( subText.current !== null){
-                subText.current.style.transform = `translate3d(0, -${window.scrollY * 0.9}px, 0) `
-                subText2.current.style.transform = `translate3d(0, -${window.scrollY * 0.47}px, 0) `
-                subText3.current.style.transform = `translate3d(0, -${window.scrollY * 0.7}px, 0) `
-                subText4.current.style.transform = `translate3d(0, -${window.scrollY * 0.39}px, 0) `
-                subText5.current.style.transform = `translate3d(0, -${window.scrollY * 0.16}px, 0) `
+                if ( itemImage.current !== null){
+                    itemImage.current.style.transform = `translate3d(0, -${window.scrollY * 0.5}px, 0) `
+                }
+                
+                if ( subText.current !== null){
+                    subText.current.style.transform = `translate3d(0, -${window.scrollY * 0.9}px, 0) `
+                    subText2.current.style.transform = `translate3d(0, -${window.scrollY * 0.47}px, 0) `
+                    subText3.current.style.transform = `translate3d(0, -${window.scrollY * 0.7}px, 0) `
+                    subText4.current.style.transform = `translate3d(0, -${window.scrollY * 0.39}px, 0) `
+                    subText5.current.style.transform = `translate3d(0, -${window.scrollY * 0.16}px, 0) `
+                }
             }
           
             frameID = requestAnimationFrame(() => skewScrolling())
@@ -341,21 +344,21 @@ function AboutMe({match, history }) {
                             </div>
                             </Observer2>
                             <Observer2>
-                            <div className="introduce-text-container2">
+                            <div className="introduce-text-container">
                                 <div className="introduce-text">
                                 in mind that I need to learn always to communicate 
                                 </div>
                             </div>
                             </Observer2>
                             <Observer2>
-                            <div className="introduce-text-container2">
+                            <div className="introduce-text-container">
                                 <div className="introduce-text">
                                 with people in various fields and emphasize with them.
                                 </div>
                             </div>
                             </Observer2>
                             <Observer2>
-                            <div className="introduce-text-container2">
+                            <div className="introduce-text-container">
                                 <div className="introduce-text">
                                 My goal is to keep evolving myself always with open
                                 </div>
@@ -363,7 +366,7 @@ function AboutMe({match, history }) {
                             </Observer2>
                             
                             <Observer2>
-                            <div className="introduce-text-container3">
+                            <div className="introduce-text-container">
                                 <div className="introduce-text">
                                 mindset, without setting any limit in my growth.
                                 </div>

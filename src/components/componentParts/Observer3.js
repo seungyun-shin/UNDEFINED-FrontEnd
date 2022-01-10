@@ -11,8 +11,8 @@ function FadeInSection3(props) {
       if (entries[0].isIntersecting) {
         entries.forEach(entry => setVisible(entry.isIntersecting));
 
-        gsap.from(entries[0].target, 1.5, {  
-            width: 0,
+        gsap.to(entries[0].target, 1.5, {  
+            width: '100%',
             ease: "power4.out",
         });
 
@@ -26,7 +26,7 @@ function FadeInSection3(props) {
     }, []);
 
     const style = {
-      width:"100%"
+      width:"0"
     }
 
     return (
