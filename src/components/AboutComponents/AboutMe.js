@@ -93,11 +93,11 @@ function AboutMe({match, history }) {
 
         const tl3 = gsap.timeline();
 
-        tl.to('#mesh-container', {
-            duration: 1,
-            opacity: 0,
-            display: "none",
-        })
+        // tl.to('#mesh-container', {
+        //     duration: 1,
+        //     opacity: 0,
+        //     display: "none",
+        // })
 
          
         tl2.to('.contents-container-full', {
@@ -126,11 +126,11 @@ function AboutMe({match, history }) {
         });
 
         return () => {
-            gsap.to( '#mesh-container', {
-                duration: 1,
-                opacity: 1,
-                display: "flex",
-            } );
+            // gsap.to( '#mesh-container', {
+            //     duration: 1,
+            //     opacity: 1,
+            //     display: "flex",
+            // } );
         };
     }, []);
 
@@ -197,8 +197,8 @@ function AboutMe({match, history }) {
 
         const skewScrolling = () => {
 
-            console.log('//////',window.scrollY)
-            console.log('///',skewConfigs.rounded)
+            // console.log('//////',window.scrollY)
+            // console.log('///',skewConfigs.rounded)
             
             skewConfigs.current = window.scrollY;
             skewConfigs.previous += (skewConfigs.current - skewConfigs.previous) * skewConfigs.ease
@@ -372,21 +372,21 @@ function AboutMe({match, history }) {
                                 </div>
                             </div>
                             </Observer2>
-                            {/* <Observer2>
-                            <div className="introduce-text-container4">
+                        </div>
+
+                        <div className="introduce-wraper-m">
+                            <Observer2>
+                            <div className="introduce-text-container">
                                 <div className="introduce-text">
-                                    vcbqwqewqeqweqwe amet consectetur, adiqweqweqweqw
+                                'Undefined' refers to express my ‘belief’ and ‘attitude’ not to set limit for myself. I believe that I should keep
+                                in mind that I need to learn always to communicate with people in various fields and emphasize with them.
+                                My goal is to keep evolving myself always with open mindset, without setting any limit in my growth.
+
                                 </div>
                             </div>
                             </Observer2>
-                            <Observer2>
-                            <div className="introduce-text-container5">
-                                <div className="introduce-text">
-                                   bvvcbvcbvdgfwerqwsadas sectetur, adiqweqweqweqw
-                                </div>
-                            </div>
-                            </Observer2> */}
                         </div>
+                     
                         
                         <div className="road-list-title">
                         <Observer2>
@@ -815,13 +815,16 @@ function AboutMe({match, history }) {
                                 </div>
                             </div>
                             </Observer2>
-                            {/* <Observer2>
-                            <div className="introduce-text-container5">
+                        </div>
+
+                        <div className="introduce-wraper-m">
+                            <Observer2>
+                            <div className="introduce-text-container">
                                 <div className="introduce-text">
-                                   bvvcbvcbvdgfwerqwsadas sectetur, adiqweqweqweqw
+                                I’ve learned and looked for the most effective, efficient way to influence all over the world. I strongly believe that this website  can be one of options. I’m planning to discuss idea with people all around the world and come up with new idea to distribute positive impact on this world. Would you join me?
                                 </div>
                             </div>
-                            </Observer2> */}
+                            </Observer2>
                         </div>
 
                         <div className="contact-section-wraper">

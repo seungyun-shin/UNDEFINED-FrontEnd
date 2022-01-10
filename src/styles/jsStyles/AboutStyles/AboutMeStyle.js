@@ -267,7 +267,51 @@ export const AboutMeStyleCom = styled.div`
         color:#dfd3c3;
         margin-bottom: 13%;
         height: 100vh;
+
+        @media screen and (max-width: 800px) {
+            display: none;
+            height: 0;
+        }
     }
+
+    .introduce-wraper-m{
+        transition: ease-out 0.7s;
+        max-width: 1500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color:#dfd3c3;
+        margin-bottom: 13%;
+        /* height: 100vh; */
+
+        height: 0;
+        display: none;
+
+        @media screen and (max-width: 800px) {
+            display: flex;
+            height: 100vh;
+        }
+
+        .introduce-text-container{
+            display: none;
+            padding-left: 5%;
+            padding-right: 5%;
+            
+            @media screen and (max-width: 800px) {
+                display: flex;
+            }
+        }
+
+        .introduce-text{
+            display: none;
+            
+            @media screen and (max-width: 800px) {
+                display: flex;
+            }
+        }
+    }
+
     .introduce-text{
         /* font-size: 3.6rem; */
         font-size: 3vw;

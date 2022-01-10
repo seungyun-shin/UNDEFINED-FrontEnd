@@ -123,12 +123,12 @@ function App() {
 
   }, []);
 
-  const customHistory = createBrowserHistory();
+  // const customHistory = createBrowserHistory();
 
   return (
     <>
       {/* <EarthModel/> */}
-      <BrowserRouter history={customHistory}>
+      {/* <BrowserRouter history={customHistory}> */}
         {/* <IcoshadrenScreen/> */}
         <IcoshadrenModel/>
         <Header/>
@@ -155,21 +155,10 @@ function App() {
                   {/* memory */}
                     <Route path="/MemoryFullGallery" component={MemoryFullGallery}/>
                     <Route path="/MemoryPhotoGallery" component={MemoryPhotoGallery}/>
-{/* 
-                    <Route path="/Galapagos" component={Galapagos}/>
-                    <Route path="/ElCalafate" component={ElCalafate}/>
-                    <Route path="/Toress" component={Toress}/>
-                    <Route path="/ElCharten" component={ElCharten}/>
-                    <Route path="/Copacabana" component={Copacabana}/>
-                    <Route path="/Uyuni" component={Uyuni}/>
-                    <Route path="/Cusco" component={Cusco}/>
-                    <Route path="/Macchuppichu" component={Macchuppichu}/>
-                    <Route path="/Lapaz" component={Lapaz}/>
-                    <Route path="/Santiago" component={Santiago}/> */}
                     <Route path="/SSYProject" component={SSYProject}/>
                     <Route path="/Thanks" component={Thanks}/>
-                  {/* <Route exact path="/MemoryScreen" component={Earth2ModelFrame}/> */}
-                  <Route exact path="/MemoryScreen" component={({ history }) => { window.appHistory = history; return <Earth2ModelFrame />;}}/>
+                    <Route exact path="/MemoryScreen" component={Earth2ModelFrame}/>
+                  {/* <Route exact path="/MemoryScreen" component={({ history }) => { window.appHistory = history; return <Earth2ModelFrame />;}}/> */}
 
                   <Route path="/WorkScreen" component={WorkScreen}/>
                   <Route path="/WorkScreenART" component={WorkScreenART}/>
@@ -228,7 +217,7 @@ function App() {
                 </Switch>
               </AnimatePresence>
         </div>
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
       {/* <Footer/> */}
     </>
   );
