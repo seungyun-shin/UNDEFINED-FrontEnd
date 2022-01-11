@@ -11,7 +11,7 @@ export const AboutMeStyleCom = styled.div`
             height: 96vh;
         }
         @media screen and (max-width: 750px) {
-            height: 96vh;
+            height: 76vh;
         }
     }
 
@@ -21,7 +21,7 @@ export const AboutMeStyleCom = styled.div`
             height: 63vh;
         }
         @media screen and (max-width: 750px) {
-            height: 63vh;
+            height: 43vh;
         }
 
         /* @media screen and (max-width: 650px) {
@@ -62,10 +62,12 @@ export const AboutMeStyleCom = styled.div`
     .contents-container-full{
         opacity:0;
         position: fixed;
+        /* position: sticky; */
         top: 0;
         left: 0;
         width: 100%;
         overflow: hidden;
+        background: #161616;
     }
     .main-container2{
         display: flex;
@@ -222,7 +224,8 @@ export const AboutMeStyleCom = styled.div`
                 font-size: 8vw;
             }
             @media screen and (max-width: 500px) {
-                font-size: 8.7vw;
+                /* font-size: 8.7vw; */
+                font-size: 13.9vw;
             }
         }
 
@@ -290,7 +293,7 @@ export const AboutMeStyleCom = styled.div`
 
         @media screen and (max-width: 800px) {
             display: flex;
-            height: 100vh;
+            height: 90vh;
         }
 
         .introduce-text-container{
@@ -463,6 +466,10 @@ export const AboutMeStyleCom = styled.div`
             /* max-width: 1300px; */
         }
 
+        .road-right{
+            text-align: right;
+        }
+
         .road-content{
             display: flex;
             align-items: center;
@@ -471,6 +478,15 @@ export const AboutMeStyleCom = styled.div`
             line-height: 1.4;
             margin: 4.32vh 0;
             color: #dfd3c3;
+
+
+
+            @media screen and (max-width: 1100px) {
+                font-size: 2vw;
+            }
+            @media screen and (max-width: 600px) {
+                font-size: 3.5vw;
+            }
         }
     }
 

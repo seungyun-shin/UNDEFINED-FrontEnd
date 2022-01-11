@@ -22,10 +22,10 @@ function Message({ children }) {
                         <i className="fas fa-user-edit"></i>
                     </div>
                     <div className="description">
-                        업데이트 중인 페이지입니다.
+                        <span> 업데이트 중인 페이지입니다. </span>
                     </div>
                     <div className="eng-description">
-                        This page is being updated.
+                        <span> This page is being updated.</span>
                     </div>
                 </div>
             </UpdatingScreenStyleCom>

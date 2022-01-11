@@ -22,10 +22,10 @@ function Message({ children }) {
                         <i className="fas fa-user-lock"></i>
                     </div>
                     <div className="description">
-                        권한이 필요한 보안 문서 입니다. 관리자에게 문의 주세요.
+                        <span>권한이 필요한 보안 문서 입니다. 관리자에게 문의 주세요.</span>
                     </div>
                     <div className="eng-description">
-                        This page requires access rights. Please Log on with administrator privileges, or contact your administrator.
+                        <span>This page requires access rights. Please Log on with administrator privileges, or contact your administrator.</span>
                     </div>
                 </div>
             </WarningScreenStyleCom>

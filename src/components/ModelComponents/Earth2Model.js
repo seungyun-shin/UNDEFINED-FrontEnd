@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from 'react'
 import { useFrame, useLoader  } from '@react-three/fiber'
 import { TextureLoader } from "three";
 import * as THREE from "three";
+import gsap from 'gsap'
 
 import EarthDayMap from '../../assets/images/models/Earth2Model/8k_earth_daymap.jpg' 
 import EarthNormalMap from '../../assets/images/models/Earth2Model/8k_earth_normal_map.jpg' 
@@ -85,6 +86,18 @@ function Earth2Model( props ) {
     const infoShowingDown = (e) => {
         props.countryInfo.current.style.display = 'none';
     }
+
+    useEffect(() => {
+
+        const tl = gsap.timeline();
+
+        tl.to('.guide-container', {
+            duration: 1,
+            opacity: 1,
+            ease: "power3.inOut",
+        });
+
+    }, [])
 
     return (
         <>

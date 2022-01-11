@@ -138,6 +138,7 @@ function AboutMe({match, history }) {
 
         document.body.style.background = `#161616`
         document.body.style.height = `${scrollRef.current.getBoundingClientRect().height}px`
+        
         // document.scrollContainer.current.style.height = `${scrollRef.current.getBoundingClientRect().height}px`
         // document.querySelector('.overall-Layout').style.background = `#191919`
         // document.querySelector('.overall-Layout').style.height = `${scrollRef.current.getBoundingClientRect().height}px`
@@ -183,8 +184,8 @@ function AboutMe({match, history }) {
 
 
         return () => {
-            document.body.style.background = `black`
-            document.body.style.height = `0px`
+            // document.body.style.background = `black`
+            // document.body.style.height = `0px`
             // document.querySelector('.overall-Layout').style.height = `0px`
         }
 
@@ -199,10 +200,20 @@ function AboutMe({match, history }) {
 
             // console.log('//////',window.scrollY)
             // console.log('///',skewConfigs.rounded)
+            // console.log('///',skewConfigs.previous)
             
-            skewConfigs.current = window.scrollY;
+            // skewConfigs.current = window.scrollY;
+
+            skewConfigs.current = window.pageYOffset;
             skewConfigs.previous += (skewConfigs.current - skewConfigs.previous) * skewConfigs.ease
             skewConfigs.rounded = Math.round(skewConfigs.previous * 100) / 100;
+            
+            // console.log('//////',window.scrollY)
+            // console.log('//////',window.pageYOffset)
+            // console.log('///',skewConfigs.rounded)
+            // console.log('///',skewConfigs.previous)
+
+            
     
             //varibles
             // const difference = skewConfigs.current - skewConfigs.rounded;
@@ -212,8 +223,10 @@ function AboutMe({match, history }) {
     
             //
             if (scrollRef.current !== null ) {
+                
                 // scrollRef.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0) skewY(${skew}deg)`
-                scrollRef.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0)`
+                // scrollRef.current.style.transform = `translate3d(0, -${skewConfigs.rounded}px, 0)`
+                scrollRef.current.style.transform = `translate3d(0, -${skewConfigs.previous}px, 0)`
             }
 
             if(window.scrollY < 2100){
@@ -236,6 +249,8 @@ function AboutMe({match, history }) {
 
         return () => {
             cancelAnimationFrame(frameID)
+            document.body.style.background = `black`
+            document.body.style.height = `0px`
         }
     }, [])
 
@@ -255,7 +270,9 @@ function AboutMe({match, history }) {
         ease: .1,
         current: 0,
         previous: 0,
-        rounded: 0
+        rounded: 0,
+        Yprevious:0,
+        difference: 0,
     }
     
     return (
@@ -726,45 +743,45 @@ function AboutMe({match, history }) {
                             <li className="road-line"></li>
                             </Observer3>
                             
-                            <li className="road-content"> <span>Hankuk University of Foreign Studies - International Sports Industry</span> <span>2013.03 - 2020.07</span></li>
+                            <li className="road-content"> <span>Hankuk University of Foreign Studies - International Sports Industry</span> <span className='road-right'>2013.03 - 2020.07</span></li>
                             
                             <Observer3>
                             <li className="road-line"></li>
                             </Observer3>
-                            <li className="road-content"> <span>PYD in New York, Manhattan </span> <span>2014.08 - 2015.02</span></li>
+                            <li className="road-content"> <span>PYD in New York, Manhattan </span> <span className='road-right'>2014.08 - 2015.02</span></li>
                             
                             <Observer3>
                             <li className="road-line"></li>
                             </Observer3>
-                            <li className="road-content"> <span>Military Duty</span> <span>2015.08 - 2017.05</span></li>
+                            <li className="road-content"> <span>Military Duty</span> <span className='road-right'>2015.08 - 2017.05</span></li>
                             
                             <Observer3>
                             <li className="road-line"></li>
                             </Observer3>
-                            <li className="road-content"> <span>Sports Industry, Seoul</span> <span>2017.12 - 2018.02</span></li>
+                            <li className="road-content"> <span>Sports Industry, Seoul</span> <span className='road-right'>2017.12 - 2018.02</span></li>
                             
                             <Observer3>
                             <li className="road-line"></li>
                             </Observer3>
-                            <li className="road-content"> <span>SsangYong Information & Communications, Jakarta Palembang, Asian games </span> <span>2018.07 - 2018.09</span></li>
+                            <li className="road-content"> <span>SsangYong Information & Communications, Jakarta Palembang, Asian games </span> <span className='road-right'>2018.07 - 2018.09</span></li>
                             
                             <Observer3>
                             <li className="road-line"></li>
                             </Observer3>
-                            <li className="road-content"> <span>Chorock Soft, Seoul - AI Development Team </span> <span>2019.07.02 - current</span></li>
-                            <li className="road-content"> <span> - Visualizing Data with Python, MICHIGAN</span> <span>2019</span></li>
-                            <li className="road-content"> <span> - Machine Learning, Stanford</span> <span>2020</span></li>
-                            <li className="road-content"> <span> - Sport special development  </span> <span>Inventor</span></li>
-                            <li className="road-content"> <span> - Sport special development  </span> <span>Inventor</span></li>
-                            <li className="road-content"> <span> - Sport special development  </span> <span>Inventor</span></li>
-                            <li className="road-content"> <span> - Demand and Vacancy Forecasting DeepLearning Models for Train</span> <span>Detail</span></li>
-                            <li className="road-content"> <span> - Real Estate Sentiment Analysis Natural Language Processing</span> <span>Detail</span></li>
-                            <li className="road-content"> <span> - DeepLearning Posture Analysis and Similarity Analysis</span> <span>Detail</span></li>
-                            <li className="road-content"> <span> - Facial Recognition Mask, Gender, Age Detection Deep Learning</span> <span>Detail</span></li>
-                            <li className="road-content"> <span> - Cryptocurrency Prediction Machine Learning Model</span> <span>Detail</span></li>
-                            <li className="road-content"> <span> - Deep Learning Recruitment Recommendation Model</span> <span>Detail</span></li>
-                            <li className="road-content"> <span> - Pictograms Supplement Model For The Visually Impaired</span> <span>Detail</span></li>
-                            <li className="road-content"> <span> - Domestic Tourist Attractions Recommendation Model</span> <span>Detail</span></li>
+                            <li className="road-content"> <span>Chorock Soft, Seoul - AI Development Team </span> <span className='road-right'>2019.07.02 - current</span></li>
+                            <li className="road-content"> <span> - Visualizing Data with Python, MICHIGAN</span> <span className='road-right'>2019</span></li>
+                            <li className="road-content"> <span> - Machine Learning, Stanford</span> <span className='road-right'>2020</span></li>
+                            <li className="road-content"> <span> - Sport special development  </span> <span className='road-right'>Inventor</span></li>
+                            <li className="road-content"> <span> - Sport special development  </span> <span className='road-right'>Inventor</span></li>
+                            <li className="road-content"> <span> - Sport special development  </span> <span className='road-right'>Inventor</span></li>
+                            <li className="road-content"> <span> - Demand and Vacancy Forecasting DeepLearning Models for Train</span> <span className='road-right'>Detail</span></li>
+                            <li className="road-content"> <span> - Real Estate Sentiment Analysis Natural Language Processing</span> <span className='road-right'>Detail</span></li>
+                            <li className="road-content"> <span> - DeepLearning Posture Analysis and Similarity Analysis</span> <span className='road-right'>Detail</span></li>
+                            <li className="road-content"> <span> - Facial Recognition Mask, Gender, Age Detection Deep Learning</span> <span className='road-right'>Detail</span></li>
+                            <li className="road-content"> <span> - Cryptocurrency Prediction Machine Learning Model</span> <span className='road-right'>Detail</span></li>
+                            <li className="road-content"> <span> - Deep Learning Recruitment Recommendation Model</span> <span className='road-right'>Detail</span></li>
+                            <li className="road-content"> <span> - Pictograms Supplement Model For The Visually Impaired</span> <span className='road-right'>Detail</span></li>
+                            <li className="road-content"> <span> - Domestic Tourist Attractions Recommendation Model</span> <span className='road-right'>Detail</span></li>
                             <Observer3>
                             <li className="road-line"></li>
                             </Observer3>

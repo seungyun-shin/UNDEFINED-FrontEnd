@@ -151,7 +151,7 @@ function IcoshadrenModel() {
                             if(meshToggle == 1){
                                 gsap.to( camera.position, {
                                     duration: 3,
-                                    z: 1.39,
+                                    z: 1.7,
                                 } );
                 
                                 gsap.to( customPass.uniforms[ "noiseblur" ], {
@@ -271,7 +271,7 @@ function IcoshadrenModel() {
             
                             scene.rotation.x = - time * 6;
                             scene.rotation.y =  time * 6;
-                            scene.position.z = 0.2 * Math.sin(time*5)
+                            scene.position.z = 0.2 * Math.sin(time*3)
             
                             customPass.uniforms.time.value = time;
                             customPass.uniforms.howmuchrgbshifticanhaz.value = mouse/5;
