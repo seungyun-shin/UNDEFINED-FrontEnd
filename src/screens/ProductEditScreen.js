@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import axios from 'axios'
+// import axios from 'axios'
+import api from '../components/componentParts/ApiAxios'
 
 //transition Animation
 import {AnimatePresence, motion} from 'framer-motion'
@@ -77,7 +78,7 @@ function ProductEditScreen({match, history}) {
                 }
             }
 
-            const {data} = await axios.post('/api/products/upload/', formData, config)
+            const {data} = await api.post('/api/products/upload/', formData, config)
 
             setImage(data)
             setUploading(false)

@@ -35,11 +35,19 @@ import { SRLWrapper } from "simple-react-lightbox";
 import useWindowSize from "../../assets/etc/useWindowSize";
 
 
-import MainImg from '../../assets/images/about/project.jpg'
-import overlay from '../../assets/images/about/project2.jpg'
+import MainImg from '../../assets/images/about/selimage2.png'
+import overlay from '../../assets/images/about/frontend.png'
 // import Img2 from '../../assets/images/memory/project/1170/project2.jpg'
 
-function AboutMe({match, history }) {
+function AboutMe({match, history }) { 
+
+    let picsData = { 
+        MainImg: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/selimage2.png",
+        overlay: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/frontend.png",
+        frontendimg: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/frontend.png",
+        backendimg: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/backend.png",
+        deployimg: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/deploy.png",
+    }
 
     const home = gsap.timeline();
 
@@ -417,7 +425,7 @@ function AboutMe({match, history }) {
                             <div className="AI-stack-pic-wraper">
                             <Observer6>
                                 <div className="AI-stack-pic-container">
-                                    <img src={MainImg}/>
+                                    <img src={picsData['MainImg']}/>
                                 </div>
                             </Observer6>
                             </div>
@@ -547,7 +555,7 @@ function AboutMe({match, history }) {
                             <div className="small-stack-pic-wraper">
                             <Observer7>
                                 <div className="small-stack-pic-container">
-                                    <img src={MainImg}/>
+                                    <img src={picsData['frontendimg']}/>
                                 </div>
                             </Observer7>
                             </div>
@@ -570,7 +578,7 @@ function AboutMe({match, history }) {
                             <div className="small-stack-pic-wraper">
                             <Observer8>
                                 <div className="small-stack-pic-container2">
-                                    <img src={MainImg}/>
+                                    <img src={picsData['backendimg']}/>
                                 </div>
                             </Observer8>
                             </div>
@@ -655,7 +663,7 @@ function AboutMe({match, history }) {
                             <div className="small-stack-pic-wraper">
                             <Observer9>
                                 <div className="small-stack-pic-container3">
-                                    <img src={MainImg}/>
+                                    <img src={picsData['deployimg']}/>
                                 </div>
                             </Observer9>
                             </div>

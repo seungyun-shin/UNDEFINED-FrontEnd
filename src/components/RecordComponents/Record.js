@@ -2,8 +2,6 @@ import React, {useState, useEffect } from 'react'
 import { RecordStyleCom } from "../../styles/jsStyles/RecordStyles/RecordStyle"
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 
-import axios  from 'axios'
-
 function Record( {record} ) {
 
     return (

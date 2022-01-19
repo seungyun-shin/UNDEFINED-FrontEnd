@@ -15,7 +15,6 @@ import { ThemeProvider } from 'styled-components';
 import theme from './styles/theme'
 import SimpleReactLightbox from 'simple-react-lightbox'
 
-
 import { HashRouter as BrowserRouter, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from "history";
 const customHistory = createBrowserHistory();

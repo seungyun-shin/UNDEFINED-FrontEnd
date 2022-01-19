@@ -1,4 +1,6 @@
-import axios from 'axios'
+// import axios from 'axios'
+import api from '../components/componentParts/ApiAxios'
+// import api from '../components/componentParts/ApiAxios'
 import { PRODUCT_DETAILS_SUCCESS } from '../constants/productConstants'
 import {
     RECORD_LIST_REQUEST,
@@ -26,7 +28,7 @@ export const listRecords = () => async(dispatch) => {
     try {
         dispatch({ type: RECORD_LIST_REQUEST})
 
-        const { data } = await axios.get('api/records')
+        const { data } = await api.get('/api/records/')
 
         dispatch({
             type:RECORD_LIST_SUCCESS,
@@ -47,7 +49,7 @@ export const listRecordDetails = (id) => async(dispatch) => {
     try {
         dispatch({ type: RECORD_DETAILS_REQUEST})
 
-        const { data } = await axios.get(`api/records/${id}/`)
+        const { data } = await api.get(`api/records/${id}/`)
 
         dispatch({
             type:RECORD_DETAILS_SUCCESS,
@@ -82,7 +84,7 @@ export const deleteRecord = (id) => async (dispatch, getState) => {
             }
         }
 
-        const {data} = await axios.delete(
+        const {data} = await api.delete(
             `/api/records/delete/${id}/`,
             config
         )
@@ -118,7 +120,7 @@ export const createRecord = (id) => async (dispatch, getState) => {
             }
         }
 
-        const {data} = await axios.post(
+        const {data} = await api.post(
             `/api/records/create/`,
             {},
             config
@@ -157,7 +159,7 @@ export const updateRecord = (record) => async (dispatch, getState) => {
             }
         }
 
-        const {data} = await axios.put(
+        const {data} = await api.put(
             `/api/records/update/${record._id}/`,
             record,
             config
