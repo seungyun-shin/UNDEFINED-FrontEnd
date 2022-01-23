@@ -84,10 +84,14 @@ export const OrderScreenStyleCom = styled.div`
                 }
 
                 .cart-item-name{
-
+                    text-align: center;
                     a{
                         color:white;
                     }
+                }
+
+                .cart-item-price{
+                    text-align:center;
                 }
             }
 

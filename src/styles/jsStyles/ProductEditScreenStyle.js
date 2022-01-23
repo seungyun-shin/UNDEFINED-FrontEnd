@@ -16,7 +16,8 @@ export const ProductEditScreenStyleCom = styled.div`
         display: flex;
         justify-content:center;
         align-items: center;
-        color: white;
+        /* color: white; */
+        color: rgba(255,255,255,.9);
         
         
         .register-wraper{
@@ -113,15 +114,17 @@ export const ProductEditScreenStyleCom = styled.div`
             }
 
             .register-label{
-                color: white;
+                /* color: white; */
+                color: rgba(255,255,255,.9);
             }
             .password-label{
-                color: white;
+                /* color: white; */
+                color: rgba(255,255,255,.9);
             }
 
             a{
                 text-decoration: none;
-                color: skyblue;
+                color: #dfd3c3;
 
             }
         }
@@ -131,7 +134,8 @@ export const ProductEditScreenStyleCom = styled.div`
             margin-bottom: 13px;
 
             .checkbox-label{
-                color: white;
+                /* color: white; */
+                color: rgba(255,255,255,.9);
                 margin-left: 2%;
             }
 

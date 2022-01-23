@@ -14,7 +14,8 @@ export const WorkDetailETCStyleCom = styled.div`
         
         .work-detail-title{
             flex-direction: column;
-            color: white;
+            /* color: white; */
+            color: rgba(255,255,255,.9);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -66,7 +67,8 @@ export const WorkDetailETCStyleCom = styled.div`
     max-width: 1300px;
         
         .project-purpose-title{
-            color: white;
+            /* color: white; */
+            color: rgba(255,255,255,.9);
             /* font-size: 1.9rem; */
             font-size: 1.9rem;
             font-weight: 900;
@@ -87,7 +89,8 @@ export const WorkDetailETCStyleCom = styled.div`
         .project-purpose-content{
             margin-top: 3%;
             padding-left: 1.9%;
-            color:white;
+            /* color:white; */
+            color: rgba(255,255,255,.9);
             
             font-size: 18px;
             font-size-adjust: 0.5;
@@ -126,7 +129,8 @@ export const WorkDetailETCStyleCom = styled.div`
             
             .project-small-title{
                 /* color: white; */
-                color: white;
+                /* color: white; */
+                color: rgba(255,255,255,.9);
                 font-size: 20px;
                 /* font-weight: 900; */
                 opacity: 1;
@@ -148,7 +152,8 @@ export const WorkDetailETCStyleCom = styled.div`
         .project-summary-content{
             margin-top: 3%;
             padding-left: 1.9%;
-            color:white;
+            /* color:white; */
+            color: rgba(255,255,255,.9);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -156,6 +161,7 @@ export const WorkDetailETCStyleCom = styled.div`
 
         .project-basic-info{
             color: white;
+            color: rgba(255,255,255,.9);
             /* font-weight: 700; */
             margin-top: 3%;
             padding-left: 1.9%;
@@ -188,14 +194,16 @@ export const WorkDetailETCStyleCom = styled.div`
     }
 
     .project-workflow-title{
-        color: white;
+        /* color: white; */
+            color: rgba(255,255,255,.9);
         font-size: 1.9rem;
         font-weight: 900;
         opacity: 0.79;
         margin-top: 3%;
     }
     .project-workflow-subtitle{
-        color: white;
+        /* color: white; */
+            color: rgba(255,255,255,.9);
         font-size: 1.6rem;
         font-weight: 900;
         opacity: 0.79;
@@ -203,7 +211,8 @@ export const WorkDetailETCStyleCom = styled.div`
         padding-left: 2%;
     }
     .project-workflow-description{
-        color: white;
+        /* color: white; */
+            color: rgba(255,255,255,.9);
         font-size: 1.3rem;
         margin-top: 2%;
         margin-bottom: 5%;

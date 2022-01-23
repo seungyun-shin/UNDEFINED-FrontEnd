@@ -218,17 +218,17 @@ function Thanks({match, history }) {
                             </div>
                             <div className="biarrow-container">
                                 <div className="arrow-container">
-                                    <div className="arrow-box">
+                                    {/* <div className="arrow-box">
                                         <LinkStyleCom to="/Thanks" style={{textDecoration:"none"}}><LeftArrow/></LinkStyleCom>
                                         <span>&nbsp;&nbsp;PREV</span> 
-                                    </div>
+                                    </div> */}
                                     <div className="arrow-box">
                                         <LinkStyleCom to="/MemoryScreen" style={{textDecoration:"none"}}>BACK TO MEMORY</LinkStyleCom>
                                     </div>
-                                    <div className="arrow-box">
+                                    {/* <div className="arrow-box">
                                         <span>NEXT&nbsp;&nbsp;</span>
                                         <LinkStyleCom to="/SSYProject" style={{textDecoration:"none"}}><RightArrow/></LinkStyleCom>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

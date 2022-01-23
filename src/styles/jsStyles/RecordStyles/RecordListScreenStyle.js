@@ -16,7 +16,8 @@ export const RecordListScreenStyleCom = styled.div`
         display: flex;
         justify-content:center;
         align-items: center;
-        color: white;
+        /* color: white; */
+        color: rgba(255,255,255,.9);
 
         a{
             color: white;
@@ -73,7 +74,8 @@ export const RecordListScreenStyleCom = styled.div`
 
             }
             .password-label{
-                color: white;
+                /* color: white; */
+                color: rgba(255,255,255,.9);
             }
         }
 

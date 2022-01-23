@@ -16,7 +16,8 @@ export const UserEditScreenStyleCom = styled.div`
         display: flex;
         justify-content:center;
         align-items: center;
-        color: white;
+        /* color: white; */
+        color: rgba(255,255,255,.9);
         
         
         .register-wraper{
@@ -112,10 +113,12 @@ export const UserEditScreenStyleCom = styled.div`
             }
 
             .register-label{
-                color: white;
+                /* color: white; */
+                color: rgba(255,255,255,.9);
             }
             .password-label{
-                color: white;
+                /* color: white; */
+                color: rgba(255,255,255,.9);
             }
 
             a{
@@ -130,7 +133,8 @@ export const UserEditScreenStyleCom = styled.div`
             margin-bottom: 13px;
 
             .checkbox-label{
-                color: white;
+                /* color: white; */
+                color: rgba(255,255,255,.9);
                 margin-left: 2%;
             }
 

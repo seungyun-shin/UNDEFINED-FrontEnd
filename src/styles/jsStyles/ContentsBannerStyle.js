@@ -24,7 +24,8 @@ export const ContentsBannerStyleCom = styled.div`
             font-family: 'Romelio';
             font-size: 13rem;
             opacity: 0.5;
-            color: white;
+            /* color: white; */
+            color: rgba(255,255,255,.79);
 
             @media screen and (max-width: 850px) {
                 font-size: 11rem;
@@ -58,8 +59,10 @@ export const ContentsBannerStyleCom = styled.div`
             width: 100%;
             text-align: center;
             font-weight: 700;
-            color: white;
+            /* color: white; */
             font-family: 'Romelio';
+            
+            color: rgba(255,255,255,.39);
         }
 
     }

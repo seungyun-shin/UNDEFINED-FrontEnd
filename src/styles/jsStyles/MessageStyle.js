@@ -21,12 +21,16 @@ export const MessageStyleCom = styled.div`
         .message-content{
 
             /* background-color: cornflowerblue; */
-            background-color: #dfd3c3;
+            background-color: #161616;
             padding: 16px;
             border-radius: 16px;
             text-align: center;
             min-width: 160px;
 
+        }
+        a{
+            color: #dfd3c3;
+            font-weight: 900;
         }
     }
     

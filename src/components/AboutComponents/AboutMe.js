@@ -35,18 +35,30 @@ import { SRLWrapper } from "simple-react-lightbox";
 import useWindowSize from "../../assets/etc/useWindowSize";
 
 
-import MainImg from '../../assets/images/about/selimage2.png'
-import overlay from '../../assets/images/about/frontend.png'
+import MainImg from '../../assets/images/about/selimage-origin.png'
+import overlay from '../../assets/images/about/selimage.png'
 // import Img2 from '../../assets/images/memory/project/1170/project2.jpg'
 
 function AboutMe({match, history }) { 
 
+    
+    const [showModal, setShowModal] = useState(false);
+
+    const openModal = () => {
+        setShowModal(true);
+      };
+    
+      const closeModal = () => {
+        setShowModal(false);
+      };
+
     let picsData = { 
-        MainImg: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/selimage2.png",
-        overlay: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/frontend.png",
-        frontendimg: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/frontend.png",
-        backendimg: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/backend.png",
-        deployimg: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/deploy.png",
+        MainImg: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/selimage-origin.png",
+        overlay: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/selimage.png",
+        AImain: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/AImain.png",
+        frontendmain: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/frontendmain.png",
+        backendmain: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/backendmain.png",
+        deploymain: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/deploymain.png",
     }
 
     const home = gsap.timeline();
@@ -425,7 +437,7 @@ function AboutMe({match, history }) {
                             <div className="AI-stack-pic-wraper">
                             <Observer6>
                                 <div className="AI-stack-pic-container">
-                                    <img src={picsData['MainImg']}/>
+                                    <img src={picsData['AImain']}/>
                                 </div>
                             </Observer6>
                             </div>
@@ -555,7 +567,7 @@ function AboutMe({match, history }) {
                             <div className="small-stack-pic-wraper">
                             <Observer7>
                                 <div className="small-stack-pic-container">
-                                    <img src={picsData['frontendimg']}/>
+                                    <img src={picsData['frontendmain']}/>
                                 </div>
                             </Observer7>
                             </div>
@@ -578,7 +590,7 @@ function AboutMe({match, history }) {
                             <div className="small-stack-pic-wraper">
                             <Observer8>
                                 <div className="small-stack-pic-container2">
-                                    <img src={picsData['backendimg']}/>
+                                    <img src={picsData['backendmain']}/>
                                 </div>
                             </Observer8>
                             </div>
@@ -663,7 +675,7 @@ function AboutMe({match, history }) {
                             <div className="small-stack-pic-wraper">
                             <Observer9>
                                 <div className="small-stack-pic-container3">
-                                    <img src={picsData['deployimg']}/>
+                                    <img src={picsData['deploymain']}/>
                                 </div>
                             </Observer9>
                             </div>
@@ -717,7 +729,6 @@ function AboutMe({match, history }) {
                                         <span><i className="fas fa-hat-cowboy idjango"></i>&nbsp;Django</span>
                                         <span><i className="fas fa-hat-cowboy-side idjangodrf"></i>&nbsp;DRF</span>
                                         <span><i className="fas fa-square inginx"></i>&nbsp;Nginx</span>
-                                        <span><i className="fas fa-horse igunicorn"></i>&nbsp;Gunicorn</span>
                                         <span><i className="fab fa-docker idocker"></i>&nbsp;Docker</span>
                                         <span><i className="fab fa-aws iec2"></i>&nbsp;EC2</span>
                                     </div>
@@ -725,7 +736,6 @@ function AboutMe({match, history }) {
                                         <span><i className="fas fa-hat-cowboy idjango"></i>&nbsp;Django</span>
                                         <span><i className="fas fa-hat-cowboy-side idjangodrf"></i>&nbsp;DRF</span>
                                         <span><i className="fas fa-square inginx"></i>&nbsp;Nginx</span>
-                                        <span><i className="fas fa-horse igunicorn"></i>&nbsp;Gunicorn</span>
                                         <span><i className="fab fa-docker idocker"></i>&nbsp;Docker</span>
                                         <span><i className="fab fa-aws iec2"></i>&nbsp;EC2</span>
                                     </div>
@@ -751,45 +761,45 @@ function AboutMe({match, history }) {
                             <li className="road-line"></li>
                             </Observer3>
                             
-                            <li className="road-content"> <span>Hankuk University of Foreign Studies - International Sports Industry</span> <span className='road-right'>2013.03 - 2020.07</span></li>
+                            <li className="road-content"> <span>Hankuk University of Foreign Studies - International Sports Industry</span> <span className='road-right'><LinkStyleCom to='/WorkDetailRC'><span >2013.03 - 2020.07</span></LinkStyleCom></span></li>
                             
                             <Observer3>
                             <li className="road-line"></li>
                             </Observer3>
-                            <li className="road-content"> <span>PYD in New York, Manhattan </span> <span className='road-right'>2014.08 - 2015.02</span></li>
+                            <li className="road-content"> <span>PYD in New York, Manhattan</span> <span className='road-right'><LinkStyleCom to='/WorkDetailRC'><span >2014.08 - 2015.02</span></LinkStyleCom></span></li>
                             
                             <Observer3>
                             <li className="road-line"></li>
                             </Observer3>
-                            <li className="road-content"> <span>Military Duty</span> <span className='road-right'>2015.08 - 2017.05</span></li>
+                            <li className="road-content"> <span>Military Duty</span> <span className='road-right'><LinkStyleCom to='/WorkDetailRC'><span >2015.08 - 2017.05</span></LinkStyleCom></span></li>
                             
                             <Observer3>
                             <li className="road-line"></li>
                             </Observer3>
-                            <li className="road-content"> <span>Sports Industry, Seoul</span> <span className='road-right'>2017.12 - 2018.02</span></li>
+                            <li className="road-content"> <span>Sports Industry, Seoul</span> <span className='road-right'><LinkStyleCom to='/WorkDetailRC'><span >2017.12 - 2018.02</span></LinkStyleCom></span></li>
                             
                             <Observer3>
                             <li className="road-line"></li>
                             </Observer3>
-                            <li className="road-content"> <span>SsangYong Information & Communications, Jakarta Palembang, Asian games </span> <span className='road-right'>2018.07 - 2018.09</span></li>
+                            <li className="road-content"> <span>SsangYong Information & Communications, Jakarta Palembang, Asian games </span> <span className='road-right'><LinkStyleCom to='/WorkDetailRC'><span >2018.07 - 2018.09</span></LinkStyleCom></span></li>
                             
                             <Observer3>
                             <li className="road-line"></li>
                             </Observer3>
-                            <li className="road-content"> <span>Chorock Soft, Seoul - AI Development Team </span> <span className='road-right'>2019.07.02 - current</span></li>
-                            <li className="road-content"> <span> - Visualizing Data with Python, MICHIGAN</span> <span className='road-right'>2019</span></li>
-                            <li className="road-content"> <span> - Machine Learning, Stanford</span> <span className='road-right'>2020</span></li>
-                            <li className="road-content"> <span> - Sport special development  </span> <span className='road-right'>Inventor</span></li>
-                            <li className="road-content"> <span> - Sport special development  </span> <span className='road-right'>Inventor</span></li>
-                            <li className="road-content"> <span> - Sport special development  </span> <span className='road-right'>Inventor</span></li>
-                            <li className="road-content"> <span> - Demand and Vacancy Forecasting DeepLearning Models for Train</span> <span className='road-right'>Detail</span></li>
-                            <li className="road-content"> <span> - Real Estate Sentiment Analysis Natural Language Processing</span> <span className='road-right'>Detail</span></li>
-                            <li className="road-content"> <span> - DeepLearning Posture Analysis and Similarity Analysis</span> <span className='road-right'>Detail</span></li>
-                            <li className="road-content"> <span> - Facial Recognition Mask, Gender, Age Detection Deep Learning</span> <span className='road-right'>Detail</span></li>
-                            <li className="road-content"> <span> - Cryptocurrency Prediction Machine Learning Model</span> <span className='road-right'>Detail</span></li>
-                            <li className="road-content"> <span> - Deep Learning Recruitment Recommendation Model</span> <span className='road-right'>Detail</span></li>
-                            <li className="road-content"> <span> - Pictograms Supplement Model For The Visually Impaired</span> <span className='road-right'>Detail</span></li>
-                            <li className="road-content"> <span> - Domestic Tourist Attractions Recommendation Model</span> <span className='road-right'>Detail</span></li>
+                            <li className="road-content"> <span>Chorock Soft, Seoul - AI Development Team </span> <span className='road-right'><LinkStyleCom to='/WorkDetailRC'><span >2019.07.02 - current</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - Coursera Visualizing Data with Python, MICHIGAN</span> <span className='road-right'><LinkStyleCom to='/Certificate'><span >2019</span></LinkStyleCom></span></li> 
+                            <li className="road-content"> <span> - Coursera Machine Learning, Stanford</span> <span className='road-right'><LinkStyleCom to='/Certificate'><span >2020</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - Sport special development  </span> <span className='road-right'><LinkStyleCom to='/Certificate'><span >Inventor</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - Sport special development  </span> <span className='road-right'><LinkStyleCom to='/Certificate'><span >Inventor</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - Sport special development  </span> <span className='road-right'><LinkStyleCom to='/Certificate'><span >Inventor</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - Demand and Vacancy Forecasting DeepLearning Models for Train</span> <span className='road-right'><LinkStyleCom to='/WorkDetailAI'><span >Detail</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - Real Estate Sentiment Analysis Natural Language Processing</span> <span className='road-right'><LinkStyleCom to='/WorkDetailNLP'><span >Detail</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - DeepLearning Posture Analysis and Similarity Analysis</span> <span className='road-right'><LinkStyleCom to='/WorkDetailPA'><span >Detail</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - Facial Recognition Mask, Gender, Age Detection Deep Learning</span> <span className='road-right'><LinkStyleCom to='/WorkDetailDT'><span >Detail</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - Cryptocurrency Prediction Machine Learning Model</span> <span className='road-right'><LinkStyleCom to='/WorkDetailBCP'><span >Detail</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - Deep Learning Recruitment Recommendation Model</span> <span className='road-right'><LinkStyleCom to='/WorkDetailAIHR'><span >Detail</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - Pictograms Supplement Model For The Visually Impaired</span> <span className='road-right'><LinkStyleCom to='/WorkDetailSB'><span >Detail</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - Domestic Tourist Attractions Recommendation Model</span> <span className='road-right'><LinkStyleCom to='/WorkDetailRC'><span >Detail</span></LinkStyleCom></span></li>
                             <Observer3>
                             <li className="road-line"></li>
                             </Observer3>
@@ -858,7 +868,7 @@ function AboutMe({match, history }) {
                             </Observer2>
                             <Observer2>
                             <div className="contact-info">
-                                <span>undefined@gmail.com</span>
+                                <span>undefined.shin@gmail.com</span>
                             </div>
                             </Observer2>
                         </div>

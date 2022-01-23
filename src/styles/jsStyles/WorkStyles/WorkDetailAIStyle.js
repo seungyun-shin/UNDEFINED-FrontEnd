@@ -16,7 +16,8 @@ export const WorkDetailAIStyleCom = styled.div`
     }
 
     .work-detail-container{
-        color: white;
+        /* color: white; */
+        color: rgba(255,255,255,.9);
         
         margin-top: 3rem;
 
@@ -37,7 +38,8 @@ export const WorkDetailAIStyleCom = styled.div`
         .work-detail-title{
             flex-direction: column;
             /* line-height: 6rem; */
-            color: white;
+            /* color: white; */
+            color: rgba(255,255,255,.9);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -171,7 +173,8 @@ export const WorkDetailAIStyleCom = styled.div`
     }
 
     .project-workflow-title{
-        color: white;
+        /* color: white; */
+        color: rgba(255,255,255,.9);
         font-size: 1.9rem;
         font-weight: 900;
         opacity: 0.79;
@@ -207,6 +210,7 @@ export const WorkDetailAIStyleCom = styled.div`
     }
     .project-workflow-description{
         color: white;
+        color: rgba(255,255,255,.9);
         font-size: 1.3rem;
         margin-top: 2%;
         margin-bottom: 5%;

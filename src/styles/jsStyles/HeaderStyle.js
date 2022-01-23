@@ -38,10 +38,17 @@ export const HeaderStyleCom = styled.div`
     }
 
     a {
-                    color: #FFF;
-                    font-size:17px;
-                    font-weight: 600;
-                }
+        /* color: #FFF; */
+        font-size:17px;
+        font-weight: 600;
+        /* opacity: 0.79; */
+        color: rgba(255,255,255,.79);
+        transition: 1s;
+
+        :hover{
+          color: white;
+        }
+    }
 
     .navbar {
       width: 100%;
@@ -91,9 +98,11 @@ export const HeaderStyleCom = styled.div`
 
 .nav-links {
   display: flex;
-  color: white;
+  /* color: white; */
   text-decoration: none;
   padding: 0.5rem 1rem;
+  
+  /* color: rgba(255,255,255,.79); */
   /* width: 65px; */
 }
 
@@ -102,10 +111,11 @@ export const HeaderStyleCom = styled.div`
   background-color: #000000;
   border-radius: 4px;
   transition: all 0.39s ease-out;
+  color: white;
 }
 
 .fa-bars {
-  color: #fff;
+  color: rgba(255,255,255,.79);
 }
 
 .nav-links-mobile {
@@ -168,6 +178,7 @@ export const HeaderStyleCom = styled.div`
     font-size: 5vw;
     font-family: Romelio;
     color: #dfd3c3;
+    opacity : 0.79;
   }
   
   .logout-hamburger{
@@ -275,12 +286,14 @@ export const HeaderStyleCom = styled.div`
     height: 100%;
     width: 100%;
     text-decoration: none;
-    color: #fff;
+    /* color: #fff; */
+    color: rgba(255,255,255,.79);
     padding: 16px;
     }
 
     .dropdown-link:hover{
       background-color: #000000;
+      color: white;
     }
 
 

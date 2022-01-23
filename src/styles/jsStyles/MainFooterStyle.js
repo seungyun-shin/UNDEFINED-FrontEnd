@@ -13,7 +13,8 @@ width: 100%;
 /* bottom: 6vh; */
 z-index: 139;
 
-color: white;
+/* color: white; */
+color: rgba(255,255,255,.79);
 /* font-size: 14.3px; */
 
 .mainfooter-container{
@@ -62,7 +63,8 @@ color: white;
                 font-weight: 600;
                 /* font-size: 1.3rem; */
                 font-size: 19px;
-                color: white;
+                /* color: white; */
+                color: rgba(255,255,255,.79);
 
                 @media screen and (max-width: 550px) {  
                     font-size: 14px;

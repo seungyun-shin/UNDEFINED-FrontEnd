@@ -108,7 +108,7 @@ export const MemoryDetailStyleCom = styled.div`
 
             img { 
                 width: calc(100% - 10px);
-                border: 5px solid black;
+                border: 5px solid rgba(0,0,0,0.39);
                 /* height: 100%; */
             }
         }

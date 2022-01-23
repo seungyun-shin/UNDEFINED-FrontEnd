@@ -21,11 +21,11 @@ export const ShopProductStyleCom = styled.div`
 
             @media ${props => props.theme.laptop2} {
                 width: 42.5vw;
-                height: 43vw;
+                height: 47.5vw;
             }
             @media ${props => props.theme.mobile3} {
                 width: 85vw;
-                height: 84.5vw;
+                height: 100vw;
             }
             @media ${props => props.theme.mobile7} {
                 margin-bottom: 3%;

@@ -22,6 +22,7 @@ export const LoginScreenStyleCom = styled.div`
         align-items: center;
         color: white;
         
+        color: rgba(255,255,255,.9);
         
         .login-wraper{
             position: relative;
@@ -101,15 +102,17 @@ export const LoginScreenStyleCom = styled.div`
             }
 
             .login-label{
-                color: white;
+                /* color: white; */
+                color: rgba(255,255,255,.9);
             }
             .password-label{
-                color: white;
+                /* color: white; */
+                color: rgba(255,255,255,.9);
             }
 
             a{
                 text-decoration: none;
-                color: skyblue;
+                color: #dfd3c3;
 
             }
             h3{

@@ -11,6 +11,7 @@ export const ShopSearchBoxStyleCom = styled.div`
 
         .input-search{
             padding: 13px;
+            opacity: 0.79;
             /* width: 130px;
             height: 50px; */
 
@@ -31,6 +32,7 @@ export const ShopSearchBoxStyleCom = styled.div`
             padding: 13px;
             font-weight: 700;
             cursor: pointer;
+            opacity: 0.79;
             
             @media screen and (max-width: 1000px) {
                 padding: 10px;
@@ -41,6 +43,10 @@ export const ShopSearchBoxStyleCom = styled.div`
             @media screen and (max-width: 500px) {
                 padding: 5px;
             }
+        }
+        .search-button:hover{
+            
+            /* opacity: 1; */
         }
     }
 `

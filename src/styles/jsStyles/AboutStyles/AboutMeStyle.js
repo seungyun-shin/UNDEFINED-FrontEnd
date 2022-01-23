@@ -140,19 +140,20 @@ export const AboutMeStyleCom = styled.div`
             /* width: 1500px; */
             /* height: 780px; */
             /* height: 700px; */
-            height: 90vh;
+            /* height: 90vh; */
+            height: 120vh;
             /* background-color: gray; */
             margin: 10px 0;
 
             @media screen and (max-width: 1100px) {
-                height: 70vh;
+                height: 90vh;
             }
 
             @media screen and (max-width: 800px) {
-                height: 60vh;
+                height: 75vh;
             }
             @media screen and (max-width: 500px) {
-                height: 50vh;
+                height: 55vh;
             }
         }
         .item-footer{
@@ -258,6 +259,13 @@ export const AboutMeStyleCom = styled.div`
         position: absolute;
         top: 90%;
         left: 10%;
+        @media screen and (max-width: 500px) {
+            left:-15%;
+            .sub-text{
+                white-space:nowrap; 
+                font-size: 12.9vw;
+            }
+        }
     }
 
     .introduce-wraper{
@@ -1158,5 +1166,18 @@ export const AboutMeStyleCom = styled.div`
         }
 
     }
+
+    a{
+        transition: 1s ease;
+        color: #dfd3c3;
+        /* opacity: 0.5; */
+        opacity: 1;
+        /* text-decoration: underline; */
+    }
+    a:hover{
+        opacity: 0.7;
+    }
+
+
     
 `

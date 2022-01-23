@@ -15,7 +15,8 @@ export const UpdatingScreenStyleCom = styled.div`
         display: flex;
         justify-content:center;
         align-items: center;
-        color: white;
+        /* color: white; */
+        color: rgba(255,255,255,.9);
 
         flex-direction: column;
         

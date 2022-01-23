@@ -19,7 +19,8 @@ export const RecordEditScreenStyleCom = styled.div`
         align-items: center;
         
         .register-banner{
-            color: white;
+            /* color: white; */
+            color: rgba(255,255,255,.9);
         }
         
         .register-wraper{

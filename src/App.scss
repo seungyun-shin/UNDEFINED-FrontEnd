@@ -151,7 +151,7 @@ video{
 }
 
 .basic-button{
-  background: lightgray;
+  background: rgba(255,255,255,.79);
   color: black;
   font-weight: 700;
   font-family: roboto;
@@ -194,6 +194,7 @@ select::-ms-expand {
   width: 200px;  /* 너비설정 */
   border: 1px solid #999;  /* 테두리 설정 */
   z-index: 1;
+  // background: rgba(255,255,255,.79);
 }
 
 /* 가상 선택자를 활용 화살표 대체 */

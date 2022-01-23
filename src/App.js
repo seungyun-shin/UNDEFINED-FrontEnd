@@ -15,24 +15,24 @@ import IcoshadrenScreen from './screens/IcoshadrenScreen'
 
 //About Component
 import AboutMe from './components/AboutComponents/AboutMe'
-import AboutSite from './components/AboutComponents/AboutSite'
 
 //Memory Component
 import MemoryFullGallery from './components/MemoryComponents/MemoryFullGallery'
 import MemoryPhotoGallery from './components/MemoryComponents/MemoryPhotoGallery'
 
-import Galapagos from './components/MemoryComponents/SouthAmerica/Galapagos'
-import ElCalafate from './components/MemoryComponents/SouthAmerica/ElCalafate'
-import Toress from './components/MemoryComponents/SouthAmerica/Toress'
-import ElCharten from './components/MemoryComponents/SouthAmerica/ElCharten'
-import Copacabana from './components/MemoryComponents/SouthAmerica/Copacabana'
-import Uyuni from './components/MemoryComponents/SouthAmerica/Uyuni'
-import Cusco from './components/MemoryComponents/SouthAmerica/Cusco'
-import Macchuppichu from './components/MemoryComponents/SouthAmerica/Macchuppichu'
-import Lapaz from './components/MemoryComponents/SouthAmerica/Lapaz'
-import Santiago from './components/MemoryComponents/SouthAmerica/Santiago'
+// import Galapagos from './components/MemoryComponents/SouthAmerica/Galapagos'
+// import ElCalafate from './components/MemoryComponents/SouthAmerica/ElCalafate'
+// import Toress from './components/MemoryComponents/SouthAmerica/Toress'
+// import ElCharten from './components/MemoryComponents/SouthAmerica/ElCharten'
+// import Copacabana from './components/MemoryComponents/SouthAmerica/Copacabana'
+// import Uyuni from './components/MemoryComponents/SouthAmerica/Uyuni'
+// import Cusco from './components/MemoryComponents/SouthAmerica/Cusco'
+// import Macchuppichu from './components/MemoryComponents/SouthAmerica/Macchuppichu'
+// import Lapaz from './components/MemoryComponents/SouthAmerica/Lapaz'
+// import Santiago from './components/MemoryComponents/SouthAmerica/Santiago'
 import SSYProject from './components/MemoryComponents/SSYProject'
 import Thanks from './components/MemoryComponents/Thanks'
+import Certificate from './components/AboutComponents/Certificate'
 
 //WorkComponent
 import WorkScreen from './components/WorkComponents/WorkScreen'
@@ -150,7 +150,7 @@ function App() {
 
                   
                   <Route path="/AboutMe" component={AboutMe}/>
-                  <Route path="/AboutSite" component={AboutSite}/>
+                  <Route path="/Certificate" component={Certificate}/>
 
                   {/* memory */}
                     <Route path="/MemoryFullGallery" component={MemoryFullGallery}/>

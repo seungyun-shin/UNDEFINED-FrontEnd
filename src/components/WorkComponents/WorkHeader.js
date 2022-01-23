@@ -15,7 +15,7 @@ function WorkHeader() {
                         {/* <LinkStyleCom to='/ShopScreen'><span className="first-span"><i className="fas fa-home"></i> Home</span></LinkStyleCom> */}
                         
                         <LinkStyleCom to='/WorkScreen'><span >AI</span></LinkStyleCom>
-                        <LinkStyleCom to='/WorkScreenART'><span >ART</span></LinkStyleCom>
+                        <LinkStyleCom to='/WorkScreenART'><span >GL</span></LinkStyleCom>
                         <LinkStyleCom to='/WorkScreenWEB'><span >WEB</span></LinkStyleCom>
                         <LinkStyleCom to='/WorkScreenETC'><span className='lastSpan'>ETC</span></LinkStyleCom>
                         {/* <LinkStyleCom to='/cart'> <span > APP</span></LinkStyleCom> */}

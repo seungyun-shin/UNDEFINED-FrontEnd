@@ -16,7 +16,8 @@ export const ShopHeaderStyleCom = styled.div`
     padding-right: 3%; */
     z-index: 139;
 
-    color: white;
+    /* color: white; */
+    color: rgba(255,255,255,.79);
     font-size: 1rem;
 
     .header-container{
@@ -39,8 +40,13 @@ export const ShopHeaderStyleCom = styled.div`
             span{
                 padding-right: 36px;
                 font-weight: 600;
-                color: white;
+                /* color: white; */
+                color: rgba(255,255,255,.79);
+                transition: 1s;
                 font-family: 'Romelio';
+            }
+            span:hover{
+                color: rgba(255,255,255,1);
             }
 
             a {    
@@ -50,7 +56,7 @@ export const ShopHeaderStyleCom = styled.div`
                 text-decoration:none;
                 font-size: 1.5rem;
                 font-weight: 600;
-                color: white;
+                color: rgba(255,255,255,.79);
 
                 @media screen and (max-width: 750px) {
                     font-size: 1.3rem;

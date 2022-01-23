@@ -39,7 +39,8 @@ export const WorkHeaderStyleCom = styled.div`
             span:not(.lastSpan){
                 padding-right: 36px;
                 font-weight: 600;
-                color: white;
+                /* color: white; */
+                /* color: rgba(255,255,255,.79); */
             }
 
             a {    
@@ -49,10 +50,16 @@ export const WorkHeaderStyleCom = styled.div`
                 text-decoration:none;
                 font-size: 1.5rem;
                 font-weight: 600;
-                color: white;
+                /* color: white; */
+                /* color: rgba(255,255,255,.79); */
             }
             span{    
                 font-family: 'Romelio';
+                transition: 1s;
+                color: rgba(255,255,255,.79);
+            }
+            span:hover{
+                color: white;
             }
 
         }
