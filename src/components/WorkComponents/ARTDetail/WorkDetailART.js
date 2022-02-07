@@ -55,7 +55,7 @@ function WorkDetailART({match, history }) {
                     <WorkDetailArtStyleCom>
                         <div className="contents-container">
                             
-                            <ContentsBanner bannerTitle={"ART"}/>
+                            <ContentsBanner bannerTitle={"GL"}/>
                             <div className="work-detail-container">
                                 <RechardModel/>
                             </div>

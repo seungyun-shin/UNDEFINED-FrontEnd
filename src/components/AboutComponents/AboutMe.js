@@ -766,7 +766,7 @@ function AboutMe({match, history }) {
                             <Observer3>
                             <li className="road-line"></li>
                             </Observer3>
-                            <li className="road-content"> <span>PYD in New York, Manhattan</span> <span className='road-right'><LinkStyleCom to='/WorkDetailRC'><span >2014.08 - 2015.02</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span>PYD in New York, Manhattan - Marketing</span> <span className='road-right'><LinkStyleCom to='/WorkDetailRC'><span >2014.08 - 2015.02</span></LinkStyleCom></span></li>
                             
                             <Observer3>
                             <li className="road-line"></li>
@@ -776,7 +776,7 @@ function AboutMe({match, history }) {
                             <Observer3>
                             <li className="road-line"></li>
                             </Observer3>
-                            <li className="road-content"> <span>Sports Industry, Seoul</span> <span className='road-right'><LinkStyleCom to='/WorkDetailRC'><span >2017.12 - 2018.02</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span>Sports Industry, Seoul - Management </span> <span className='road-right'><LinkStyleCom to='/WorkDetailRC'><span >2017.12 - 2018.02</span></LinkStyleCom></span></li>
                             
                             <Observer3>
                             <li className="road-line"></li>
@@ -789,9 +789,9 @@ function AboutMe({match, history }) {
                             <li className="road-content"> <span>Chorock Soft, Seoul - AI Development Team </span> <span className='road-right'><LinkStyleCom to='/WorkDetailRC'><span >2019.07.02 - current</span></LinkStyleCom></span></li>
                             <li className="road-content"> <span> - Coursera Visualizing Data with Python, MICHIGAN</span> <span className='road-right'><LinkStyleCom to='/Certificate'><span >2019</span></LinkStyleCom></span></li> 
                             <li className="road-content"> <span> - Coursera Machine Learning, Stanford</span> <span className='road-right'><LinkStyleCom to='/Certificate'><span >2020</span></LinkStyleCom></span></li>
-                            <li className="road-content"> <span> - Sport special development  </span> <span className='road-right'><LinkStyleCom to='/Certificate'><span >Inventor</span></LinkStyleCom></span></li>
-                            <li className="road-content"> <span> - Sport special development  </span> <span className='road-right'><LinkStyleCom to='/Certificate'><span >Inventor</span></LinkStyleCom></span></li>
-                            <li className="road-content"> <span> - Sport special development  </span> <span className='road-right'><LinkStyleCom to='/Certificate'><span >Inventor</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - Posture correction of sports participants using artificial neural network model  </span> <span className='road-right'><LinkStyleCom to='/Certificate'><span >Inventor</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - Sports recommendation platform through AI-based information analysis of athletes  </span> <span className='road-right'><LinkStyleCom to='/Certificate'><span >Inventor</span></LinkStyleCom></span></li>
+                            <li className="road-content"> <span> - Machine learning model analysis service for prediction and valuation of cryptocurrency price and trading volume  </span> <span className='road-right'><LinkStyleCom to='/Certificate'><span >Inventor</span></LinkStyleCom></span></li>
                             <li className="road-content"> <span> - Demand and Vacancy Forecasting DeepLearning Models for Train</span> <span className='road-right'><LinkStyleCom to='/WorkDetailAI'><span >Detail</span></LinkStyleCom></span></li>
                             <li className="road-content"> <span> - Real Estate Sentiment Analysis Natural Language Processing</span> <span className='road-right'><LinkStyleCom to='/WorkDetailNLP'><span >Detail</span></LinkStyleCom></span></li>
                             <li className="road-content"> <span> - DeepLearning Posture Analysis and Similarity Analysis</span> <span className='road-right'><LinkStyleCom to='/WorkDetailPA'><span >Detail</span></LinkStyleCom></span></li>

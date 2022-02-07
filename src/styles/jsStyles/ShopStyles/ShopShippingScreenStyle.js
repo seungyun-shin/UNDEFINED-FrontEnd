@@ -52,14 +52,17 @@ export const ShopShippingScreenStyleCom = styled.div`
                 display: flex;
                 justify-content:center;
                 align-items: center;
+                opacity: 0.93;
             }
 
             .register-label{
                 margin-bottom: 13px;
+                opacity: 0.93;
             }
 
             .password-label{
                 padding-bottom: 13px;
+                opacity: 0.93;
             }
 
             .input-Address{
@@ -101,6 +104,9 @@ export const ShopShippingScreenStyleCom = styled.div`
                 font-size: 1rem;
                 margin-bottom: 13px;
                 cursor: pointer;
+                color:#dfd3c3;
+                background:#161616;
+                border: 1px solid rgba(223,211,195,0.1);
             }
 
             .register-label{
@@ -112,7 +118,7 @@ export const ShopShippingScreenStyleCom = styled.div`
 
             a{
                 text-decoration: none;
-                color: skyblue;
+                color: #dfd3c3;
 
             }
         }

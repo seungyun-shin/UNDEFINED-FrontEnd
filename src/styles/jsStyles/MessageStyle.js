@@ -17,6 +17,7 @@ export const MessageStyleCom = styled.div`
         transition: 1s ease;
         margin-top: 3%;
         margin-bottom: 2%;
+        color: #dfd3c3;
 
         .message-content{
 

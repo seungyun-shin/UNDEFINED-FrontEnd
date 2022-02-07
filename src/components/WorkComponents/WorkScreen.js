@@ -48,6 +48,8 @@ function WorkScreen() {
 
     const containerMove = (e) => {
 
+        console.log(e.currentTarget)
+
         const width = e.currentTarget.offsetWidth
         const height = e.currentTarget.offsetHeight
         const left = e.currentTarget.offsetParent.offsetLeft
@@ -58,7 +60,7 @@ function WorkScreen() {
         // const oY = (e.nativeEvent.offsetY/height) * 100
 
         const mouseX = (e.pageX - left - width/2) / width
-        const mouseY = (e.pageY - top - height/2) / height -2
+        const mouseY = (e.pageY - top - height/2) / height - 1.3
         // const mouseY = (e.pageY - e.currentTarget.offsetTop - height/2) / height -2
         // console.log('ddd', mouseX * 30, mouseY * -30)
 

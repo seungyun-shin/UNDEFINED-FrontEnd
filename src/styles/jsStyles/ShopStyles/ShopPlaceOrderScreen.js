@@ -56,6 +56,7 @@ export const ShopPlaceOrderScreenCom = styled.div`
                 display: flex;
                 justify-content:center;
                 align-items: center;
+                opacity: 0.93;
             }
 
             .shipping-info{
@@ -63,6 +64,7 @@ export const ShopPlaceOrderScreenCom = styled.div`
                 margin-bottom: 3%;
                 padding-bottom: 1.5%;
                 border-bottom: solid 1px gray;
+                opacity: 0.93;
 
                 h2{
                     padding-bottom: 2%;
@@ -70,6 +72,7 @@ export const ShopPlaceOrderScreenCom = styled.div`
             }
 
             .shipping-summay{
+                opacity: 0.93;
 
             }
 
@@ -140,11 +143,14 @@ export const ShopPlaceOrderScreenCom = styled.div`
                 margin-bottom: 13px;
                 margin-top: 13px;
                 cursor: pointer;
+                color:#dfd3c3;
+                background:#161616;
+                border: 1px solid rgba(223,211,195,0.1);
             }
 
             a{
                 text-decoration: none;
-                color: skyblue;
+                color: #dfd3c3;
 
             }
 

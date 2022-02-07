@@ -132,6 +132,7 @@ function Thanks({match, history }) {
         { id: 34, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Thanks/1170/thanks34.jpg" },
         { id: 35, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Thanks/1170/thanks35.jpg" },
         { id: 36, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Thanks/1170/thanks36.jpg" },
+        { id: 37, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Thanks/1170/thanks37.jpg" },
     ]
 
     let spicsData = [
@@ -171,6 +172,7 @@ function Thanks({match, history }) {
         { id: 34, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Thanks/300/thanks34.jpg" },
         { id: 35, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Thanks/300/thanks35.jpg" },
         { id: 36, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Thanks/300/thanks36.jpg" },
+        { id: 37, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Thanks/300/thanks37.jpg" },
     ]
 
     const options = {

@@ -34,6 +34,7 @@ export const ShopCartScreenStyleCom = styled.div`
                 width: 70%;
                 color: white;
                 margin-bottom: 3%;
+                opacity: 0.89;
             }
 
             .cart-list-container{

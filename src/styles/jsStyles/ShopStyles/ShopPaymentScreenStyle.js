@@ -56,6 +56,7 @@ export const ShopPaymentScreenStyleCom = styled.div`
                 display: flex;
                 justify-content:center;
                 align-items: center;
+                opacity: 0.93;
             }
 
             .payment-label{
@@ -63,6 +64,7 @@ export const ShopPaymentScreenStyleCom = styled.div`
                 font-size: 1.6rem;
                 font-weight: 500;
                 margin-bottom: 13px;
+                opacity: 0.93;
             }
 
 
@@ -84,12 +86,14 @@ export const ShopPaymentScreenStyleCom = styled.div`
                 margin-bottom: 13px;
                 margin-top: 13px;
                 cursor: pointer;
+                color:#dfd3c3;
+                background:#161616;
+                border: 1px solid rgba(223,211,195,0.1);
             }
 
             a{
                 text-decoration: none;
-                color: skyblue;
-
+                color: #dfd3c3;
             }
             
         }

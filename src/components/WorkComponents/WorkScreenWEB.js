@@ -46,7 +46,7 @@ function WorkScreenWEB() {
         // const oY = (e.nativeEvent.offsetY/height) * 100
 
         const mouseX = (e.pageX - e.currentTarget.offsetLeft - width/2) /width
-        const mouseY = (e.pageY - e.currentTarget.offsetTop - height/2) /height -2
+        const mouseY = (e.pageY - e.currentTarget.offsetTop - height/2) /height - 1.3
         // console.log('ddd', mouseX * 30, mouseY * -30)
 
         // console.log(oX, oY)

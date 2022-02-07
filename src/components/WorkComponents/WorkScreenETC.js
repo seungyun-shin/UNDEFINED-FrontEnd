@@ -52,7 +52,7 @@ function WorkScreenETC() {
         // const oY = (e.nativeEvent.offsetY/height) * 100
 
         const mouseX = (e.pageX - left - width/2) /width
-        const mouseY = (e.pageY - top - height/2) /height -2
+        const mouseY = (e.pageY - top - height/2) /height - 1.3
         // console.log('ddd', mouseX * 30, mouseY * -30)
 
         // console.log(oX, oY)

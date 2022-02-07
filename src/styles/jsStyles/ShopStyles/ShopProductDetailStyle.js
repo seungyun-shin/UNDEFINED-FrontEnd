@@ -151,8 +151,10 @@ export const ShopProductDetailStyleCom = styled.div`
 
             .product-detail-orderbox1{
                 /* margin-top: 1rem; */
-                font-size: 1.3rem;
-                border: 1px solid white;
+                background: #161616;
+                color:#dfd3c3;
+                font-size: 1rem;
+                border: 3px solid rgba(223,211,195,0.3);
                 text-align: center;
                 padding: 7px;
                 
@@ -163,14 +165,18 @@ export const ShopProductDetailStyleCom = styled.div`
             }
             .product-detail-orderbox2{
                 /* margin-top: 1rem; */
-                font-size: 1.3rem;
-                border: 1px solid white;
+                
+                background: #161616;
+                color:#dfd3c3;
+                font-size: 1rem;
+                border: 3px solid rgba(223,211,195,0.3);
                 border-top: 0px;
                 text-align: center;
                 padding: 7px;
 
                 @media ${props => props.theme.laptop} {
-                    border-top: 1px solid white;
+                    border-top: 3px solid rgba(223,211,195,0.3);
+                    border-left: 0;
                 }
                 @media screen and (max-width: 550px) {
                     font-size: 0.8rem;
@@ -234,7 +240,7 @@ export const ShopProductDetailStyleCom = styled.div`
                 }
 
             .shop-product-review-box{
-                border-top: 3px solid white;
+                border-top: 3px solid rgba(255,255,255,0.69);
                 width: 70%;
                 padding: 1.5%;
 
@@ -248,13 +254,14 @@ export const ShopProductDetailStyleCom = styled.div`
                 .review-title{
                     font-size: 1.9rem;
                     font-weight: 700;
+                    opacity: 0.79;
                     @media screen and (max-width: 550px) {
                     font-size: 1.3rem;
                     }
                 }
 
                 .review-content{
-                    border-top: 1px solid white;
+                    border-top: 1px solid rgba(255,255,255,0.69);
                     margin-top: 2%;
                     padding: 1%;
                     padding-top: 2.3%;
@@ -265,7 +272,7 @@ export const ShopProductDetailStyleCom = styled.div`
                 }
 
             .review-input-container{
-                border-top: 3px solid white;
+                border-top: 3px solid rgba(255,255,255,0.69);
                 width: 100%;
                 padding-top: 1.5%;
 
@@ -278,6 +285,7 @@ export const ShopProductDetailStyleCom = styled.div`
                         font-weight: 700;
                         margin-top: 0.5%;
                         margin-bottom: 0.5%;
+                        opacity: 0.79;
                     }
 
                     .rating-select{
@@ -297,6 +305,7 @@ export const ShopProductDetailStyleCom = styled.div`
                         font-weight: 700;
                         margin-top: 1.7%;
                         margin-bottom: 1.7%;
+                        opacity: 0.79;
                     }
                 }
 
@@ -306,19 +315,15 @@ export const ShopProductDetailStyleCom = styled.div`
                     padding: 15px;
                     cursor: pointer;
                     margin-top: 1%;
+                    color: #dfd3c3; 
+                    background-color: #161616;
+                    border: 1px solid rgba(22,22,22,0.69) ;
 
                     @media screen and (max-width: 550px) {
                         font-size: 0.8rem;
                     }
                 }
             }   
-        }
-    }
-
-    @media ${props => props.theme.laptop} {
-        .basic-button{
-            margin-top: 0;
-            height: 100%;
         }
     }
 
@@ -351,5 +356,33 @@ export const ShopProductDetailStyleCom = styled.div`
         }
     }
     
-    
+    .basic-button{
+        // background: rgba(255,255,255,.79);
+        background: #161616;
+        color: #dfd3c3;
+        font-weight: 700;
+        font-family: roboto;
+        border: none;
+        padding:9px;
+        height: 50px;
+        width: 100%;
+        // border-radius: 9px;
+        cursor:pointer;
+        margin-top: 0.3rem;
+        font-size: 1rem;
+        // border: 1px solid rgba(223,211,195,0.3);
+
+        @media ${props => props.theme.laptop} {
+        .basic-button{
+            margin-top: 0;
+            height: 100%;
+        }
+         
+        @media screen and (max-width: 550px) {
+                
+            font-size: 0.8rem;
+            }
+        }
+
+    }
 `

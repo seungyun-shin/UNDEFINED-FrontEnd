@@ -23,11 +23,17 @@ function Certificate({match, history }) {
     let picsData = [
         { id: 1, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Certificate/1170/Michigan.JPG" },
         { id: 2, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Certificate/1170/Stanford.JPG" },
+        { id: 3, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Certificate/1170/Patent.JPG" },
+        { id: 4, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Certificate/1170/Patent2.JPG" },
+        { id: 5, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Certificate/1170/Patent3.JPG" },
     ]
 
     let spicsData = [
         { id: 1, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Certificate/300/Michigan.JPG" },
         { id: 2, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Certificate/300/Stanford.JPG" },
+        { id: 3, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Certificate/300/Patent.JPG" },
+        { id: 4, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Certificate/300/Patent2.JPG" },
+        { id: 5, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Certificate/300/Patent3.JPG" },
     ]
 
     const options = {
@@ -46,7 +52,7 @@ function Certificate({match, history }) {
                     <MemoryDetailStyleCom>
                         <div className="contents-container">
                             
-                            <ContentsBanner bannerTitle={"Certificate"}/>
+                            <ContentsBanner bannerTitle={"CTF"}/>
                     <div className="gallaryfullwraper">
                             <div className="memory-detail-container">
 

@@ -54,6 +54,7 @@ export const OrderScreenStyleCom = styled.div`
                 display: flex;
                 justify-content:center;
                 align-items: center;
+                opacity: 0.93;
             }
 
             .shipping-info{
@@ -61,9 +62,14 @@ export const OrderScreenStyleCom = styled.div`
                 margin-bottom: 3%;
                 padding-bottom: 1.5%;
                 border-bottom: solid 1px gray;
+                opacity: 0.93;
 
                 h2{
                     padding-bottom: 2%;
+                    opacity: 0.93;
+                }
+                span{
+                    opacity: 0.93;
                 }
             }
 
@@ -105,6 +111,7 @@ export const OrderScreenStyleCom = styled.div`
                     padding-bottom: 2%;
                     padding-top: 2%;
                     border-bottom: solid 1px gray;
+                    opacity: 0.93;
 
                     .summary-title{
                         padding-left: 1.6%;
@@ -128,7 +135,7 @@ export const OrderScreenStyleCom = styled.div`
 
             a{
                 text-decoration: none;
-                color: skyblue;
+                color:#dfd3c3;
 
             }
 
@@ -177,6 +184,9 @@ export const OrderScreenStyleCom = styled.div`
             font-weight: 700;
             font-size: 1rem;
             cursor: pointer;
+            color:#dfd3c3;
+            background:#161616;
+            border: 1px solid rgba(223,211,195,0.1);
         }
         
     }

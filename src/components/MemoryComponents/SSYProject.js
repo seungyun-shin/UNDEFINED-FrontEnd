@@ -192,6 +192,7 @@ function SSYProject({match, history }) {
         { id: 57, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/1170/project56.jpg" },
         { id: 58, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/1170/project57.jpg" },
         { id: 59, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/1170/project58.jpg" },
+        { id: 60, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/1170/project59.jpg" },
     ]
 
     let spicsData = [
@@ -253,6 +254,7 @@ function SSYProject({match, history }) {
         { id: 57, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/300/project56.jpg" },
         { id: 58, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/300/project57.jpg" },
         { id: 59, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/300/project58.jpg" },
+        { id: 60, imgSrc: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/Project/300/project59.jpg" },
     ]
 
     const options = {

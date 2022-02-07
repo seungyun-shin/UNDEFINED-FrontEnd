@@ -24,6 +24,7 @@ export const RecordScreenStyleCom = styled.div`
         width: 100%;
         height: 100%;
         margin-top: 9%;
+        padding-bottom: 9%;
 
         
         

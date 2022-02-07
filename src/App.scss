@@ -151,8 +151,9 @@ video{
 }
 
 .basic-button{
-  background: rgba(255,255,255,.79);
-  color: black;
+  // background: rgba(255,255,255,.79);
+  background: #161616;
+  color: #dfd3c3;
   font-weight: 700;
   font-family: roboto;
   border: none;
@@ -162,6 +163,7 @@ video{
   // border-radius: 9px;
   cursor:pointer;
   margin-top: 0.3rem;
+  // border: 1px solid rgba(223,211,195,0.3);
 }
 
 .shop-select {
@@ -175,8 +177,10 @@ video{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: black;
-  background-color: white ;
+  // color: black;
+  // background-color: white ;
+  color: #dfd3c3;
+  background: #161616 ;
   }
 
 label{

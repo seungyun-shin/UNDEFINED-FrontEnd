@@ -22,6 +22,7 @@ export const RecordDetailStyleCom = styled.div`
             line-height: 5vw;
             font-weight: 700;
             padding:2%;
+            opacity: 0.79;
             /* border-bottom: 2px solid #dfd3c3; */
             /* border-bottom: 2px solid #dfd3c3; */
 
@@ -48,7 +49,7 @@ export const RecordDetailStyleCom = styled.div`
 
         }
         .record-detail-contents{
-            border: 2px solid #dfd3c3;
+            border: 6px solid rgba(223,211,195,0.1);
             padding: 5%;
             color: white;
             
@@ -62,6 +63,10 @@ export const RecordDetailStyleCom = styled.div`
             }
 
             background-color: #161616;
+        }
+
+        a{
+            color:#dfd3c3;
         }
     }
 
