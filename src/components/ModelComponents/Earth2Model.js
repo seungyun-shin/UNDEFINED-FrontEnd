@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { useFrame, useLoader  } from '@react-three/fiber'
 import { TextureLoader } from "three";
 import * as THREE from "three";
@@ -14,7 +14,7 @@ import Landscape2 from '../../assets/images/textures/test2.jpg'
 
 import countryPoint from "../../assets/etc/countryPoint"
 
-import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
+// import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 
 import { OrbitControls, Stars } from '@react-three/drei'
 

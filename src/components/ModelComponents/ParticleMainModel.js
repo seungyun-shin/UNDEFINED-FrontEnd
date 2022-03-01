@@ -1,4 +1,4 @@
-import React, { useRef, useMemo, useCallback, Component, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import * as THREE from "three";
 // reset Styles
 import "../../App.scss"
@@ -10,7 +10,7 @@ import vertexJS from '../../shaders/ParticleTransitShader/vertex.js'
 import gsap from 'gsap'
 
 //dat.gui
-import * as dat from "dat.gui"
+// import * as dat from "dat.gui"
 
 // shader texture
 import maskimg from '../../assets/images/models/particle.jpeg'
@@ -25,7 +25,7 @@ import t4 from '../../assets/images/models/pill.png'
 //timeline
 const tl = gsap.timeline();
 const tl2 = gsap.timeline();
-const tl3 = gsap.timeline();
+// const tl3 = gsap.timeline();
 
 const MeshModel = () => {
 
@@ -65,12 +65,12 @@ const MeshModel = () => {
       let smove = 0;
       
       let implementCount = 0
-      let initial = true;
+      // let initial = true;
       
       let textureIndexslice1 = 0
       let textureIndexslice2 = 1 
       
-      let imageAspect = 1;
+      // let imageAspect = 1;
 
       const material = new THREE.ShaderMaterial({
         fragmentShader:fragmentJS,
@@ -132,16 +132,16 @@ const MeshModel = () => {
       const mesh = new THREE.Points( geometry, material );
       scene.add( mesh );
 
-      const settings = () => {
+      // const settings = () => {
 
-        let settings = {
-          howmuchrgbshifticanhaz: 1,
-        };
+      //   let settings = {
+      //     howmuchrgbshifticanhaz: 1,
+      //   };
 
-        const gui = new dat.GUI();
-        gui.add(settings, "howmuchrgbshifticanhaz", 0, 1, 0.01);
+      //   const gui = new dat.GUI();
+      //   gui.add(settings, "howmuchrgbshifticanhaz", 0, 1, 0.01);
 
-      }
+      // }
 
       const mouseEffects = () => {
 
@@ -171,7 +171,7 @@ const MeshModel = () => {
 
           if(debounceTimer) clearTimeout(debounceTimer)
           debounceTimer = setTimeout(() => {
-            if (implementCount%2 == 0){
+            if (implementCount%2 === 0){
               tl
               .add('start')
               .add('end')
@@ -289,7 +289,7 @@ const MeshModel = () => {
     }
 
       
-      const bindedResize = resize.bind(this)
+      // const bindedResize = resize.bind(this)
       resize();
       mouseEffects();
       render();
@@ -305,7 +305,7 @@ const MeshModel = () => {
           window.removeEventListener("mousewheel", mouseEffects);
             // document.removeEventListener('mousemove', onMouseMove, false);
             // document.removeEventListener("resize", bindedResize);
-            frag = false;
+          frag = false;
         }
 
 

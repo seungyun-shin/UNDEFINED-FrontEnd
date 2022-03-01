@@ -1,17 +1,17 @@
 
-import React, {useState, useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React from 'react'
+// import { useDispatch, useSelector } from 'react-redux'
 
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 // import Select from 'react-select'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion} from 'framer-motion'
 
 //basic Components
 import ContentsBanner from "../componentParts/ContentsBanner"
-import {ReactComponent as LeftArrow} from "../../assets/svg/arrow-left.svg"
-import {ReactComponent as RightArrow} from "../../assets/svg/arrow-right.svg"
+// import {ReactComponent as LeftArrow} from "../../assets/svg/arrow-left.svg"
+// import {ReactComponent as RightArrow} from "../../assets/svg/arrow-right.svg"
 
 //style
 import { MemoryDetailStyleCom } from "../../styles/jsStyles/MemoryStyles/MemoryDetailStyle"
@@ -200,7 +200,7 @@ function Thanks({match, history }) {
                                 <div className="main-pic-container">
                                     <a href={mainpics.imgSrc}>
                                         <div className="picsContainer">
-                                            <img src={mainpics.imgSrc}/>
+                                            <img src={mainpics.imgSrc} alt="mainpic"/>
                                         </div>
                                     </a>
                                 </div>
@@ -210,7 +210,7 @@ function Thanks({match, history }) {
                                         return(
                                             <a href={picsData[index].imgSrc} key={index}>
                                                 <div className="picsContainer" key={index}>
-                                                    <img src={item.imgSrc}  srl_gallery_image="true"/>
+                                                    <img src={item.imgSrc}  srl_gallery_image="true" alt="gallarypic"/>
                                                 </div>
                                             </a>
                                         )

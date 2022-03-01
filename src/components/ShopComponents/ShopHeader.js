@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import { ShopHeaderStyleCom } from "../../styles/jsStyles/ShopStyles/ShopHeaderStyle";
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";

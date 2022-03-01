@@ -1,12 +1,12 @@
-import React, { useRef, useMemo, useCallback, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import * as THREE from "three";
-import { BufferAttribute } from 'three';
+// import { BufferAttribute } from 'three';
 
 // reset Styles
 import "../../App.scss"
 
 //R3F
-import { Canvas, useFrame, extend  } from '@react-three/fiber'
+// import { Canvas, useFrame, extend  } from '@react-three/fiber'
 
 import RechardFragment from '../../shaders/RechadShader/RechardFragment'
 import RechardVertex from '../../shaders/RechadShader/RechardVertex'
@@ -27,8 +27,8 @@ function RechardModel() {
     renderer.setClearColor(0x000000, 1);
 
     // const container = document.getElementById("back-mesh-container");
-    var width = canvasContainer.current.offsetWidth;
-    var height = canvasContainer.current.offsetHeight;
+    // var width = canvasContainer.current.offsetWidth;
+    // var height = canvasContainer.current.offsetHeight;
     // container.appendChild( renderer.domElement );
     canvasContainer.current.appendChild( renderer.domElement );
 
@@ -57,9 +57,9 @@ function RechardModel() {
         const camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 1000 );
         camera.position.set(0, 0, 1);
 
-        const count = 40;
-        const particleCnt = 5000;
-        const time = 0;
+        // const count = 40;
+        // const particleCnt = 5000;
+        // const time = 0;
 
         const imageAspect = 1;
 

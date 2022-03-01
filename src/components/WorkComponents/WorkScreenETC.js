@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useRef } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { Route, NavLink, Redirect } from 'react-router-dom';
+// import { useDispatch, useSelector } from 'react-redux'
+// import { Route, NavLink, Redirect } from 'react-router-dom';
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 
@@ -11,19 +11,19 @@ import ContentsBanner from "../componentParts/ContentsBanner"
 import WorkHeader from "./WorkHeader"
 
 //Record
-import Record from '../RecordComponents/Record'
+// import Record from '../RecordComponents/Record'
 
 // import Records from '../../assets/etc/products'
 //Components
-import Loader from "../componentParts/Loader"
-import Message from "../componentParts/Message"
+// import Loader from "../componentParts/Loader"
+// import Message from "../componentParts/Message"
 
 import FadeInSection from "../componentParts/Observer"
 
 //style
 import { WorkScreenStyleCom } from "../../styles/jsStyles/WorkStyles/WorkScreenStyle"
 
-import { listRecords } from '../../actions/recordActions'
+// import { listRecords } from '../../actions/recordActions'
 
 //img
 import PaperMain from "../../assets/images/work/ETC/paper/PaperMain.jpg"
@@ -95,7 +95,7 @@ function WorkScreenETC() {
                                         ref={titleContainer}
                                     >
                                         <LinkStyleCom to="/WorkDetailETCPaper">
-                                        <img src={PaperMain}/>
+                                        <img src={PaperMain} alt="PaperMain" />
                                         <div className="card-3d-contents">
                                             <div className="card-3d-title"> Research Paper / Machine Learning / Big Data / Sports Industry </div>
                                             <div className="card-3d-content">빅데이터와 머신러닝을 활용한 프로농구선수 연봉 예측</div>
@@ -111,7 +111,7 @@ function WorkScreenETC() {
                                         ref={titleContainer}
                                     >
                                         <LinkStyleCom to="/WorkDetailETC3">
-                                        <img src={VARMain}/>
+                                        <img src={VARMain} alt="VARMain" />
                                         <div className="card-3d-contents">
                                             <div className="card-3d-title"> Sports Industry / Facility / Column </div>
                                             <div className="card-3d-content">VAR 제도, 심판의 ‘정체성’에 의문을 제기하다.</div>
@@ -127,7 +127,7 @@ function WorkScreenETC() {
                                         ref={titleContainer}
                                     >
                                         <LinkStyleCom to="/WorkDetailETC2">
-                                        <img src={ESportsMain}/>
+                                        <img src={ESportsMain} alt="ESportsMain" />
                                         <div className="card-3d-contents">
                                             <div className="card-3d-title"> Sports Industry / Facility / Column </div>
                                             <div className="card-3d-content"> E-Sports 트렌디(Trendy)한 미디어로 발전하라.</div>
@@ -143,7 +143,7 @@ function WorkScreenETC() {
                                         ref={titleContainer}
                                     >
                                         <LinkStyleCom to="/WorkDetailETC">
-                                        <img src={BarclaysMain}/>
+                                        <img src={BarclaysMain} alt="BarclaysMain" />
                                         <div className="card-3d-contents">
                                             <div className="card-3d-title"> Sports Industry / Facility / Column </div>
                                             <div className="card-3d-content"> 프로농구경기장, 경험과 문화를 파는 소통의 창구로. </div>

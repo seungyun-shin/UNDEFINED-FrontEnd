@@ -1,18 +1,17 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useEffect} from 'react'
 
 import { MainTitleStyleCom } from "../styles/jsStyles/mainStyle"
 
 //animation 
 import gsap from 'gsap'
-import {AnimatePresence, motion} from 'framer-motion'
+// import {AnimatePresence, motion} from 'framer-motion'
 
 // component
-import Header from "../components/componentParts/Header"
 import MainFooter from "../components/componentParts/MainFooter"
 
 import IntroOverlay from "../components/componentParts/IntroOverlay"
 
-function MainScreen({}) {
+function MainScreen() {
 
     useEffect(() => {
 
@@ -61,7 +60,6 @@ function MainScreen({}) {
         stagger:0.4,
         // delay: -.8,
         transformOrigin: 'bottom',
-        stagger: 0.4
         }).from('.mainfooter-container', 1.6, {
             y: 70,
             opacity: 0,
@@ -73,7 +71,6 @@ function MainScreen({}) {
     return (
         <>
         <IntroOverlay/>
-        {/* <Header/> */}
         <MainTitleStyleCom>
             <div className="main-text-container">
                 <div className="main-title-wraper">

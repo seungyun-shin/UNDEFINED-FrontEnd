@@ -1,12 +1,12 @@
-import React, {useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Route, NavLink, Redirect } from 'react-router-dom';
+// import { Route, NavLink, Redirect } from 'react-router-dom';
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 //basic Components
 import ContentsBanner from "../componentParts/ContentsBanner"
-import RecordHeader from "../RecordComponents/RecordHeader"
+// import RecordHeader from "../RecordComponents/RecordHeader"
 
 //Record
 import Record from '../RecordComponents/Record'

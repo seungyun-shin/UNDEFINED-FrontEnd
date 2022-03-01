@@ -1,7 +1,7 @@
 import React from 'react'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 //basic Components
 import ContentsBanner from "../componentParts/ContentsBanner"

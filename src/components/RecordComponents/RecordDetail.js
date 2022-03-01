@@ -1,20 +1,16 @@
-import React, {useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { RecordDetailStyleCom } from "../../styles/jsStyles/RecordStyles/RecordDetailStyle"
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
-
-import ContentsBanner from "../componentParts/ContentsBanner"
-import Records from '../../assets/etc/products'
+import { motion } from 'framer-motion'
 
 import Loader from '../componentParts/Loader'
 import Message from '../componentParts/Message'
 
 import ReactHtmlParser from 'react-html-parser';
-import {ReactComponent as LeftArrow} from "../../assets/svg/arrow-left.svg"
 
 import { listRecordDetails } from '../../actions/recordActions'
 

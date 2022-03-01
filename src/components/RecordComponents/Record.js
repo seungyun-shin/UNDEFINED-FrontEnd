@@ -1,5 +1,4 @@
-import React, {useState, useEffect } from 'react'
-import { RecordStyleCom } from "../../styles/jsStyles/RecordStyles/RecordStyle"
+import React from 'react'
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 
 function Record( {record} ) {

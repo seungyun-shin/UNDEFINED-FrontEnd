@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom";
 
 import { RecordHeaderStyleCom } from "../../styles/jsStyles/RecordStyles/RecordHeaderStyle";
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";

@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import { ShopPaymentScreenStyleCom } from "../../styles/jsStyles/ShopStyles/ShopPaymentScreenStyle";
 
@@ -10,9 +10,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { savePaymentMethod } from '../../actions/cartActions' 
 
 import CheckoutSteps from './CheckoutSteps';
-
-import Loader from '../../components/componentParts/Loader'
-import Message from '../../components/componentParts/Message'
 
 
 function PaymentScreen({history}) {

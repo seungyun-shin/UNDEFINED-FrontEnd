@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import { LinkStyleCom } from "../styles/jsStyles/LinkStyle";
 
@@ -38,7 +38,7 @@ function RegisterScreen({location, history}) {
     const submitHandler = (e) => {
         e.preventDefault()
 
-        if(password != confirmPassword){
+        if(password !== confirmPassword){
             setMessage('Passwords do not match')
         }else{
             dispatch(register(name, email, password))

@@ -1,8 +1,8 @@
-import React, {useState, useEffect, useRef } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { Route, NavLink, Redirect } from 'react-router-dom';
+import React, {useState, useRef } from 'react'
+// import { useDispatch, useSelector } from 'react-redux'
+// import { Route, NavLink, Redirect } from 'react-router-dom';
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion} from 'framer-motion'
 
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 
@@ -11,18 +11,18 @@ import ContentsBanner from "../componentParts/ContentsBanner"
 import WorkHeader from "../WorkComponents/WorkHeader"
 
 //Record
-import Record from '../RecordComponents/Record'
+// import Record from '../RecordComponents/Record'
 
 // import Records from '../../assets/etc/products'
 //Components
-import Loader from "../componentParts/Loader"
-import Message from "../componentParts/Message"
+// import Loader from "../componentParts/Loader"
+// import Message from "../componentParts/Message"
 
 import FadeInSection from "../componentParts/Observer"
 //style
 import { WorkScreenStyleCom } from "../../styles/jsStyles/WorkStyles/WorkScreenStyle"
 
-import { listRecords } from '../../actions/recordActions'
+// import { listRecords } from '../../actions/recordActions'
 
 //img
 import Trainstation from "../../assets/images/work/AI/trainstation.jpg"
@@ -37,11 +37,6 @@ import BCP from "../../assets/images/work/AI/BCP.jpg"
 import lock from "../../assets/images/etc/lockShild.png"
   
 function WorkScreen() {
-
-    useEffect(() => {
-
-    }, [])
-
     
     const [pos, changePos] = useState({ x: 0, y: 0 });
     const titleContainer = useRef(null);
@@ -105,7 +100,7 @@ function WorkScreen() {
                                 ref={titleContainer}
                             >
                                 <LinkStyleCom to="/WorkDetailAI">
-                                <img src={Trainstation}/>
+                                <img src={Trainstation} alt="Trainstation"/>
                                 <div className="lockImgContainer"><img src={lock} alt="lock"/></div>
                                 <div className="card-3d-contents">
                                     <div className="card-3d-title"> Forecasting Models / Deep Learning / DNN / LSTM</div>
@@ -122,7 +117,7 @@ function WorkScreen() {
                                 ref={titleContainer}
                             >
                                 <LinkStyleCom to="/WorkDetailNLP">
-                                <img src={NLP}/>
+                                <img src={NLP}  alt="NLP" />
                                 <div className="lockImgContainer"><img src={lock} alt="lock"/></div>
                                 <div className="card-3d-contents">
                                     <div className="card-3d-title"> Natural Language Processing / Deep Learning / BERT</div>
@@ -139,7 +134,7 @@ function WorkScreen() {
                                 ref={titleContainer}
                             >
                                 <LinkStyleCom to="/WorkDetailPA">
-                                <img src={PoseAnalysis}/>
+                                <img src={PoseAnalysis} alt="PoseAnalysis"/>
                                 <div className="lockImgContainer"><img src={lock} alt="lock"/></div>
                                 <div className="card-3d-contents">
                                     <div className="card-3d-title"> Pose Estimation / Computer Vision / Deep Learning</div>
@@ -156,7 +151,7 @@ function WorkScreen() {
                                 ref={titleContainer}
                             >
                                 <LinkStyleCom to="/WorkDetailDT">
-                                <img src={DT}/>
+                                <img src={DT} alt="DT"/>
                                 <div className="lockImgContainer"><img src={lock} alt="lock"/></div>
                                 <div className="card-3d-contents">
                                     <div className="card-3d-title"> Detection / Deep Learning / Computer Vision</div>
@@ -173,7 +168,7 @@ function WorkScreen() {
                                 ref={titleContainer}
                             >
                                 <LinkStyleCom to="/WorkDetailAIHR">
-                                <img src={AIHR}/>
+                                <img src={AIHR} alt="AIHR"/>
                                 <div className="lockImgContainer"><img src={lock} alt="lock"/></div>
                                 <div className="card-3d-contents">
                                     <div className="card-3d-title"> Recommender System / Django / Deep Learning</div>
@@ -190,7 +185,7 @@ function WorkScreen() {
                                 ref={titleContainer}
                             >
                                 <LinkStyleCom to="/WorkDetailBCP">
-                                <img src={BCP}/>
+                                <img src={BCP} alt="BCP"/>
                                 <div className="lockImgContainer"><img src={lock} alt="lock"/></div>
                                 <div className="card-3d-contents">
                                     <div className="card-3d-title"> Forecasting Models / Django / Deep Learning</div>
@@ -207,7 +202,7 @@ function WorkScreen() {
                                 ref={titleContainer}
                             >
                                 <LinkStyleCom to="/WorkDetailSB">
-                                <img src={SB}/>
+                                <img src={SB} alt="SB"/>
                                 <div className="lockImgContainer"><img src={lock} alt="lock"/></div>
                                 <div className="card-3d-contents">
                                     <div className="card-3d-title"> Edge Detection / CNN / Deep Learning </div>
@@ -224,7 +219,7 @@ function WorkScreen() {
                                 ref={titleContainer}
                             >
                                 <LinkStyleCom to="/WorkDetailRC">
-                                <img src={RC}/>
+                                <img src={RC} alt="RC"/>
                                 <div className="lockImgContainer"><img src={lock} alt="lock"/></div>
                                 <div className="card-3d-contents">
                                     <div className="card-3d-title"> Recommender System / Flask / Deep Learning</div>

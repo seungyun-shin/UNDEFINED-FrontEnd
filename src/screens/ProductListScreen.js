@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React, {useEffect} from 'react'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import { LinkStyleCom } from "../styles/jsStyles/LinkStyle";
 

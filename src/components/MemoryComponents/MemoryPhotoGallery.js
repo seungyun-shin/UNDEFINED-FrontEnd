@@ -1,18 +1,16 @@
 
-import React, {useState, useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React, { useEffect } from 'react'
+// import { useDispatch, useSelector } from 'react-redux'
 
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 // import Select from 'react-select'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 //basic Components
 // import ContentsBanner from "../componentParts/ContentsBanner"
 import GallaryBanner from "../componentParts/GallaryBanner"
-import {ReactComponent as LeftArrow} from "../../assets/svg/arrow-left.svg"
-import {ReactComponent as RightArrow} from "../../assets/svg/arrow-right.svg"
 
 //style
 import { MemoryDetailStyleCom } from "../../styles/jsStyles/MemoryStyles/MemoryDetailStyle"
@@ -21,7 +19,7 @@ import { SRLWrapper } from "simple-react-lightbox";
 
 import {useLocation} from "react-router";
 
-import countryPointArray from "../../assets/etc/countryPoint"
+// import countryPointArray from "../../assets/etc/countryPoint"
 
 function MemoryPhotoGallery({match, history }) {
 
@@ -82,7 +80,7 @@ function MemoryPhotoGallery({match, history }) {
                             <div className="main-pic-container">
                                 <a href={countryPoint.mainImg}>
                                     <div className="picsContainer">
-                                        <img src={countryPoint.mainImg}/>
+                                        <img src={countryPoint.mainImg} alt="mainpic"/>
                                     </div>
                                 </a>
                             </div>
@@ -93,7 +91,7 @@ function MemoryPhotoGallery({match, history }) {
                                     return(
                                         <a href={countryPoint.imgList[index].imgSrc} key={index}>
                                             <div className="picsContainer" key={index}>
-                                                <img src={item.imgSrc}  srl_gallery_image="true"/>
+                                                <img src={item.imgSrc}  srl_gallery_image="true" alt="gallarypic"/>
                                             </div>
                                         </a>
                                     )

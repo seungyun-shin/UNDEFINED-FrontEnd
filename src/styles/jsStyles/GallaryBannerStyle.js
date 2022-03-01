@@ -1,4 +1,4 @@
-import styled, {css, createGlobalStyle} from "styled-components"
+import styled from "styled-components"
 
 export const GallaryBannerStyleCom = styled.div`
     .contents-banner-container{

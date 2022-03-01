@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import { LinkStyleCom } from "../styles/jsStyles/LinkStyle";
 
@@ -31,6 +31,23 @@ function UserEditScreen({match, history}) {
     const userUpdate = useSelector(state => state.userUpdate)
     const {error: errorUpdate, loading:loadingUpdate, success:successUpdate } = userUpdate
 
+    // useEffect(()=> {
+
+    //     if(successUpdate){
+    //         dispatch({type:USER_UPDATE_RESET})
+    //         history.push('/admin/userlist')
+    //     }else{
+    //         if(!user.name || user._id !== Number(userId)){
+    //             dispatch(getUserDetails(userId))
+    //         }else{
+    //             setName(user.name)
+    //             setEmail(user.email)
+    //             setIsAdmin(user.isAdmin)
+    //         }
+    //     }
+        
+    // }, [user, userId, successUpdate, history])
+
     useEffect(()=> {
 
         if(successUpdate){
@@ -46,7 +63,7 @@ function UserEditScreen({match, history}) {
             }
         }
         
-    }, [user, userId, successUpdate, history])
+    }, [user, userId, successUpdate, history, dispatch])
 
     const submitHandler = (e) => {
         e.preventDefault()

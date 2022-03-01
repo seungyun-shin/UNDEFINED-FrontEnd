@@ -6,14 +6,13 @@ import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 // import Select from 'react-select'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 //basic Components
 import ContentsBanner from "../componentParts/ContentsBanner"
 import Rating from './Rating'
 import Loader from '../componentParts/Loader'
 import Message from '../componentParts/Message'
-import {ReactComponent as LeftArrow} from "../../assets/svg/arrow-left.svg"
 
 //style
 import { ShopProductDetailStyleCom } from "../../styles/jsStyles/ShopStyles/ShopProductDetailStyle"
@@ -38,7 +37,16 @@ function ShopProductDetail({match, history }) {
 
     const productReviewCreate = useSelector(state => state.productReviewCreate)
     const { loading:loadingProductReview, error:errorProductReview, success:successProductReview} = productReviewCreate
- 
+    
+
+    const pointeryHomeClick = () => {
+        window.open("https://point-ery.com");
+      };
+
+    const pointeryInstaClick = () => {
+        window.open("https://www.instagram.com/point_ery");
+    };
+
     useEffect(() => {
         if(successProductReview){
             setRating(0)
@@ -62,26 +70,26 @@ function ShopProductDetail({match, history }) {
         ))
     }
 
-    const options = [...Array(product.countInStock).keys()].map((x) => ({ value: x+1, label: x+1}))
+    // const options = [...Array(product.countInStock).keys()].map((x) => ({ value: x+1, label: x+1}))
     
-    const customStyles = {
-        menu: (provided, state) => ({
-            ...provided,
-            width: state.selectProps.width,
-            borderBottom: '1px dotted pink',
-            // color: state.selectProps.menuColor,
-            color: 'black',
-            padding: 10,
-          }),
+    // const customStyles = {
+    //     menu: (provided, state) => ({
+    //         ...provided,
+    //         width: state.selectProps.width,
+    //         borderBottom: '1px dotted pink',
+    //         // color: state.selectProps.menuColor,
+    //         color: 'black',
+    //         padding: 10,
+    //       }),
 
-          option: (provided, state) => ({
-            ...provided,
-            // borderBottom: '1px dotted black',
-            color: state.isSelected ? 'red' : 'blue',
-            padding: 5,
-            color: 'black',
-          }),
-    }
+    //       option: (provided, state) => ({
+    //         ...provided,
+    //         // borderBottom: '1px dotted black',
+    //         color: state.isSelected ? 'red' : 'blue',
+    //         padding: 5,
+    //         color: 'black',
+    //       }),
+    // }
 
     const qtyfunction = (e) => {
         setQty(e.target.value)
@@ -104,8 +112,13 @@ function ShopProductDetail({match, history }) {
                         <div className="contents-container">
                             <ContentsBanner bannerTitle={"SHOP"}/>
                             <div className="shop-product-detail-container">
-                                <img src={product.image}/>
+                                <img src={product.image} alt="product"/>
                                 <div className="product-detail-info-wraper">
+                                    <div className="product-detail-pointery-info">
+                                        From POINT-ERY &nbsp;
+                                        <span className="clickSpan" onClick={pointeryHomeClick}><i className="fas fa-home"></i></span> &nbsp;
+                                        <span className="clickSpan" onClick={pointeryInstaClick}><i className="fab fa-instagram"></i></span>
+                                    </div>
                                     <div className="product-detail-name">{product.name}</div>
                                     <div className="product-detail-rating"><Rating value={product.rating} text={`${product.numReviews} reviews`} color={'#f8e825'} /></div>
                                     <div className="product-detail-price">Price : $ {product.price}</div>
@@ -133,7 +146,7 @@ function ShopProductDetail({match, history }) {
                                             </select>
                                         </div>
                                     </div>
-                                    <div className="product-detail-orderbox4"><button onClick={addToCartHandler} className='basic-button' style={ product.countInStock == 0 ? {display:'none'} : {}} type='button'>Add to Cart</button></div>
+                                    <div className="product-detail-orderbox4"><button onClick={addToCartHandler} className='basic-button' style={ product.countInStock === 0 ? {display:'none'} : {}} type='button'>Add to Cart</button></div>
                                 </div>
                                 
                             {/* <div className="arrow-container">

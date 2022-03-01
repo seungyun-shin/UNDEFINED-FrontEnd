@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import React from 'react';
+// import { Link } from "react-router-dom";
 
-import { ButtonStylesCom } from "../../styles/jsStyles/ButtonStyles";
+// import { ButtonStylesCom } from "../../styles/jsStyles/ButtonStyles";
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 
 function Button() {

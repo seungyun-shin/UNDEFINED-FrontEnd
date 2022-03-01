@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import { OrderScreenStyleCom } from "../../styles/jsStyles/ShopStyles/OrderScreenStyle";
 
@@ -17,7 +17,8 @@ import Loader from '../../components/componentParts/Loader'
 import Message from '../../components/componentParts/Message'
 import { LinkStyleCom } from '../../styles/jsStyles/LinkStyle';
 
-import { getOrderDetails, payOrder, deliverOrder } from '../../actions/orderActions'
+import { getOrderDetails, deliverOrder } from '../../actions/orderActions'
+// import { getOrderDetails, payOrder, deliverOrder } from '../../actions/orderActions'
 import { ORDER_PAY_RESET, ORDER_DELIVER_RESET } from '../../constants/orderConstants'
 
 function OrderScreen({ match, history }) {
@@ -71,11 +72,11 @@ function OrderScreen({ match, history }) {
                 setSdkReady(true)
             }
         }
-    }, [dispatch ,order, orderId, successPay, successDeliver])
+    }, [dispatch ,order, orderId, successPay, successDeliver, history, userInfo])
 
-    const successPaymentHandler = (paymentResult) => {
-        dispatch(payOrder(orderId, paymentResult))
-    }
+    // const successPaymentHandler = (paymentResult) => {
+    //     dispatch(payOrder(orderId, paymentResult))
+    // }
 
     const deliverHandler = () =>{
         dispatch(deliverOrder(order))

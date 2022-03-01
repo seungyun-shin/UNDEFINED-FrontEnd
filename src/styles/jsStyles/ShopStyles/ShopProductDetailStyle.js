@@ -1,4 +1,4 @@
-import styled, {css, createGlobalStyle} from "styled-components"
+import styled from "styled-components"
 
 export const ShopProductDetailStyleCom = styled.div` 
     
@@ -57,6 +57,27 @@ export const ShopProductDetailStyleCom = styled.div`
                 margin-top: 3%;
                 width: 90%;
                 margin-left: 0;
+            }
+
+            .product-detail-pointery-info{
+                
+                font-family: 'Romelio';
+                font-weight: 700px;
+                font-size: 1.3rem;
+                margin-bottom: 6%;
+                color:#dfd3c3;
+                padding-bottom:3%;
+                border-bottom: 3px solid #dfd3c3;
+                /* border: 3px solid white; */
+
+                @media screen and (max-width: 700px) {
+                    font-size: 1.0rem;
+                }
+                @media screen and (max-width: 550px) {
+                    font-size: 0.8rem;
+                    padding-left: 2%;
+                    padding-right: 2%;
+                }
             }
 
             .product-detail-name{
@@ -384,5 +405,12 @@ export const ShopProductDetailStyleCom = styled.div`
             }
         }
 
+    }
+
+    i{
+        color:#dfd3c3;;
+    }
+    .clickSpan{
+        cursor: pointer;
     }
 `

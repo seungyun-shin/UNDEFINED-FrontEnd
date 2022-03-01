@@ -1,6 +1,5 @@
 
-import React, {useState, useEffect, useRef } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React, { useEffect, useRef } from 'react'
 
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 // import Select from 'react-select'
@@ -16,21 +15,16 @@ import Observer6 from "../componentParts/Observer6"
 import Observer7 from "../componentParts/Observer7"
 import Observer8 from "../componentParts/Observer8"
 import Observer9 from "../componentParts/Observer9"
-import Observer10 from "../componentParts/Observer10"
+// import Observer10 from "../componentParts/Observer10"
 
 import gsap from 'gsap' 
-
-//basic Components
-import ContentsBanner from "../componentParts/ContentsBanner"
-import {ReactComponent as LeftArrow} from "../../assets/svg/arrow-left.svg"
-import {ReactComponent as RightArrow} from "../../assets/svg/arrow-right.svg"
 
 import hoverEffect from 'hover-effect'
 
 //style
 import { AboutMeStyleCom } from "../../styles/jsStyles/AboutStyles/AboutMeStyle"
 
-import { SRLWrapper } from "simple-react-lightbox";
+// import { SRLWrapper } from "simple-react-lightbox";
 
 import useWindowSize from "../../assets/etc/useWindowSize";
 
@@ -40,17 +34,6 @@ import overlay from '../../assets/images/about/selimage.png'
 // import Img2 from '../../assets/images/memory/project/1170/project2.jpg'
 
 function AboutMe({match, history }) { 
-
-    
-    const [showModal, setShowModal] = useState(false);
-
-    const openModal = () => {
-        setShowModal(true);
-      };
-    
-      const closeModal = () => {
-        setShowModal(false);
-      };
 
     let picsData = { 
         MainImg: "https://ssyproject.s3.ap-northeast-2.amazonaws.com/Memory/profile/selimage-origin.png",
@@ -63,17 +46,12 @@ function AboutMe({match, history }) {
 
     const home = gsap.timeline();
 
-    const options = {
-        settings: {
-        }
-    }
-
     const size = useWindowSize();
 
     const scrollContainer = useRef(null);
     const scrollRef = useRef(null);
 
-    const mainpicRef = useRef(null);
+    // const mainpicRef = useRef(null);
 
     const itemImage = useRef(null);
 
@@ -107,7 +85,7 @@ function AboutMe({match, history }) {
 
     useEffect(() => {
         
-        const tl = gsap.timeline();
+        // const tl = gsap.timeline();
 
         const tl2 = gsap.timeline();
 
@@ -437,7 +415,7 @@ function AboutMe({match, history }) {
                             <div className="AI-stack-pic-wraper">
                             <Observer6>
                                 <div className="AI-stack-pic-container">
-                                    <img src={picsData['AImain']}/>
+                                    <img src={picsData['AImain']} alt="aimain"/>
                                 </div>
                             </Observer6>
                             </div>
@@ -567,7 +545,7 @@ function AboutMe({match, history }) {
                             <div className="small-stack-pic-wraper">
                             <Observer7>
                                 <div className="small-stack-pic-container">
-                                    <img src={picsData['frontendmain']}/>
+                                    <img src={picsData['frontendmain']} alt="frontimg"/>
                                 </div>
                             </Observer7>
                             </div>
@@ -590,7 +568,7 @@ function AboutMe({match, history }) {
                             <div className="small-stack-pic-wraper">
                             <Observer8>
                                 <div className="small-stack-pic-container2">
-                                    <img src={picsData['backendmain']}/>
+                                    <img src={picsData['backendmain']} alt="backendimg" />
                                 </div>
                             </Observer8>
                             </div>
@@ -675,7 +653,7 @@ function AboutMe({match, history }) {
                             <div className="small-stack-pic-wraper">
                             <Observer9>
                                 <div className="small-stack-pic-container3">
-                                    <img src={picsData['deploymain']}/>
+                                    <img src={picsData['deploymain']} alt="deployimg"/>
                                 </div>
                             </Observer9>
                             </div>

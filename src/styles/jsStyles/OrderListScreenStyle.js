@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom'
-import styled, {css, createGlobalStyle} from "styled-components"
+import styled from "styled-components"
 
 export const OrderListScreenStyleCom = styled.div`
 

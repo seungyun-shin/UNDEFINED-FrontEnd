@@ -1,8 +1,7 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { ReactComponent as RightArrow} from '../../assets/svg/arrow-right.svg' 
 import { BannerStyleCom } from "../../styles/jsStyles/BannerStyle"
-import gsap from 'gsap'
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 function Banner() {
 

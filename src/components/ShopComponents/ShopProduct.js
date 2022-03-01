@@ -26,7 +26,7 @@ function ShopProduct({product}) {
                                         {/* <h2>{product.rating} from {product.numReviews} reviews</h2> */}
                                         {/* <h2>Bartolo Manzano</h2> */}
                                         {/* <img src="https://1.bp.blogspot.com/-m1-zHVG6p7g/U2bIYfsLUfI/AAAAAAAAPzg/oCcoC-RFFug/s1600/portada.jpg" /> */}
-                                        <img src={product.image}/>
+                                        <img src={product.image} alt="product"/>
                                     </div>
                                 </LinkStyleCom>
                                 <div className="book-spine">

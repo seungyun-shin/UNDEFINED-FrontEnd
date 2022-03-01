@@ -1,12 +1,12 @@
-import React, { useRef, useMemo, useCallback, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import * as THREE from "three";
-import { BufferAttribute } from 'three';
+// import { BufferAttribute } from 'three';
 
 // reset Styles
 import "../../App.scss"
 
 //R3F
-import { Canvas, useFrame, extend  } from '@react-three/fiber'
+// import { Canvas, useFrame, extend  } from '@react-three/fiber'
 
 import Boilerfragment from '../../shaders/BoilerShader/BoilerFragment'
 import BoilerVertex from '../../shaders/BoilerShader/BoilerVertex'

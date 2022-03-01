@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../../actions/userActions'
-import Button from './Button';
-import Dropdown from './Dropdown';
+// import Button from './Button';
+// import Dropdown from './Dropdown';
 
 import { HeaderStyleCom } from "../../styles/jsStyles/HeaderStyle";
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
@@ -15,11 +15,11 @@ function Header() {
     const [dropdown2, setDropdown2] = useState(false);
 
     
-    const [dropClick, setdropClick] = useState(false)
-    const dropDownHandleClick = () => setdropClick(!click)
+    // const [dropClick, setdropClick] = useState(false)
+    // const dropDownHandleClick = () => setdropClick(!click)
     
-    const [dropClick2, setdropClick2] = useState(false)
-    const dropDownHandleClick2 = () => setdropClick2(!click)
+    // const [dropClick2, setdropClick2] = useState(false)
+    // const dropDownHandleClick2 = () => setdropClick2(!click)
 
     const onMouseEnter = () => {
         if(window.innerWidth < 960){
@@ -114,7 +114,8 @@ function Header() {
                                         {userInfo.name} <i className='fas fa-caret-down'/>
                                     </LinkStyleCom>
                                     {dropdown &&
-                                        <ul onClick={dropDownHandleClick} className={'dropdown-menu'}>
+                                        <ul className={'dropdown-menu'}>
+                                        {/* <ul onClick={dropDownHandleClick} className={'dropdown-menu'}> */}
                                             <LinkStyleCom className='dropdown-link' to="/profile" >
                                                 PROFILE
                                             </LinkStyleCom>
@@ -143,7 +144,8 @@ function Header() {
                                     ADMIN <i className='fas fa-caret-down'/>
                                 </LinkStyleCom> 
                                 {dropdown2 &&
-                                    <ul onClick={dropDownHandleClick2} className={'dropdown-menu'}>
+                                    <ul className={'dropdown-menu'}>
+                                    {/* <ul onClick={dropDownHandleClick2} className={'dropdown-menu'}> */}
                                         <LinkStyleCom className='dropdown-link' to="/admin/userlist" >
                                             USER
                                         </LinkStyleCom>

@@ -1,15 +1,15 @@
-import React, {useState, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 
 function FadeInSection(props) {
-    const [isVisible, setVisible] = useState(false);
+    // const [isVisible, setVisible] = useState(false);
     const domRef = useRef();
     useEffect(() => {
       const observer = new IntersectionObserver(entries => {    
 
            
       if (entries[0].isIntersecting) {
-        entries.forEach(entry => setVisible(entry.isIntersecting));
+        // entries.forEach(entry => setVisible(entry.isIntersecting));
 
         // gsap.from(entries[0].target, { 
         //     duration: 1, 

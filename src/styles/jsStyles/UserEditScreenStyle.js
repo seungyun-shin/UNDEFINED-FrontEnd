@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom'
-import styled, {css, createGlobalStyle} from "styled-components"
+import styled from "styled-components"
 
 export const UserEditScreenStyleCom = styled.div`
 
@@ -9,14 +8,10 @@ export const UserEditScreenStyleCom = styled.div`
         left: 0;
         width: 100vw;
         margin-top: 5%;
-        /* height: 75vh; */
-        /* max-width: 1500px; */
-        /* background: rgba(1,1,1,0.7); */
 
         display: flex;
         justify-content:center;
         align-items: center;
-        /* color: white; */
         color: rgba(255,255,255,.9);
         
         
@@ -32,7 +27,6 @@ export const UserEditScreenStyleCom = styled.div`
             align-items: center;
             flex-direction: column;
 
-            /* background-color: teal; */
             background-image: linear-gradient(180deg,#000,rgba(31,31,31,.19));
             backdrop-filter: brightness(155%) blur(5px);
             webkit-backdrop-filter: brightness(155%) blur(5px);

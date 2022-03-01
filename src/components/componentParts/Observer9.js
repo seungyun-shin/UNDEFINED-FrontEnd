@@ -1,9 +1,10 @@
-import React, {useState, useEffect, useRef } from 'react'
+// import React, {useState, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 
 function FadeInSection9(props) {
 
-    const [isVisible, setVisible] = useState(false);
+    // const [isVisible, setVisible] = useState(false);
     const domRef = useRef();
 
     useEffect(() => {
@@ -11,7 +12,7 @@ function FadeInSection9(props) {
 
            
       if (entries[0].isIntersecting) {
-        entries.forEach(entry => setVisible(entry.isIntersecting));
+        // entries.forEach(entry => setVisible(entry.isIntersecting));
 
         gsap.to(".small-stack-pic-container3", {  
             rotationX: 0,

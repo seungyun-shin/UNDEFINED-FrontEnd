@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useRef } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { Route, NavLink, Redirect } from 'react-router-dom';
+// import { useDispatch, useSelector } from 'react-redux'
+// import { Route, NavLink, Redirect } from 'react-router-dom';
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 
@@ -11,24 +11,24 @@ import ContentsBanner from "../componentParts/ContentsBanner"
 import WorkHeader from "./WorkHeader"
 
 //Record
-import Record from '../RecordComponents/Record'
+// import Record from '../RecordComponents/Record'
 
 // import Records from '../../assets/etc/products'
 //Components
-import Loader from "../componentParts/Loader"
-import Message from "../componentParts/Message"
+// import Loader from "../componentParts/Loader"
+// import Message from "../componentParts/Message"
 import FadeInSection from "../componentParts/Observer"
 
 //style
 import { WorkScreenStyleCom } from "../../styles/jsStyles/WorkStyles/WorkScreenStyle"
 
-import { listRecords } from '../../actions/recordActions'
+// import { listRecords } from '../../actions/recordActions'
 
 //img
 import rechardImg from "../../assets/images/work/ART/WorkArtRechard.jpg"
 import papayaImg from "../../assets/images/work/ART/WorkArtPapaya.jpg"
-import rechardImg2 from "../../assets/images/work/ART/WorkArtRechard2.jpg"
-import papayaImg2 from "../../assets/images/work/ART/WorkArtPapaya2.jpg"
+// import rechardImg2 from "../../assets/images/work/ART/WorkArtRechard2.jpg"
+// import papayaImg2 from "../../assets/images/work/ART/WorkArtPapaya2.jpg"
 import vibrantImg from "../../assets/images/work/ART/WorkArtVibrant.jpg"
 import particleImg from "../../assets/images/work/ART/WorkArtParticleBack.jpg"
 import WorkArtDigital from "../../assets/images/work/ART/WorkArtDigital.jpg"
@@ -98,7 +98,7 @@ function WorkScreenART() {
                                         ref={titleContainer}
                                     >
                                         <LinkStyleCom to="/WorkDetailArt">
-                                        <img src={rechardImg}/>
+                                        <img src={rechardImg} alt="rechardImg" />
                                         <div className="card-3d-contents">
                                             <div className="card-3d-title"> GRAPHIC SHADER / WEBGL / GLSL</div>
                                             <div className="card-3d-content"> Alien Richard Mattka</div>
@@ -114,7 +114,7 @@ function WorkScreenART() {
                                         ref={titleContainer}
                                     >
                                         <LinkStyleCom to="/WorkDetailArt7">
-                                        <img src={WorkArtSun}/>
+                                        <img src={WorkArtSun} alt="WorkArtSun" />
                                         <div className="card-3d-contents">
                                             <div className="card-3d-title"> THREE.JS / NOISE / GRAPHIC SHADER / WEBGL </div>
                                             <div className="card-3d-content"> Solar Athena Noise </div>
@@ -130,7 +130,7 @@ function WorkScreenART() {
                                         ref={titleContainer}
                                     >
                                         <LinkStyleCom to="/WorkDetailArt3">
-                                        <img src={vibrantImg}/>
+                                        <img src={vibrantImg} alt="vibrantImg" />
                                         <div className="card-3d-contents">
                                             <div className="card-3d-title"> 3D MODEL / THREE.JS / GRAPHIC SHADER / GLSL</div>
                                             <div className="card-3d-content"> Francis Face Model</div>
@@ -146,7 +146,7 @@ function WorkScreenART() {
                                         ref={titleContainer}
                                     >
                                         <LinkStyleCom to="/WorkDetailArt6">
-                                        <img src={WorkArtDigital}/>
+                                        <img src={WorkArtDigital} alt="WorkArtDigital"/>
                                         <div className="card-3d-contents">
                                             <div className="card-3d-title"> THREE.JS / GRAPHIC SHADER / WEBGL </div>
                                             <div className="card-3d-content"> Infinite Cave Kernel</div>
@@ -162,7 +162,7 @@ function WorkScreenART() {
                                         ref={titleContainer}
                                     >
                                         <LinkStyleCom to="/WorkDetailArt5">
-                                        <img src={particleImg}/>
+                                        <img src={particleImg} alt="particleImg" />
                                         <div className="card-3d-contents">
                                             <div className="card-3d-title"> THREE.JS / GRAPHIC SHADER / GLSL </div>
                                             <div className="card-3d-content"> Deep Particle Drawing </div>
@@ -178,7 +178,7 @@ function WorkScreenART() {
                                         ref={titleContainer}
                                     >
                                         <LinkStyleCom to="/WorkDetailArt2">
-                                        <img src={papayaImg}/>
+                                        <img src={papayaImg} alt="papayaImg" />
                                         <div className="card-3d-contents">
                                             <div className="card-3d-title"> THREE.JS / GRAPHIC SHADER / WEBGL </div>
                                             <div className="card-3d-content"> Unpredictable Beneficial Virus </div>

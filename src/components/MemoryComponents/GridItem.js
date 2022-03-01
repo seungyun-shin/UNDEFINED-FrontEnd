@@ -7,7 +7,7 @@ function GridItem({url, description}) {
     return (
         <MemoryGridItemStyleCom>
         <div className="grid-item">
-            <img className="grid-item-media" src={url} />
+            <img className="grid-item-media" src={url} alt="gridimg" />
             <p>{description}</p>
         </div>
         </MemoryGridItemStyleCom>

@@ -1,17 +1,18 @@
-import React, {useEffect, useRef} from "react"
-import { HashRouter as BrowserRouter, Route, Switch } from 'react-router-dom';
+import React, {useEffect} from "react"
+// import { HashRouter as BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import "./App.scss";
-import { createBrowserHistory } from "history";
+// import { createBrowserHistory } from "history";
 import gsap from 'gsap'
-import {AnimatePresence, motion} from 'framer-motion'
+import {AnimatePresence} from 'framer-motion'
 
 //screens
-import ParticleScreen from './screens/ParticleScreen'
-import PapayaScreen from './screens/PapayaScreen'
-import DigitalScreen from './screens/DigitalScreen'
-import RechardScreen from './screens/RechardScreen'
-import VibrantScreen from './screens/VibrantScreen'
-import IcoshadrenScreen from './screens/IcoshadrenScreen'
+// import ParticleScreen from './screens/ParticleScreen'
+// import PapayaScreen from './screens/PapayaScreen'
+// import DigitalScreen from './screens/DigitalScreen'
+// import RechardScreen from './screens/RechardScreen'
+// import VibrantScreen from './screens/VibrantScreen'
+// import IcoshadrenScreen from './screens/IcoshadrenScreen'
 
 //About Component
 import AboutMe from './components/AboutComponents/AboutMe'
@@ -75,10 +76,10 @@ import RecordDetail from './components/RecordComponents/RecordDetail'
 import RecordListScreen from './components/RecordComponents/RecordListScreen'
 import RecordEditScreen from './components/RecordComponents/RecordEditScreen'
 
-import BoilerScreen from './screens/BoilerScreen'
+// import BoilerScreen from './screens/BoilerScreen'
 import MainScreen from './screens/MainScreen'
 import InitialMainScreen from './screens/InitialMainScreen'
-import ParticleBackgroundScreen from './screens/ParticleBackgroundScreen'
+// import ParticleBackgroundScreen from './screens/ParticleBackgroundScreen'
 
 import LoginScreen from './screens/LoginScreen'
 import RegisterScreen from './screens/RegisterScreen'
@@ -99,19 +100,19 @@ import Earth2ModelFrame from './components/ModelComponents/Earth2ModelFrame'
 
 //basic Components
 import Header from "./components/componentParts/Header"
-import Footer from "./components/componentParts/Footer"
+// import Footer from "./components/componentParts/Footer"
 import Banner from "./components/componentParts/Banner"
-import IntroOverlay from "./components/componentParts/IntroOverlay"
-import Empty from "./components/componentParts/Empty"
+// import IntroOverlay from "./components/componentParts/IntroOverlay"
+// import Empty from "./components/componentParts/Empty"
 import WarningScreen from "./components/componentParts/WarningScreen"
 import UpdatingScreen from "./components/componentParts/UpdatingScreen"
 
 function App() {
 
-  function handleClick(e) {
-    e.preventDefault();
-    console.log('The link was clicked.');
-  }
+  // function handleClick(e) {
+  //   e.preventDefault();
+  //   console.log('The link was clicked.');
+  // }
 
   useEffect(()=>{
     let vh = window.innerHeight * .01;

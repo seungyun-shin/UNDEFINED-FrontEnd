@@ -1,13 +1,13 @@
-import React, { useRef, useMemo, useCallback, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import * as THREE from "three";
-import { BufferAttribute } from 'three';
+// import { BufferAttribute } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 
 // reset Styles
 import "../../App.scss"
 
 //R3F
-import { Canvas, useFrame, extend  } from '@react-three/fiber'
+// import { Canvas, useFrame, extend  } from '@react-three/fiber'
 
 import Vibrantfragment from '../../shaders/VibrantShader/Vibrantfragment'
 import VibrantVertex from '../../shaders/VibrantShader/VibrantVertex'
@@ -73,7 +73,7 @@ function VibrantModel() {
             })  
         })
 
-        const geometry = new THREE.PlaneBufferGeometry( 1, 1 );
+        // const geometry = new THREE.PlaneBufferGeometry( 1, 1 );
         var material = new THREE.MeshNormalMaterial({side: THREE.DoubleSide});
         material = new THREE.ShaderMaterial({
             fragmentShader:Vibrantfragment,
@@ -93,10 +93,10 @@ function VibrantModel() {
         
         let time = 0;
         
-        const setupResize = () => {
-            // window.addEventListener("resize", resize.bind(this))
-            window.addEventListener("resize", bindedResize)
-        }
+        // const setupResize = () => {
+        //     // window.addEventListener("resize", resize.bind(this))
+        //     window.addEventListener("resize", bindedResize)
+        // }
 
         const resize = () => {
             width = VibrantContainer.current.offsetWidth;

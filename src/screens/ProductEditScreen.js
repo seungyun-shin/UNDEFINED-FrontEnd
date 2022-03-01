@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react'
 import api from '../components/componentParts/ApiAxios'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import { LinkStyleCom } from "../styles/jsStyles/LinkStyle";
 
@@ -16,8 +16,6 @@ import Message from '../components/componentParts/Message'
 import FormContainer from '../components/componentParts/FormContainer'
 import { listProductDetails, updateProduct } from '../actions/productActions'
 import { PRODUCT_UPDATE_RESET} from '../constants/productConstants'
-
-import imageCompression from 'browser-image-compression';
 
 function ProductEditScreen({match, history}) {
     

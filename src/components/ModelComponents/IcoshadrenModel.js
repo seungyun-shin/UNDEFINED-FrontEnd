@@ -1,4 +1,4 @@
-import React, { useRef, useMemo, useCallback, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import * as THREE from "three";
 
 import gsap from 'gsap'
@@ -14,15 +14,15 @@ import IcoshadrenFragment from '../../shaders/IcoshadrenShader/IcoshadrenFragmen
 import IcoshadrenFragment1 from '../../shaders/IcoshadrenShader/IcoshadrenFragment1'
 import IcoshadrenVertex from '../../shaders/IcoshadrenShader/IcoshadrenVertex'
 //pixel
-import IcoshadrenPixelFragment from '../../shaders/IcoshadrenShader/IcoshadrenPixelFragment'
-import IcoshadrenPixelVertex from '../../shaders/IcoshadrenShader/IcoshadrenPixelVertex'
+// import IcoshadrenPixelFragment from '../../shaders/IcoshadrenShader/IcoshadrenPixelFragment'
+// import IcoshadrenPixelVertex from '../../shaders/IcoshadrenShader/IcoshadrenPixelVertex'
 
 
 import { HeaderStyleCom } from "../../styles/jsStyles/HeaderStyle";
-import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
+// import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 
 import landscape from '../../assets/images/textures/skytexture.png'
-import { TetrahedronGeometry } from 'three';
+// import { TetrahedronGeometry } from 'three';
 
 function IcoshadrenModel() {
 
@@ -68,7 +68,7 @@ function IcoshadrenModel() {
             (t) =>{
                 t.wrapS = t.wrapT = THREE.MirroredRepeatWrapping;
         
-                const geometry = new THREE.IcosahedronGeometry( 0.59, 2 );
+                // const geometry = new THREE.IcosahedronGeometry( 0.59, 2 );
                 const geometry1 = new THREE.IcosahedronBufferGeometry( 0.60, 2 );
                 let length = geometry1.attributes.position.array.length;
                 
@@ -122,7 +122,7 @@ function IcoshadrenModel() {
 
                     const initialpagecheck = () => {
                         
-                        if(document.getElementsByClassName('main-title').length == 0){
+                        if(document.getElementsByClassName('main-title').length === 0){
 
                             if( document.getElementsByClassName('about-header').length !== 0 || document.getElementsByClassName('earthContainer').length !== 0){
                                 
@@ -148,7 +148,7 @@ function IcoshadrenModel() {
             
                         document.getElementsByClassName('logo')[0].addEventListener('click', (e) => {
             
-                            if(meshToggle == 1){
+                            if(meshToggle === 1){
                                 gsap.to( camera.position, {
                                     duration: 3,
                                     z: 1.7,

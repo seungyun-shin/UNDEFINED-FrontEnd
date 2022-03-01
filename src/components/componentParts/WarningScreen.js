@@ -1,11 +1,11 @@
 import React from 'react'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import {motion} from 'framer-motion'
 
 import { WarningScreenStyleCom } from "../../styles/jsStyles/WarningScreenStyle"
 
-import lock from "../../assets/images/etc/lockShild.png"
+// import lock from "../../assets/images/etc/lockShild.png"
 
 function Message({ children }) {
     return (

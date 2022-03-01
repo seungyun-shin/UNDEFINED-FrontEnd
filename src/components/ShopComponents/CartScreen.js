@@ -94,8 +94,8 @@ function CartScreen( { match, location, history } ) {
                                         <div className="cart-subtotal-container">
                                             <div className="subtotal-title">
                                                 <h1>SUBTOTAL ({cartItems.reduce((acc, item) => acc + item.qty, 0)}) ITEMS</h1>
-                                                <h2>=> TOTAL PRICE : ${cartItems.reduce((acc, item) => acc + item.qty * item.price, 0).toFixed(2)}</h2>
-                                                <div className="cart-subtotal-button"><button onClick={checkoutHandler} className='basic-button' type='button' style={ cartItems.length == 0 ? {display:'none'} : {}} >PROCEED TO CHECKOUT</button></div>
+                                                <h2> = TOTAL PRICE : ${cartItems.reduce((acc, item) => acc + item.qty * item.price, 0).toFixed(2)}</h2>
+                                                <div className="cart-subtotal-button"><button onClick={checkoutHandler} className='basic-button' type='button' style={ cartItems.length === 0 ? {display:'none'} : {}} >PROCEED TO CHECKOUT</button></div>
                                             </div>
                                         </div>
                                     </>

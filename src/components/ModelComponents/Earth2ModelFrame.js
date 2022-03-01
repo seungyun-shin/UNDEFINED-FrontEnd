@@ -1,21 +1,21 @@
-import React, { useRef, useMemo, useCallback, useEffect, Suspense } from 'react'
-import * as THREE from "three";
+import React, { useRef, useEffect, Suspense } from 'react'
+// import * as THREE from "three";
 
 import gsap from 'gsap'
 
 import Earth2Model from '../ModelComponents/Earth2Model'
 
-import { OrbitControls, Loader } from '@react-three/drei'
+import { Loader } from '@react-three/drei'
 // reset Styles
 import "../../App.scss"
 
 //R3F
-import { Canvas, useFrame, extend, render  } from '@react-three/fiber'
-import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
+import { Canvas } from '@react-three/fiber'
+// import { LinkStyleCom } from "../../styles/jsStyles/LinkStyle";
 
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 function Earth2ModelFrame() {
 

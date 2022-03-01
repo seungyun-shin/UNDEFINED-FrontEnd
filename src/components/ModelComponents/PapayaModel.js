@@ -1,6 +1,6 @@
-import React, { useRef, useMemo, useCallback, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import * as THREE from "three";
-import { BufferAttribute } from 'three';
+// import { BufferAttribute } from 'three';
 // reset Styles
 import "../../App.scss"
 
@@ -10,7 +10,7 @@ import PapayaVertex from '../../shaders/PapayaShader/PapayaVertex'
 import PapayaFragmentParticle from '../../shaders/PapayaShader/PapayaFragmentParticle'
 import PapayaVertexParticle from '../../shaders/PapayaShader/PapayaVertexParticle'
 
-let OrbitControls = require("three-orbit-controls")(THREE);
+// let OrbitControls = require("three-orbit-controls")(THREE);
 
 function PapayaModel() {
 
@@ -38,7 +38,7 @@ function PapayaModel() {
         camera.position.set(0, 0, 5);
 
         let time = 0;
-        let paused = false;
+        // let paused = false;
 
         const material = new THREE.ShaderMaterial({
             extensions: {

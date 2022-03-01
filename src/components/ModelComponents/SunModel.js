@@ -1,11 +1,11 @@
-import React, { useRef, useMemo, useCallback, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 import * as THREE from "three";
-import { BufferAttribute } from 'three';
+// import { BufferAttribute } from 'three';
 // reset Styles
 import "../../App.scss"
-import {gsap} from 'gsap';
+// import {gsap} from 'gsap';
 //dat.gui
-import * as dat from "dat.gui"
+// import * as dat from "dat.gui"
 
 import SunFragment from '../../shaders/SunShader/SunFragment'
 import SunVertex from '../../shaders/SunShader/SunVertex'
@@ -16,7 +16,7 @@ import SunVertex2 from '../../shaders/SunShader/SunVertex2'
 import SunFragmentAround from '../../shaders/SunShader/SunFragmentAround'
 import SunVertexAround from '../../shaders/SunShader/SunVertexAround'
 
-let OrbitControls = require("three-orbit-controls")(THREE);
+// let OrbitControls = require("three-orbit-controls")(THREE);
 // import PapayaFragmentParticle from '../../shaders/PapayaShader/PapayaFragmentParticle'
 // import PapayaVertexParticle from '../../shaders/PapayaShader/PapayaVertexParticle'
 
@@ -47,7 +47,7 @@ function SunModel() {
         camera.position.set(0, 0, 2);
 
         let time = 0;
-        let paused = false;
+        // let paused = false;
         let isPlaying = true;
 
         //addAround

@@ -1,17 +1,17 @@
-import React, {useState, useEffect} from 'react'
+import React, { useEffect } from 'react'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import { ShopPlaceOrderScreenCom } from "../../styles/jsStyles/ShopStyles/ShopPlaceOrderScreen";
 
 import { useDispatch, useSelector } from 'react-redux';
 
-import { savePaymentMethod } from '../../actions/cartActions' 
+// import { savePaymentMethod } from '../../actions/cartActions' 
 
 import CheckoutSteps from './CheckoutSteps';
 
-import Loader from '../../components/componentParts/Loader'
+// import Loader from '../../components/componentParts/Loader'
 import Message from '../../components/componentParts/Message'
 import { LinkStyleCom } from '../../styles/jsStyles/LinkStyle';
 
@@ -42,7 +42,7 @@ function PlaceOrderScreen({history}) {
             history.push(`/order/${order._id}`)
             dispatch({ type: ORDER_CREATE_RESET})
         }
-    }, [success, history])
+    }, [success, history, dispatch, order._id])
 
     const placeOrder = () => {
         dispatch(createOrder({

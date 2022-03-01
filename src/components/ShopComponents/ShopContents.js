@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import { useHistory } from 'react-router-dom'
 
@@ -11,8 +11,7 @@ import { listProducts } from '../../actions/productActions'
 import Loader from "../componentParts/Loader"
 import Message from "../componentParts/Message"
 //paginate
-import Paginate from "../componentParts/Paginate"
-
+// import Paginate from "../componentParts/Paginate"
 
 function ShopContents( ) {
 
@@ -20,7 +19,7 @@ function ShopContents( ) {
 
     const dispatch = useDispatch()
     const productList = useSelector(state => state.productList)
-    const { error, loading, products, page, pages} = productList
+    const { error, loading, products} = productList
     
     let keyword = history.location.search
     

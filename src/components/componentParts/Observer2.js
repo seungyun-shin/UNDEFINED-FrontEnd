@@ -1,15 +1,15 @@
-import React, {useState, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 
 function FadeInSection2(props) {
-    const [isVisible, setVisible] = useState(false);
+    // const [isVisible, setVisible] = useState(false);
     const domRef = useRef();
     useEffect(() => {
       const observer = new IntersectionObserver(entries => {    
 
            
       if (entries[0].isIntersecting) {
-        entries.forEach(entry => setVisible(entry.isIntersecting));
+        // entries.forEach(entry => setVisible(entry.isIntersecting));
 
         gsap.to(entries[0].target, {  
           y: 0,
@@ -42,23 +42,12 @@ function FadeInSection2(props) {
       return () => observer && observer.disconnect();
     }, []);
 
-    
-    const style = {
-      display:'flex',
-      justifyContent: "center",
-      alignItems: "center",
-      width:"100%",
-      // height:"100%"
-    }
-
-
 
     return (
       <div
         // className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
         className={`work-observer-container2`}
         ref={domRef}
-        // style={style}
       >
         {props.children}
       </div>

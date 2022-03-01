@@ -1,4 +1,4 @@
-import styled, {css, createGlobalStyle} from "styled-components"
+import styled from "styled-components"
 
 export const IntroOverlayStyleCom = styled.div`
 .overlay-container{

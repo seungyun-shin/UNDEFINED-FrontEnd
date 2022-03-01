@@ -1,17 +1,12 @@
 
-import React, {useState, useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React from 'react'
 
 import { LinkStyleCom } from "../../../styles/jsStyles/LinkStyle";
 // import Select from 'react-select'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
-//basic Components
-import ContentsBanner from "../../componentParts/ContentsBanner"
-import {ReactComponent as LeftArrow} from "../../../assets/svg/arrow-left.svg"
-import {ReactComponent as RightArrow} from "../../../assets/svg/arrow-right.svg"
 
 
 //style

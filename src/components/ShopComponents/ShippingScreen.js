@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import { ShopShippingScreenStyleCom } from "../../styles/jsStyles/ShopStyles/ShopShippingScreenStyle";
 
@@ -11,8 +11,8 @@ import { saveShippingAddress } from '../../actions/cartActions'
 
 import CheckoutSteps from './CheckoutSteps';
 
-import Loader from '../../components/componentParts/Loader'
-import Message from '../../components/componentParts/Message'
+// import Loader from '../../components/componentParts/Loader'
+// import Message from '../../components/componentParts/Message'
 
 function ShippingScreen({history}) {
 

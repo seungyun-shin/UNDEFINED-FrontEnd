@@ -1,17 +1,13 @@
 
-import React, {useState, useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React, { useEffect } from 'react'
+import { useSelector } from 'react-redux'
 
 import { LinkStyleCom } from "../../../styles/jsStyles/LinkStyle";
 // import Select from 'react-select'
 
 //transition Animation
-import {AnimatePresence, motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
-//basic Components
-import ContentsBanner from "../../componentParts/ContentsBanner"
-import {ReactComponent as LeftArrow} from "../../../assets/svg/arrow-left.svg"
-import {ReactComponent as RightArrow} from "../../../assets/svg/arrow-right.svg"
 
 //style
 import { WorkDetailAIStyleCom } from "../../../styles/jsStyles/WorkStyles/WorkDetailAIStyle"
@@ -19,9 +15,6 @@ import { WorkDetailAIStyleCom } from "../../../styles/jsStyles/WorkStyles/WorkDe
 import pic1 from "../../../assets/images/work/AI/PASummary.png"
 
 //video
-
-import video1 from "../../../assets/videos/golf_compare.mp4"
-import video2 from "../../../assets/videos/tennis_compare.mp4"
 
 function WorkDetailNLP({history, match }) {
 

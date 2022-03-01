@@ -1,9 +1,7 @@
-import React, {useState, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 
 //style
 import { TransitionStyleCom } from "../../styles/jsStyles/TransitionStyles"
-
-import {Power4} from 'gsap' 
 
 function Transition({timeline}) {
     const trans = useRef(null);

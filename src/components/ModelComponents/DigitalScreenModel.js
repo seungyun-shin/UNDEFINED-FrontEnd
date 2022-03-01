@@ -1,18 +1,18 @@
-import React, { useRef, useMemo, useCallback, useEffect, useState } from 'react'
+import React, { useRef, useEffect } from 'react'
 import * as THREE from "three";
-import { BufferAttribute } from 'three';
+// import { BufferAttribute } from 'three';
 
 // reset Styles
 import "../../App.scss"
 
 //R3F
-import { Canvas, useFrame, extend  } from '@react-three/fiber'
+// import { Canvas, useFrame, extend  } from '@react-three/fiber'
 
 //gsap 
-import gsap from 'gsap'
+// import gsap from 'gsap'
 
 //dat.gui
-import * as dat from "dat.gui"
+// import * as dat from "dat.gui"
 
 import DigitalScreenFragment from '../../shaders/DigitalScreenShader/DigitalScreenFragment'
 import DigitalScreenVertex from '../../shaders/DigitalScreenShader/DigitalScreenVertex'
