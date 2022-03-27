@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# UNDEFINED
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="815" alt="Screen Shot 2022-03-27 at 2 35 49 PM" src="https://user-images.githubusercontent.com/59545206/160269321-85b03456-3b93-4e90-8b07-ac38a6aab5b9.png">
+
+개인 포트폴리오 및 기능 저장을 위한 웹사이트 입니다.
 
 ## Available Scripts
 
