@@ -2,6 +2,9 @@
 
 <img width="815" alt="Screen Shot 2022-03-27 at 2 35 49 PM" src="https://user-images.githubusercontent.com/59545206/160269321-85b03456-3b93-4e90-8b07-ac38a6aab5b9.png">
 
+![undefined-main2](https://user-images.githubusercontent.com/59545206/160288706-210e7fa6-e19d-4de4-82fd-9bda0dce6021.JPG)
+
+
 'Undefined' refers to express my ‘belief’ and ‘attitude’ not to set limit for myself. I believe that I should keep
 in mind that I need to learn always to communicate with people in various fields and emphasize with them.
 My goal is to keep evolving myself always with open mindset, without setting any limit in my growth.
