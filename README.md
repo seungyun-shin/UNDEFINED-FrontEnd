@@ -2,6 +2,14 @@
 
 <img width="815" alt="Screen Shot 2022-03-27 at 2 35 49 PM" src="https://user-images.githubusercontent.com/59545206/160269321-85b03456-3b93-4e90-8b07-ac38a6aab5b9.png">
 
+'Undefined' 라는 단어는 제 자신의 한계를 정의해 두지 않고자 하는 제 '신념'과 '태도'를 표현하는 단어입니다.
+다양한 분야의 사람들과 원활하게 의사소통 하고 그들에게 공감하기 위해서는, 언제나 배우는 마음가짐이 있어야 한다고 생각합니다.  
+배움과 성장에 경계를 정하지 않고 항상 열린 마음으로 끊임없이 발전해 나가고자 합니다.
+
+'Undefined' refers to express my ‘belief’ and ‘attitude’ not to set limit for myself. I believe that I should keep
+in mind that I need to learn always to communicate with people in various fields and emphasize with them.
+My goal is to keep evolving myself always with open mindset, without setting any limit in my growth.
+
 개인 포트폴리오 및 기능 저장을 위한 웹사이트 입니다.
 
 ## Available Scripts
