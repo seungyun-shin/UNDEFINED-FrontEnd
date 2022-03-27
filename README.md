@@ -10,6 +10,9 @@ My goal is to keep evolving myself always with open mindset, without setting any
 
 개인 작업기록 및 필요기능을 구현한 웹서비스 입니다.
 
+![front-architecture](https://user-images.githubusercontent.com/59545206/160290048-f2572155-03ea-472d-b943-f541a9bf600a.png)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
