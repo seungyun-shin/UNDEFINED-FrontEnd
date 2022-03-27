@@ -2,14 +2,13 @@
 
 ![mainimg](https://user-images.githubusercontent.com/59545206/160289502-12383bed-74cf-427a-b6cf-caa582cc46d3.JPG)
 
-![undefined-main2](https://user-images.githubusercontent.com/59545206/160288706-210e7fa6-e19d-4de4-82fd-9bda0dce6021.JPG)
-
-
 'Undefined' refers to express my ‘belief’ and ‘attitude’ not to set limit for myself. I believe that I should keep
 in mind that I need to learn always to communicate with people in various fields and emphasize with them.
 My goal is to keep evolving myself always with open mindset, without setting any limit in my growth.
 
-개인 포트폴리오 및 기능 저장을 위한 웹사이트 입니다.
+![undefined-main2](https://user-images.githubusercontent.com/59545206/160288706-210e7fa6-e19d-4de4-82fd-9bda0dce6021.JPG)
+
+개인 작업기록 및 필요기능을 구현한 웹서비스 입니다.
 
 ## Available Scripts
 
