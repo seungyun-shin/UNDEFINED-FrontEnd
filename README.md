@@ -1,4 +1,4 @@
-# UNDEFINED
+# UNDEFINED - Front-End
 
 ![mainimg](https://user-images.githubusercontent.com/59545206/160289502-12383bed-74cf-427a-b6cf-caa582cc46d3.JPG)
 
@@ -8,7 +8,7 @@ My goal is to keep evolving myself always with open mindset, without setting any
 
 개인 작업기록 및 필요기능을 위해 구현한 웹서비스 입니다.
 
-## Awwards (HONORABLE MENTION)
+## Awwards (Honorable Mention)
 
 ![awward](https://user-images.githubusercontent.com/59545206/160397628-3ff45c66-297c-400d-af0b-ed27b33535a0.JPG)
 
