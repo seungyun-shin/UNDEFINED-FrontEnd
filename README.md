@@ -8,10 +8,15 @@ My goal is to keep evolving myself always with open mindset, without setting any
 
 개인 작업기록 및 필요기능을 위해 구현한 웹서비스 입니다.
 
-# 기능(Function)
+## 기능(Function)
 
 ![undefined-main2](https://user-images.githubusercontent.com/59545206/160288706-210e7fa6-e19d-4de4-82fd-9bda0dce6021.JPG)
 
+1.WORK   : 개인 프로젝트 및 작업 기록
+2.SHOP   : 차후 작품 및 물건 판매를 위한 display 및 주문 결제 기능 구현
+3.RECORD : 임시적인 작업 메모 및 기록을 위한 기능 구현
+4.MEMORY : 여행 장소 및 개인 사진 시각적으로 표현 
+5.ABOUT  : 개인 소개
 
 ![front-architecture](https://user-images.githubusercontent.com/59545206/160290048-f2572155-03ea-472d-b943-f541a9bf600a.png)
 
