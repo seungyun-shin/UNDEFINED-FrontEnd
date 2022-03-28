@@ -8,13 +8,12 @@ My goal is to keep evolving myself always with open mindset, without setting any
 
 개인 작업기록 및 필요기능을 위해 구현한 웹서비스 입니다.
 
-https://www.awwwards.com/sites/undefined
-
 ## Awwards (HONORABLE MENTION)
 
 ![awward](https://user-images.githubusercontent.com/59545206/160397628-3ff45c66-297c-400d-af0b-ed27b33535a0.JPG)
 
 Awwards 플랫폼에서 세계 전문가들의 피드백과 평가를 받았습니다.
+https://www.awwwards.com/sites/undefined
 
 ## 메뉴(Function)
 
