@@ -6,7 +6,7 @@
 in mind that I need to learn always to communicate with people in various fields and emphasize with them.
 My goal is to keep evolving myself always with open mindset, without setting any limit in my growth.
 
-개인 작업기록 및 필요기능을 구현한 웹서비스 입니다.
+개인 작업기록 및 필요기능을 위해 구현한 웹서비스 입니다.
 
 ![undefined-main2](https://user-images.githubusercontent.com/59545206/160288706-210e7fa6-e19d-4de4-82fd-9bda0dce6021.JPG)
 
