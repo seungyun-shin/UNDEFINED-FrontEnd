@@ -38,4 +38,4 @@ https://www.awwwards.com/sites/undefined
 
 ![service-architecture](https://user-images.githubusercontent.com/59545206/160290395-ecc143a8-c4c8-44b8-b9a0-40ad588120d2.png)
 
-BackEnd : https://github.com/seungyun-shin/UNDEFINED-BackEnd
+Back-End : https://github.com/seungyun-shin/UNDEFINED-BackEnd
