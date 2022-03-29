@@ -25,6 +25,8 @@ https://www.awwwards.com/sites/undefined
 4.MEMORY : 여행 장소 및 개인 사진 \
 5.ABOUT  : 개인 소개
 
+## Front- End architecture
+
 ![front-architecture](https://user-images.githubusercontent.com/59545206/160290048-f2572155-03ea-472d-b943-f541a9bf600a.png)
 
 ![front-deploy](https://user-images.githubusercontent.com/59545206/160290120-5ec666bd-cd8b-454f-8368-00897763b962.png)
