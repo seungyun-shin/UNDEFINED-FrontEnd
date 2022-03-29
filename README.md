@@ -25,14 +25,19 @@ https://www.awwwards.com/sites/undefined
 4.MEMORY : 여행 장소 및 개인 사진 \
 5.ABOUT  : 개인 소개
 
-## Front- End architecture
+## Front-End Architecture
 
 ![front-architecture](https://user-images.githubusercontent.com/59545206/160290048-f2572155-03ea-472d-b943-f541a9bf600a.png)
 
+
+## Front-End Deployment
+
 ![front-deploy](https://user-images.githubusercontent.com/59545206/160290120-5ec666bd-cd8b-454f-8368-00897763b962.png)
 
-![front-deploy](https://user-images.githubusercontent.com/59545206/160290391-deffa04b-71e8-4bf8-984d-b43762ef1986.png)
+## UNDEFINED Service Architecture
+
 ![service-architecture](https://user-images.githubusercontent.com/59545206/160290395-ecc143a8-c4c8-44b8-b9a0-40ad588120d2.png)
+
 ![backend-architecture](https://user-images.githubusercontent.com/59545206/160290396-88fa944b-6111-4721-ad2f-544b6c995e57.png)
 ![backend-deploy](https://user-images.githubusercontent.com/59545206/160290399-616f1842-8364-48d4-89e9-b0628940027f.png)
 ![front-architecture](https://user-images.githubusercontent.com/59545206/160290400-19afa513-caf9-42c2-a48f-bcb12eb69c8d.png)
